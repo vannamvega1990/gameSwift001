@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420E4CF227E7FFD7004E6251 /* biDaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF127E7FFD7004E6251 /* biDaViewController.swift */; };
+		420E4CF427E800FA004E6251 /* scene001.sks in Resources */ = {isa = PBXBuildFile; fileRef = 420E4CF327E800FA004E6251 /* scene001.sks */; };
+		420E4CF627E80125004E6251 /* scene001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF527E80125004E6251 /* scene001.swift */; };
 		C1203F3A26C9B5CD009E55A2 /* BaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F3926C9B5CD009E55A2 /* BaseAnimation.swift */; };
 		C1203F4126C9C782009E55A2 /* TestVCSwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F4026C9C782009E55A2 /* TestVCSwiftUIView1.swift */; };
 		C139A6A626C9F7B20005E74A /* PushToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C139A6A526C9F7B20005E74A /* PushToViewController.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420E4CF127E7FFD7004E6251 /* biDaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biDaViewController.swift; sourceTree = "<group>"; };
+		420E4CF327E800FA004E6251 /* scene001.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = scene001.sks; sourceTree = "<group>"; };
+		420E4CF527E80125004E6251 /* scene001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scene001.swift; sourceTree = "<group>"; };
 		C1203F3926C9B5CD009E55A2 /* BaseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnimation.swift; sourceTree = "<group>"; };
 		C1203F4026C9C782009E55A2 /* TestVCSwiftUIView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVCSwiftUIView1.swift; sourceTree = "<group>"; };
 		C139A6A526C9F7B20005E74A /* PushToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +87,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420E4CEE27E7FCED004E6251 /* 2d */ = {
+			isa = PBXGroup;
+			children = (
+				C1C3759F26D252AB009C1BCA /* Example2 */,
+			);
+			path = 2d;
+			sourceTree = "<group>";
+		};
+		420E4CEF27E7FCF8004E6251 /* 3d */ = {
+			isa = PBXGroup;
+			children = (
+				C1C375A026D252C5009C1BCA /* Example1 */,
+			);
+			path = 3d;
+			sourceTree = "<group>";
+		};
+		420E4CF027E7FD7B004E6251 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				420E4CF127E7FFD7004E6251 /* biDaViewController.swift */,
+				420E4CF527E80125004E6251 /* scene001.swift */,
+				420E4CF327E800FA004E6251 /* scene001.sks */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		C1203F3726C9B5A1009E55A2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +221,7 @@
 		C1C3755E26D24B0F009C1BCA /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				420E4CF027E7FD7B004E6251 /* New Group */,
 				C1C3756226D24B3D009C1BCA /* Example */,
 				C1C3755F26D24B3A009C1BCA /* BaseGame.swift */,
 			);
@@ -198,8 +231,8 @@
 		C1C3756226D24B3D009C1BCA /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				C1C375A026D252C5009C1BCA /* Example1 */,
-				C1C3759F26D252AB009C1BCA /* Example2 */,
+				420E4CEE27E7FCED004E6251 /* 2d */,
+				420E4CEF27E7FCF8004E6251 /* 3d */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -320,6 +353,7 @@
 			files = (
 				C18B56B926C8719B0000CC66 /* TestViewController1.xib in Resources */,
 				C1C375A626D25694009C1BCA /* GameScene2.sks in Resources */,
+				420E4CF427E800FA004E6251 /* scene001.sks in Resources */,
 				C1C3759D26D25252009C1BCA /* Actions.sks in Resources */,
 				C1C3759A26D2517F009C1BCA /* GameScene.sks in Resources */,
 				C1F6E8B826ABE5A600194CEA /* LaunchScreen.storyboard in Resources */,
@@ -343,12 +377,14 @@
 				C1F6E8A926ABE5A500194CEA /* AppDelegate.swift in Sources */,
 				C1C3758D26D24E6F009C1BCA /* ExGameViewController2.swift in Sources */,
 				C1F6E8AB26ABE5A500194CEA /* SceneDelegate.swift in Sources */,
+				420E4CF627E80125004E6251 /* scene001.swift in Sources */,
 				C1C3755726D23F70009C1BCA /* ExNavigationBar1.swift in Sources */,
 				C1C3755C26D240A0009C1BCA /* ExNavigationController1.swift in Sources */,
 				C19CBA3526C9DEE300846AFC /* TestVCSwiftUIView2.swift in Sources */,
 				C1C3759326D250FD009C1BCA /* GameScene.swift in Sources */,
 				C1C3755026D2390E009C1BCA /* ExTableView1.swift in Sources */,
 				C1F6E8B326ABE5A500194CEA /* learnGit.xcdatamodeld in Sources */,
+				420E4CF227E7FFD7004E6251 /* biDaViewController.swift in Sources */,
 				C139A6A626C9F7B20005E74A /* PushToViewController.swift in Sources */,
 				C1C3756726D24B9B009C1BCA /* Snipet.swift in Sources */,
 				C1C3756426D24B55009C1BCA /* ExGameViewController1.swift in Sources */,

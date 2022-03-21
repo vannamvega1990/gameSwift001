@@ -30,6 +30,9 @@ class BaseGame: SKScene {
         note1.position=CGPoint(x: 0, y: 0)
         //self.addChild(note1)
     }
+    func changeDirectLucHut(){
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: 12)
+    }
     func testTaoLucHut(){
         // Tạo lực hút
         // Tao khung để bao nhân vật, có 3 loại khung: khung chử nhật, tròn, hình hỗn hợp.Rồi add lực hút cho note

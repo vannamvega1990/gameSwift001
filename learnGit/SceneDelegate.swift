@@ -25,8 +25,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
             //let vc = ViewController()
-            //let vc = ExGameViewController1()
-            let vc = ExGameViewController2()
+//            let vc = ExGameViewController1()
+//            let vc = ExGameViewController2()
+            let vc = biDaViewController()
             
             let nav = UINavigationController(rootViewController: vc)
             nav.setNavigationBarHidden(true, animated: true)
