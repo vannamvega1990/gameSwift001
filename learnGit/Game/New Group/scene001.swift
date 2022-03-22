@@ -10,10 +10,14 @@ import GameplayKit
 
 class scene001: SKScene, SKPhysicsContactDelegate{
     
-    let node1 = SKSpriteNode(color: .yellow, size: CGSize(width: 36, height: 36))
+    //let node1 = SKSpriteNode(color: .yellow, size: CGSize(width: 36, height: 36))
+//    let node1 = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 36, height: 36), cornerRadius: 18)
+    let node1 = SKShapeNode(circleOfRadius: 26)
     let node2 = SKSpriteNode(color: .green, size: CGSize(width: 567, height: 36))
+    let stick = SKShapeNode(rectOf: CGSize(width: 536, height: 116))
     
-    private var label : SKLabelNode?
+    
+    private var num3 : SKLabelNode?
     private var san : SKSpriteNode?
     private var canh1 : SKSpriteNode?
     private var canh2 : SKSpriteNode?
@@ -70,9 +74,21 @@ class scene001: SKScene, SKPhysicsContactDelegate{
             canh4.physicsBody?.contactTestBitMask=vatThe.nhom1.rawValue
         }
         
+        
         node1.position = CGPoint(x: 0, y: 60)
         self.addChild(node1)
-        node1.physicsBody=SKPhysicsBody(rectangleOf: node1.size)
+        node1.fillColor = .yellow
+        let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.red ,
+                            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26)]
+        let myAttrString = NSAttributedString(string: "3", attributes: myAttribute)
+        self.num3 = SKLabelNode(attributedText: myAttrString)
+        if let num3 = num3 {
+            node1.addChild(num3)
+        }
+//        node1.physicsBody=SKPhysicsBody(rectangleOf: node1.size)
+//        node1.physicsBody=SKPhysicsBody(circleOfRadius: node1.frame.size.width/2)
+        node1.physicsBody = SKPhysicsBody(circleOfRadius: 26)
+        node1.physicsBody!.mass = 0.6
         node1.physicsBody!.affectedByGravity = false
         node1.physicsBody?.friction = 1.6
 //        node1.physicsBody?.isDynamic=false// if false thì ko rơi xuống
@@ -83,6 +99,33 @@ class scene001: SKScene, SKPhysicsContactDelegate{
         node2.physicsBody=SKPhysicsBody(rectangleOf: node2.size)
         node2.physicsBody?.isDynamic=true
         node2.physicsBody?.contactTestBitMask=vatThe.nhom2.rawValue
+        
+        let node1 = SKShapeNode(circleOfRadius: 20)
+                node1.physicsBody = SKPhysicsBody(circleOfRadius: 20)
+                node1.position = CGPoint(x: self.size.width/2.0, y: self.size.height/2.0)
+
+                let node2 = SKShapeNode(circleOfRadius: 2)
+                node2.physicsBody = SKPhysicsBody(circleOfRadius: 1)
+                node2.position = CGPoint(x: self.size.width/2.0, y: self.size.height/2.0+19)
+                node2.physicsBody!.mass = node1.physicsBody!.mass * 0.2 //Set body2 mass as a ratio of body1 mass.
+
+                self.addChild(node1)
+                self.addChild(node2)
+
+        let joint = SKPhysicsJointFixed.joint(withBodyA: node1.physicsBody!, bodyB: node2.physicsBody!, anchor: node1.position)
+
+        self.physicsWorld.add(joint)
+
+        self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
+                node1.physicsBody!.applyImpulse(CGVector(dx: -10, dy: 0))
+        setUpForStick()
+            
+    }
+    
+    private func setUpForStick(){
+        stick.fillColor = .red
+        stick.position = CGPoint(x: 0, y: 0)
+        stick.zRotation = CGFloat.pi / 3
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -100,7 +143,7 @@ class scene001: SKScene, SKPhysicsContactDelegate{
             //MARK: Tạo vecter để di chuyển note, vector có hướng và độ lớn làm cho bay nhanh hay chậm
             
 //            node1.physicsBody?.velocity=CGVector(dx: 120, dy: 526)
-            node1.physicsBody?.applyImpulse(CGVector(dx: 96, dy: -76))
+            node1.physicsBody?.applyImpulse(CGVector(dx: 96, dy: -176))
             //node1.physicsBody?.applyImpulse(CGVector(dx: location.x, dy: location.y))
         }
         
