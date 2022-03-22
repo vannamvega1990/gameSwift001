@@ -22,7 +22,7 @@ class biDaViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        gameView = SKView(frame: view.bounds)
+        gameView = SKView(frame: view.bounds.resizeAtCenter(offsetX: 16, offsetY: 16))
         view.addSubview(gameView!)
         if let view = self.gameView {
             // ------------ Load the SKScene from 'GameScene.sks'

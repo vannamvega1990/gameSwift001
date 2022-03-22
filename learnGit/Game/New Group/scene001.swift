@@ -12,9 +12,11 @@ class scene001: SKScene, SKPhysicsContactDelegate{
     
     //let node1 = SKSpriteNode(color: .yellow, size: CGSize(width: 36, height: 36))
 //    let node1 = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 36, height: 36), cornerRadius: 18)
-    let node1 = SKShapeNode(circleOfRadius: 26)
+    let ball_main = SKShapeNode(circleOfRadius: 26)
     let node2 = SKSpriteNode(color: .green, size: CGSize(width: 567, height: 36))
-    let stick = SKShapeNode(rectOf: CGSize(width: 536, height: 116))
+//    let stick = SKShapeNode(rectOf: CGSize(width: 536, height: 16))
+    
+    let stick = SKSpriteNode(color: .green, size: CGSize(width: 536, height: 16))
     
     
     private var num3 : SKLabelNode?
@@ -75,22 +77,22 @@ class scene001: SKScene, SKPhysicsContactDelegate{
         }
         
         
-        node1.position = CGPoint(x: 0, y: 60)
-        self.addChild(node1)
-        node1.fillColor = .yellow
+        ball_main.position = CGPoint(x: 0, y: 60)
+        self.addChild(ball_main)
+        ball_main.fillColor = .yellow
         let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.red ,
                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26)]
         let myAttrString = NSAttributedString(string: "3", attributes: myAttribute)
         self.num3 = SKLabelNode(attributedText: myAttrString)
         if let num3 = num3 {
-            node1.addChild(num3)
+            ball_main.addChild(num3)
         }
 //        node1.physicsBody=SKPhysicsBody(rectangleOf: node1.size)
 //        node1.physicsBody=SKPhysicsBody(circleOfRadius: node1.frame.size.width/2)
-        node1.physicsBody = SKPhysicsBody(circleOfRadius: 26)
-        node1.physicsBody!.mass = 0.6
-        node1.physicsBody!.affectedByGravity = false
-        node1.physicsBody?.friction = 1.6
+        ball_main.physicsBody = SKPhysicsBody(circleOfRadius: 26)
+        ball_main.physicsBody!.mass = 0.6
+        ball_main.physicsBody!.affectedByGravity = false
+        ball_main.physicsBody?.friction = 1.6
 //        node1.physicsBody?.isDynamic=false// if false thì ko rơi xuống
 //        node1.physicsBody?.contactTestBitMask=vatThe.nhom1.rawValue // tạo nhóm cho note1 để xử lý chạm nhau
         
@@ -123,9 +125,15 @@ class scene001: SKScene, SKPhysicsContactDelegate{
     }
     
     private func setUpForStick(){
-        stick.fillColor = .red
         stick.position = CGPoint(x: 0, y: 0)
-        stick.zRotation = CGFloat.pi / 3
+        stick.anchorPoint = CGPoint(x: 0, y: 0.5)
+        stick.position = ball_main.position
+//        stick.anchorPoint = ball_main.position
+        self.addChild(stick)
+    }
+    
+    func changePosistionStick(){
+        stick.position = ball_main.position
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -138,12 +146,14 @@ class scene001: SKScene, SKPhysicsContactDelegate{
             let location=touch.location(in: self)
             print(location.x,location.y)
             //self.note1.position=location
+            changePosistionStick()
+            stick.zRotation = CGFloat.pi / 3
             
             // Di chuyển note1 theo vị trí click
             //MARK: Tạo vecter để di chuyển note, vector có hướng và độ lớn làm cho bay nhanh hay chậm
             
 //            node1.physicsBody?.velocity=CGVector(dx: 120, dy: 526)
-            node1.physicsBody?.applyImpulse(CGVector(dx: 96, dy: -176))
+//            ball_main.physicsBody?.applyImpulse(CGVector(dx: 96, dy: -176))
             //node1.physicsBody?.applyImpulse(CGVector(dx: location.x, dy: location.y))
         }
         
@@ -151,3 +161,32 @@ class scene001: SKScene, SKPhysicsContactDelegate{
     }
 }
 
+
+
+//override func viewDidLoad() {
+//    super.viewDidLoad()
+//    let viewVoice = UIView()
+//    viewVoice.frame = CGRect(x: 200, y: 200, width: 60, height: 60)
+//    viewVoice.backgroundColor = UIColor.red
+//    self.view.addSubview(viewVoice)
+//    let imgVoice = UIImageView()
+//    viewVoice.addSubview(imgVoice)
+//    imgVoice.frame = viewVoice.bounds
+//    imgVoice.image = UIImage()
+//    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(pan))
+//    viewVoice.addGestureRecognizer(panGesture)
+//
+//}
+//
+//@objc func pan(_ pan: UIPanGestureRecognizer) {
+//
+//    if pan.state == .began || pan.state == .changed {
+//
+//        let translation = pan.translation(in: self.view)
+//        // note: 'view' is optional and need to be unwrapped
+//        pan.view!.center = CGPoint(x: pan.view!.center.x + translation.x, y: pan.view!.center.y + translation.y)
+//        pan.setTranslation(CGPoint.zero, in: self.view)
+//
+//        print("=============")
+//    }
+//}

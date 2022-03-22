@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseTableView" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="tbv" destination="BQH-0G-wSV" id="2eD-ry-njf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="420"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQH-0G-wSV">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="420"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BQH-0G-wSV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LWX-tJ-ACz"/>
+                <constraint firstItem="BQH-0G-wSV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c0Q-Dn-ScF"/>
+                <constraint firstItem="BQH-0G-wSV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fDS-mG-k3G"/>
+                <constraint firstItem="BQH-0G-wSV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ycb-dk-5to"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="91" y="-85"/>
+        </view>
+    </objects>
+</document>

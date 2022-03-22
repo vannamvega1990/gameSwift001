@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FTBaseTextFildWithTitle" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="xXg-xm-ofG" id="nUg-dr-P5z"/>
+                <outlet property="textfield" destination="Gd2-OS-9Y0" id="reT-hI-0VI"/>
+                <outlet property="title" destination="18L-Ln-xNL" id="4yg-uk-y0p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xXg-xm-ofG">
+                    <rect key="frame" x="0.0" y="0.0" width="432" height="165"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18L-Ln-xNL">
+                            <rect key="frame" x="0.0" y="0.0" width="432" height="20.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20.5" id="U9y-ou-mVT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gd2-OS-9Y0" customClass="FTBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="20.5" width="432" height="144.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="y8w-7V-iLS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftInsect">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightInsect">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xXg-xm-ofG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1CA-Kx-k2y"/>
+                <constraint firstItem="xXg-xm-ofG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3jg-Pg-hRM"/>
+                <constraint firstItem="xXg-xm-ofG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IMt-ab-tPN"/>
+                <constraint firstItem="xXg-xm-ofG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="g7j-hV-e85"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-54.399999999999999" y="-166.8665667166417"/>
+        </view>
+    </objects>
+</document>

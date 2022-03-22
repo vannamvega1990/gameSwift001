@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HocSinh" representedClassName="HocSinh" syncable="YES" codeGenerationType="class">
+        <attribute name="lop" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="linkPersion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Persion" inverseName="linkHocsinh" inverseEntity="Persion"/>
+    </entity>
+    <entity name="Persion" representedClassName="Persion" syncable="YES" codeGenerationType="class">
+        <attribute name="chieuCao" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="linkHocsinh" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HocSinh" inverseName="linkPersion" inverseEntity="HocSinh"/>
+    </entity>
+    <elements>
+        <element name="HocSinh" positionX="-61.85711669921875" positionY="-16.19271850585938" width="128" height="73"/>
+        <element name="Persion" positionX="227.2413330078125" positionY="113.9210357666016" width="128" height="88"/>
+    </elements>
+</model>
