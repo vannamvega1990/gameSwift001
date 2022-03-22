@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWr-YT-J41" customClass="LineChart" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="20" y="116" width="374" height="88"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacingFix">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aO-Pu-5MM" customClass="FearView" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="40" y="283" width="143" height="298"/>
+                    <color key="backgroundColor" name="CL#FAC75F"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="298" id="JrX-hq-kgV"/>
+                        <constraint firstAttribute="width" constant="143" id="pwW-uf-aeM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJa-Hb-fw1">
+                    <rect key="frame" x="20" y="598" width="319" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IWr-YT-J41" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="1KM-w5-8un"/>
+                <constraint firstItem="9aO-Pu-5MM" firstAttribute="top" secondItem="IWr-YT-J41" secondAttribute="bottom" constant="79" id="OiB-M4-Evu"/>
+                <constraint firstItem="IWr-YT-J41" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="72" id="dyn-Z4-YpN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IWr-YT-J41" secondAttribute="bottom" constant="658" id="gRy-VB-Ewf"/>
+                <constraint firstItem="9aO-Pu-5MM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="t29-87-Bty"/>
+                <constraint firstItem="IWr-YT-J41" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="yYc-MM-QNU"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="CL#FAC75F">
+            <color red="0.98000001907348633" green="0.77999997138977051" blue="0.37299999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

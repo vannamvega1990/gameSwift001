@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAccountBankViewController" customModule="FinTech" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd3-dU-xzS" customClass="FTBaseHeaderView" customModule="FinTech" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="hmA-IM-OhN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nameTitle" value="Tài khoản ngân hàng"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4bq-Ip-TeE">
+                    <rect key="frame" x="19" y="106" width="337" height="276.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1X9-64-63O">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="82.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngân hàng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeb-hV-pHd">
+                                    <rect key="frame" x="0.0" y="0.0" width="337" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKe-fh-nd0" customClass="FTBaseView" customModule="FinTech" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28.5" width="337" height="54"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqK-w8-MXY">
+                                            <rect key="frame" x="0.0" y="0.0" width="337" height="54"/>
+                                            <state key="normal" image="ic_next"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="tqK-w8-MXY" secondAttribute="trailing" id="08t-9y-E2f"/>
+                                        <constraint firstItem="tqK-w8-MXY" firstAttribute="leading" secondItem="DKe-fh-nd0" secondAttribute="leading" id="8V0-YP-RmQ"/>
+                                        <constraint firstItem="tqK-w8-MXY" firstAttribute="top" secondItem="DKe-fh-nd0" secondAttribute="top" id="Jy2-nV-jPA"/>
+                                        <constraint firstAttribute="height" constant="54" id="Uma-3L-6I5"/>
+                                        <constraint firstAttribute="bottom" secondItem="tqK-w8-MXY" secondAttribute="bottom" id="tpl-hI-V6n"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOc-wz-NdO" customClass="FTBaseTextFildWithTitle" customModule="FinTech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="100.5" width="337" height="79"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="79" id="kx8-pQ-8F3"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleName" value="Chủ tài khoản"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="heightUITextfield">
+                                    <real key="value" value="54"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundOfTextfield">
+                                    <color key="value" red="0.97647058819999999" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftInsect">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightInsect">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColorTField">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthTField">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qQ-fH-L1q" customClass="FTBaseTextFildWithTitle" customModule="FinTech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="197.5" width="337" height="79"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="79" id="tKh-6y-Nej"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleName" value="Số tài khoản"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="heightUITextfield">
+                                    <real key="value" value="54"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundOfTextfield">
+                                    <color key="value" red="0.97647058819999999" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftInsect">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightInsect">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthTField">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="LpU-LZ-mIg">
+                    <rect key="frame" x="88" y="547.5" width="199" height="41"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUy-5X-kgL" customClass="FTBaseButton" customModule="FinTech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="87" height="41"/>
+                            <color key="backgroundColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="87" id="WWD-8w-GMB"/>
+                                <constraint firstAttribute="height" constant="41" id="ew8-HY-QxQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="Lưu">
+                                <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQY-M8-QbQ" customClass="FTBaseButton" customModule="FinTech" customModuleProvider="target">
+                            <rect key="frame" x="112" y="0.0" width="87" height="41"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="87" id="DRl-ve-sal"/>
+                                <constraint firstAttribute="height" constant="41" id="EH2-Y2-LFB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="Hủy">
+                                <color key="titleColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vd3-dU-xzS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="97e-PT-fU9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vd3-dU-xzS" secondAttribute="trailing" id="Of7-GZ-C95"/>
+                <constraint firstItem="4bq-Ip-TeE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PEF-mz-Wyk"/>
+                <constraint firstItem="LpU-LZ-mIg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YYi-Gg-LOZ"/>
+                <constraint firstItem="4bq-Ip-TeE" firstAttribute="top" secondItem="vd3-dU-xzS" secondAttribute="bottom" constant="46" id="Yca-9c-ruI"/>
+                <constraint firstItem="4bq-Ip-TeE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="19" id="bza-fq-0YP"/>
+                <constraint firstItem="vd3-dU-xzS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mf1-cG-dh1"/>
+                <constraint firstItem="LpU-LZ-mIg" firstAttribute="top" secondItem="4bq-Ip-TeE" secondAttribute="bottom" constant="165" id="wSe-9V-BYm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="99.400299850074973"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_next" width="8" height="19"/>
+    </resources>
+</document>

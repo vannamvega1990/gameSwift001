@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TPHistoryTransactionVC" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonSaoke" destination="ujx-84-nKz" id="TAI-vy-Qm7"/>
+                <outlet property="heightTbvContraint" destination="ujx-84-nKz" id="rYh-gA-Z0F"/>
+                <outlet property="stackViewSelect" destination="3f5-vA-lsL" id="Zwd-37-CCG"/>
+                <outlet property="tbvView" destination="Dwn-aS-3od" id="BaK-4d-NnC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewSaoke" destination="EhD-Ic-bMv" id="Nbv-jv-bGe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-aS-3od" customClass="FTBaseTableView" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="207" width="414" height="639"/>
+                    <color key="backgroundColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhD-Ic-bMv" userLabel="ViewSaoke">
+                    <rect key="frame" x="0.0" y="143" width="414" height="56"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-F6-bxT">
+                            <rect key="frame" x="60" y="9" width="150.5" height="38"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký nhận sao kê" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2Y-w8-DgC">
+                                    <rect key="frame" x="0.0" y="0.0" width="150.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chưa đăng ký" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXO-m1-anV">
+                                    <rect key="frame" x="0.0" y="23.5" width="78" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email" translatesAutoresizingMaskIntoConstraints="NO" id="j7L-xi-irA" customClass="BaseUIImageView" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="16" y="12" width="32" height="32"/>
+                            <color key="backgroundColor" red="0.12941176469999999" green="0.13725490200000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="TIx-Db-2Xw"/>
+                                <constraint firstAttribute="height" constant="32" id="Yc9-Yp-pj3"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor1">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_btnDown" translatesAutoresizingMaskIntoConstraints="NO" id="ZHn-5S-gUT" customClass="BaseUIImageView" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="367" y="16" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="2nX-CL-J3p"/>
+                                <constraint firstAttribute="width" constant="24" id="RTE-pK-8w6"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                    <real key="value" value="-90"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.12941176470588234" green="0.13725490196078433" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="SWw-F6-bxT" firstAttribute="leading" secondItem="j7L-xi-irA" secondAttribute="trailing" constant="12" id="XYK-i3-dSQ"/>
+                        <constraint firstItem="ZHn-5S-gUT" firstAttribute="centerY" secondItem="j7L-xi-irA" secondAttribute="centerY" id="YmL-5n-R9m"/>
+                        <constraint firstItem="j7L-xi-irA" firstAttribute="leading" secondItem="EhD-Ic-bMv" secondAttribute="leading" constant="16" id="irq-Ya-oaw"/>
+                        <constraint firstItem="j7L-xi-irA" firstAttribute="centerY" secondItem="EhD-Ic-bMv" secondAttribute="centerY" id="ixu-Vy-ZCk"/>
+                        <constraint firstAttribute="height" constant="56" id="kwe-gm-GVR"/>
+                        <constraint firstAttribute="trailing" secondItem="ZHn-5S-gUT" secondAttribute="trailing" constant="23" id="nOF-aY-JjO"/>
+                        <constraint firstItem="SWw-F6-bxT" firstAttribute="centerY" secondItem="j7L-xi-irA" secondAttribute="centerY" id="zQZ-rJ-tJ8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="343-4F-lL4" userLabel="Viewbg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jdl-LS-RZj" userLabel="ViewTong">
+                            <rect key="frame" x="16" y="94" width="382" height="32"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYh-cj-ak6" customClass="FTBaseView" customModule="VegaFintech" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="32"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3f5-vA-lsL">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="32"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Loại sản phẩm" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nS7-nF-HBo" customClass="TPBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="190.5" height="32"/>
+                                                    <color key="backgroundColor" red="0.12941176469999999" green="0.13725490200000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInsect">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInsect">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tháng 4, 2021" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YnX-CO-gRd" customClass="TPBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                                                    <rect key="frame" x="191.5" y="0.0" width="190.5" height="32"/>
+                                                    <color key="backgroundColor" red="0.12941176469999999" green="0.13725490200000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInsect">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInsect">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="3f5-vA-lsL" firstAttribute="width" secondItem="PYh-cj-ak6" secondAttribute="width" id="8ZV-Ve-Ueq"/>
+                                        <constraint firstItem="3f5-vA-lsL" firstAttribute="height" secondItem="PYh-cj-ak6" secondAttribute="height" id="Jy3-c8-vOv"/>
+                                        <constraint firstItem="3f5-vA-lsL" firstAttribute="centerX" secondItem="PYh-cj-ak6" secondAttribute="centerX" id="a6O-Hm-NLd"/>
+                                        <constraint firstItem="3f5-vA-lsL" firstAttribute="centerY" secondItem="PYh-cj-ak6" secondAttribute="centerY" id="zfD-7Y-mIn"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_btnDown" translatesAutoresizingMaskIntoConstraints="NO" id="duY-Yw-JMf" customClass="BaseUIImageView" customModule="VegaFintech" customModuleProvider="target">
+                                    <rect key="frame" x="158.5" y="4" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="eC0-aP-0bY"/>
+                                        <constraint firstAttribute="width" constant="24" id="eav-og-4QJ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_btnDown" translatesAutoresizingMaskIntoConstraints="NO" id="6GU-RN-rMR" customClass="BaseUIImageView" customModule="VegaFintech" customModuleProvider="target">
+                                    <rect key="frame" x="350" y="4" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="3m1-jo-zbs"/>
+                                        <constraint firstAttribute="width" constant="24" id="Ypj-cP-kxh"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="PYh-cj-ak6" firstAttribute="centerX" secondItem="Jdl-LS-RZj" secondAttribute="centerX" id="Gwb-p5-Vqh"/>
+                                <constraint firstItem="PYh-cj-ak6" firstAttribute="centerY" secondItem="Jdl-LS-RZj" secondAttribute="centerY" id="KC8-cB-WRs"/>
+                                <constraint firstItem="6GU-RN-rMR" firstAttribute="centerY" secondItem="YnX-CO-gRd" secondAttribute="centerY" id="Now-Y8-GcJ"/>
+                                <constraint firstItem="PYh-cj-ak6" firstAttribute="centerX" secondItem="Jdl-LS-RZj" secondAttribute="centerX" id="OdB-Rf-kfi"/>
+                                <constraint firstItem="6GU-RN-rMR" firstAttribute="trailing" secondItem="YnX-CO-gRd" secondAttribute="trailing" constant="-8" id="Odb-Fg-ooB"/>
+                                <constraint firstAttribute="height" constant="32" id="Upr-3i-fia"/>
+                                <constraint firstItem="duY-Yw-JMf" firstAttribute="centerY" secondItem="nS7-nF-HBo" secondAttribute="centerY" id="arY-5i-jXl"/>
+                                <constraint firstItem="PYh-cj-ak6" firstAttribute="top" secondItem="Jdl-LS-RZj" secondAttribute="top" id="eWb-tM-lO0"/>
+                                <constraint firstItem="duY-Yw-JMf" firstAttribute="trailing" secondItem="nS7-nF-HBo" secondAttribute="trailing" constant="-8" id="hWA-G3-ae6"/>
+                                <constraint firstItem="PYh-cj-ak6" firstAttribute="leading" secondItem="Jdl-LS-RZj" secondAttribute="leading" id="i7G-Fp-5je"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltj-ZY-L8k" customClass="TPBaseHeaderView" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="48" width="414" height="26"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="dtL-5U-WCq"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="btnBackIcon" value="ic_close"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nameTitle" value="Lịch sử giao dịch"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.13725490200000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ltj-ZY-L8k" firstAttribute="centerX" secondItem="343-4F-lL4" secondAttribute="centerX" id="F44-ej-H8n"/>
+                        <constraint firstAttribute="height" constant="142" id="Of7-2d-7US"/>
+                        <constraint firstItem="Jdl-LS-RZj" firstAttribute="centerX" secondItem="343-4F-lL4" secondAttribute="centerX" id="PGk-4Y-fZZ"/>
+                        <constraint firstAttribute="bottom" secondItem="Jdl-LS-RZj" secondAttribute="bottom" constant="16" id="lgX-Q9-EIB"/>
+                        <constraint firstItem="Ltj-ZY-L8k" firstAttribute="top" secondItem="343-4F-lL4" secondAttribute="top" constant="48" id="q82-yj-4E8"/>
+                        <constraint firstItem="Jdl-LS-RZj" firstAttribute="leading" secondItem="343-4F-lL4" secondAttribute="leading" constant="16" id="t6V-jp-nwd"/>
+                        <constraint firstItem="Ltj-ZY-L8k" firstAttribute="leading" secondItem="343-4F-lL4" secondAttribute="leading" id="xbk-0G-JYP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icu-gy-IVM">
+                    <rect key="frame" x="16" y="94" width="190.5" height="32"/>
+                    <connections>
+                        <action selector="btnKidProductPressd:" destination="-1" eventType="touchUpInside" id="dlA-KL-SM3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9a-0n-TPQ">
+                    <rect key="frame" x="207.5" y="94" width="190.5" height="32"/>
+                    <connections>
+                        <action selector="btnDate:" destination="-1" eventType="touchUpInside" id="MCz-Se-lkX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujx-84-nKz" userLabel="ButtonSaoke">
+                    <rect key="frame" x="0.0" y="143" width="414" height="56"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="btnSaoke:" destination="-1" eventType="touchUpInside" id="LUf-uZ-t5I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="H9a-0n-TPQ" firstAttribute="trailing" secondItem="YnX-CO-gRd" secondAttribute="trailing" id="0TR-GW-tMK"/>
+                <constraint firstItem="H9a-0n-TPQ" firstAttribute="top" secondItem="YnX-CO-gRd" secondAttribute="top" id="5oe-Fq-oQK"/>
+                <constraint firstItem="343-4F-lL4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7yw-oY-SH8"/>
+                <constraint firstItem="Dwn-aS-3od" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AVi-Ri-DnQ"/>
+                <constraint firstItem="Icu-gy-IVM" firstAttribute="bottom" secondItem="nS7-nF-HBo" secondAttribute="bottom" id="F2Y-AK-89a"/>
+                <constraint firstItem="EhD-Ic-bMv" firstAttribute="top" secondItem="343-4F-lL4" secondAttribute="bottom" constant="1" id="Fb3-dF-SJp"/>
+                <constraint firstItem="EhD-Ic-bMv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HNp-J6-5UC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="343-4F-lL4" secondAttribute="trailing" id="I0D-nB-53V"/>
+                <constraint firstItem="ujx-84-nKz" firstAttribute="centerY" secondItem="EhD-Ic-bMv" secondAttribute="centerY" id="Jnw-LK-MYJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Dwn-aS-3od" secondAttribute="bottom" constant="16" id="K4o-cw-EFm"/>
+                <constraint firstItem="Icu-gy-IVM" firstAttribute="trailing" secondItem="nS7-nF-HBo" secondAttribute="trailing" id="Ppd-hq-57k"/>
+                <constraint firstItem="Icu-gy-IVM" firstAttribute="top" secondItem="nS7-nF-HBo" secondAttribute="top" id="T5p-eq-uSp"/>
+                <constraint firstItem="Dwn-aS-3od" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UEq-wD-x1r"/>
+                <constraint firstItem="ujx-84-nKz" firstAttribute="trailing" secondItem="EhD-Ic-bMv" secondAttribute="trailing" id="VFs-9r-FZ7"/>
+                <constraint firstItem="H9a-0n-TPQ" firstAttribute="bottom" secondItem="YnX-CO-gRd" secondAttribute="bottom" id="VRT-Dl-qvU"/>
+                <constraint firstItem="ujx-84-nKz" firstAttribute="height" secondItem="EhD-Ic-bMv" secondAttribute="height" id="hUc-0i-gNW"/>
+                <constraint firstItem="Icu-gy-IVM" firstAttribute="leading" secondItem="nS7-nF-HBo" secondAttribute="leading" id="hVd-ac-EBH"/>
+                <constraint firstItem="Dwn-aS-3od" firstAttribute="top" secondItem="EhD-Ic-bMv" secondAttribute="bottom" constant="8" id="iBb-3z-YFU"/>
+                <constraint firstItem="EhD-Ic-bMv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mxm-fa-yvz"/>
+                <constraint firstItem="H9a-0n-TPQ" firstAttribute="leading" secondItem="YnX-CO-gRd" secondAttribute="leading" id="nNu-KU-hu7"/>
+                <constraint firstItem="343-4F-lL4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uB3-wg-8Js"/>
+                <constraint firstItem="ujx-84-nKz" firstAttribute="width" secondItem="EhD-Ic-bMv" secondAttribute="width" id="v8I-YC-wfi"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6GU-RN-rMR">
+            <size key="intrinsicContentSize" width="12" height="6"/>
+        </designable>
+        <designable name="YnX-CO-gRd">
+            <size key="intrinsicContentSize" width="116" height="21"/>
+        </designable>
+        <designable name="ZHn-5S-gUT">
+            <size key="intrinsicContentSize" width="12" height="6"/>
+        </designable>
+        <designable name="duY-Yw-JMf">
+            <size key="intrinsicContentSize" width="12" height="6"/>
+        </designable>
+        <designable name="j7L-xi-irA">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="nS7-nF-HBo">
+            <size key="intrinsicContentSize" width="116.5" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_btnDown" width="12" height="6"/>
+        <image name="ic_close" width="24" height="24"/>
+        <image name="ic_email" width="24" height="24"/>
+    </resources>
+</document>

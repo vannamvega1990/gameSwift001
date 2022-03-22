@@ -29,7 +29,7 @@ struct SubView: View {
     }
 }
 
-struct Data: Identifiable {
+struct Data1: Identifiable {
     var id = UUID()
     let title: String
     let imageName: String
@@ -43,7 +43,7 @@ struct ContentView: View {
     @State private var didTap:Bool = false
     
     
-    var items:[Data] = [Data(id: .init(), title: "123test", imageName: "pic1", imageDes: "day la pic 1", imageTokenDate: "123")]
+    var items:[Data1] = [Data1(id: .init(), title: "123test", imageName: "pic1", imageDes: "day la pic 1", imageTokenDate: "123")]
     
     func actionOfButton() {
         print("Hello, world!")

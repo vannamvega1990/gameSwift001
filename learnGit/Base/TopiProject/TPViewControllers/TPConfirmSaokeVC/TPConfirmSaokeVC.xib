@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TPConfirmSaokeVC" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="tfEmail" destination="M2Y-dV-YNy" id="gqm-yx-lH2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="GTe-Ys-3Yy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LD-rS-Hy2" customClass="TPBaseHeaderView" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="80" width="414" height="26"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="xKH-1k-ikV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="btnBackIcon" value="ic_close"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nameTitle" value="Đăng ký nhận sao kê"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quý khách sẽ nhận được sao kê tài khoản hàng tháng thông qua email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plc-AM-Zyn">
+                    <rect key="frame" x="16" y="135" width="382" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vju-zS-oMc" customClass="FTBaseView" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="16" y="200.5" width="382" height="64"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="77v-vG-pl9">
+                            <rect key="frame" x="8" y="8" width="366" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-iT-dKp">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2Y-dV-YNy" customClass="TPBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="14.5" width="366" height="33.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" red="0.99607843139999996" green="0.75686274509999996" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="r9f-xO-EOe"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="77v-vG-pl9" firstAttribute="top" secondItem="Vju-zS-oMc" secondAttribute="top" constant="8" id="8tL-hH-j6D"/>
+                        <constraint firstItem="77v-vG-pl9" firstAttribute="centerY" secondItem="Vju-zS-oMc" secondAttribute="centerY" id="Cfd-Zh-vJB"/>
+                        <constraint firstItem="77v-vG-pl9" firstAttribute="leading" secondItem="Vju-zS-oMc" secondAttribute="leading" constant="8" id="MoF-0u-4DP"/>
+                        <constraint firstItem="77v-vG-pl9" firstAttribute="centerX" secondItem="Vju-zS-oMc" secondAttribute="centerX" id="pWj-wE-EOF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.99607843139999996" green="0.75686274509999996" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRT-OY-XPu" customClass="BaseButton" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="16" y="288.5" width="382" height="48"/>
+                    <color key="backgroundColor" red="0.27450980392156865" green="0.29411764705882354" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Afd-Rn-vvr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Hủy đăng ký">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnCancelSaoke:" destination="-1" eventType="touchUpInside" id="4yD-IB-9mh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7LD-rS-Hy2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="2bo-aZ-zhi"/>
+                <constraint firstItem="7LD-rS-Hy2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4kC-Vm-AVB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GTe-Ys-3Yy" secondAttribute="trailing" id="69g-3E-gsh"/>
+                <constraint firstItem="Plc-AM-Zyn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AS3-2n-FKI"/>
+                <constraint firstItem="Vju-zS-oMc" firstAttribute="top" secondItem="Plc-AM-Zyn" secondAttribute="bottom" constant="32" id="Dma-HM-fJh"/>
+                <constraint firstItem="KRT-OY-XPu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LgA-Kf-0cS"/>
+                <constraint firstAttribute="trailing" secondItem="7LD-rS-Hy2" secondAttribute="trailing" id="Mps-e9-53E"/>
+                <constraint firstAttribute="bottom" secondItem="GTe-Ys-3Yy" secondAttribute="bottom" id="NL6-td-oSI"/>
+                <constraint firstItem="Plc-AM-Zyn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ROI-VR-sIa"/>
+                <constraint firstItem="Vju-zS-oMc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Rgy-9p-UZ8"/>
+                <constraint firstItem="Vju-zS-oMc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TNc-zU-iau"/>
+                <constraint firstItem="7LD-rS-Hy2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZUD-km-7tF"/>
+                <constraint firstItem="KRT-OY-XPu" firstAttribute="top" secondItem="Vju-zS-oMc" secondAttribute="bottom" constant="24" id="bfh-Ik-ihy"/>
+                <constraint firstItem="GTe-Ys-3Yy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hc2-bi-tW6"/>
+                <constraint firstItem="KRT-OY-XPu" firstAttribute="width" secondItem="Vju-zS-oMc" secondAttribute="width" id="rIL-vg-YwG"/>
+                <constraint firstItem="Plc-AM-Zyn" firstAttribute="top" secondItem="7LD-rS-Hy2" secondAttribute="bottom" constant="29" id="uPm-cn-Ve3"/>
+                <constraint firstItem="GTe-Ys-3Yy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vtC-GG-fau"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="KRT-OY-XPu">
+            <size key="intrinsicContentSize" width="92" height="32"/>
+        </designable>
+        <designable name="M2Y-dV-YNy">
+            <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="background" width="375" height="812"/>
+        <image name="ic_close" width="24" height="24"/>
+    </resources>
+</document>

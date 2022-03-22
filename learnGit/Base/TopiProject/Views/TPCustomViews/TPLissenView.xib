@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TPLissenView" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="AN4-3b-eMg" id="8Wr-mP-Jyg"/>
+                <outlet property="textView" destination="KHS-Gz-jTh" id="yOH-K2-Oef"/>
+                <outlet property="titleContent" destination="SyY-jh-AI8" id="UZY-gp-t3M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AN4-3b-eMg" customClass="TPBaseViewImageWithLabel" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="16" y="336" width="441" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="WcC-Ox-bwC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="setBgColor1" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="setBgColor2" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="txtColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="txtTitle" value="Đăng ký"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideNail" value="YES"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="setIcon" value="ic_call"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="txtSize">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLogo" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bằng việc nhấn Đăng ký, đồng nghĩa việc bạn đã đồng ý với các Điều khoản của chúng tôi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyY-jh-AI8">
+                    <rect key="frame" x="16" y="275.5" width="441" height="49.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfk-CZ-AQI" userLabel="line">
+                    <rect key="frame" x="0.0" y="0.0" width="473" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="M1r-I3-jDJ"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Bằng việc nhấn Đăng ký, đồng nghĩa việc bạn đã đồng ý với các Điều khoản của chúng tôi" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KHS-Gz-jTh">
+                    <rect key="frame" x="16" y="275.5" width="441" height="49.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.078431372549019607" green="0.086274509803921567" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AN4-3b-eMg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4Ut-2h-Y8N"/>
+                <constraint firstAttribute="trailing" secondItem="Cfk-CZ-AQI" secondAttribute="trailing" id="8j3-8x-j8C"/>
+                <constraint firstItem="SyY-jh-AI8" firstAttribute="leading" secondItem="KHS-Gz-jTh" secondAttribute="leading" id="KDc-es-RMO"/>
+                <constraint firstItem="SyY-jh-AI8" firstAttribute="trailing" secondItem="KHS-Gz-jTh" secondAttribute="trailing" id="Mw5-ir-Ra5"/>
+                <constraint firstAttribute="bottom" secondItem="AN4-3b-eMg" secondAttribute="bottom" constant="16" id="QSc-cl-rIr"/>
+                <constraint firstItem="SyY-jh-AI8" firstAttribute="top" secondItem="KHS-Gz-jTh" secondAttribute="top" id="SdO-0O-VAD"/>
+                <constraint firstItem="SyY-jh-AI8" firstAttribute="bottom" secondItem="KHS-Gz-jTh" secondAttribute="bottom" id="VgU-Mp-6O8"/>
+                <constraint firstItem="AN4-3b-eMg" firstAttribute="leading" secondItem="SyY-jh-AI8" secondAttribute="leading" id="Ycg-8m-Pfs"/>
+                <constraint firstItem="Cfk-CZ-AQI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="haX-8a-ZaA"/>
+                <constraint firstItem="AN4-3b-eMg" firstAttribute="top" secondItem="SyY-jh-AI8" secondAttribute="bottom" constant="11" id="mNo-0i-TFI"/>
+                <constraint firstItem="SyY-jh-AI8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nKo-Bj-w65"/>
+                <constraint firstItem="Cfk-CZ-AQI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q8G-MR-FxQ"/>
+                <constraint firstItem="AN4-3b-eMg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="swK-kd-Yi2"/>
+                <constraint firstItem="AN4-3b-eMg" firstAttribute="trailing" secondItem="SyY-jh-AI8" secondAttribute="trailing" id="tD1-R5-Rl0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="174.63768115942031" y="110.49107142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_call" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

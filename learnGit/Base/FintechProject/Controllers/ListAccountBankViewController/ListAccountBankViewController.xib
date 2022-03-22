@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListAccountBankViewController" customModule="FinTech" customModuleProvider="target">
+            <connections>
+                <outlet property="tbvView" destination="spa-ey-vew" id="GK5-b9-KRX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqx-Gh-cTe" customClass="FTBaseHeaderView" customModule="FinTech" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="VzU-b3-2sU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nameTitle" value="Tài khoản ngân hàng"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spa-ey-vew" customClass="FTBaseTableView" customModule="FinTech" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPZ-bS-hem">
+                    <rect key="frame" x="323" y="18.5" width="40" height="33"/>
+                    <state key="normal" image="ic_plus"/>
+                    <connections>
+                        <action selector="btnAddNewAccountBankPressed:" destination="-1" eventType="touchUpInside" id="lyU-N7-Ulg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rPZ-bS-hem" firstAttribute="centerY" secondItem="Iqx-Gh-cTe" secondAttribute="centerY" id="2a6-I8-x8d"/>
+                <constraint firstItem="4PO-ee-s68" firstAttribute="trailing" secondItem="rPZ-bS-hem" secondAttribute="trailing" constant="12" id="Buu-fd-tz8"/>
+                <constraint firstItem="spa-ey-vew" firstAttribute="top" secondItem="Iqx-Gh-cTe" secondAttribute="bottom" constant="46" id="Cg4-dr-WQ5"/>
+                <constraint firstItem="Iqx-Gh-cTe" firstAttribute="leading" secondItem="4PO-ee-s68" secondAttribute="leading" id="S5X-0w-i1f"/>
+                <constraint firstItem="Iqx-Gh-cTe" firstAttribute="trailing" secondItem="4PO-ee-s68" secondAttribute="trailing" id="ScQ-L5-emp"/>
+                <constraint firstAttribute="trailing" secondItem="spa-ey-vew" secondAttribute="trailing" id="Shs-Y1-g6W"/>
+                <constraint firstItem="spa-ey-vew" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rBI-Mf-86f"/>
+                <constraint firstAttribute="bottom" secondItem="spa-ey-vew" secondAttribute="bottom" id="s15-QD-9Su"/>
+                <constraint firstItem="Iqx-Gh-cTe" firstAttribute="top" secondItem="4PO-ee-s68" secondAttribute="top" id="zuM-Pv-V4z"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="4PO-ee-s68"/>
+            <point key="canvasLocation" x="132" y="147.97601199400302"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_plus" width="40" height="33"/>
+    </resources>
+</document>

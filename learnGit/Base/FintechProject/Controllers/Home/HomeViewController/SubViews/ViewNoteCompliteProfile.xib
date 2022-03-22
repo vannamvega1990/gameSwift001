@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewNoteCompliteProfile" customModule="FinTech" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="474"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoàn tất hồ sơ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-w4-482">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgn-Tm-2eS" customClass="FTBaseView" customModule="FinTech" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="25" width="303" height="80.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn còn đúng 1 bước nữa để hoàn tất hồ sơ và đầu tư thu lợi nhuận thôi ^^." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCL-6Q-DTI">
+                            <rect key="frame" x="20" y="15" width="236" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-GD-upd">
+                            <rect key="frame" x="0.0" y="0.0" width="287" height="80.5"/>
+                            <color key="tintColor" red="0.0" green="0.72549019609999998" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="ic_nextYellow"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Jlp-GD-upd" firstAttribute="top" secondItem="cgn-Tm-2eS" secondAttribute="top" id="1h1-A5-fTU"/>
+                        <constraint firstAttribute="bottom" secondItem="Jlp-GD-upd" secondAttribute="bottom" id="1wb-nH-jAh"/>
+                        <constraint firstItem="yCL-6Q-DTI" firstAttribute="leading" secondItem="cgn-Tm-2eS" secondAttribute="leading" constant="20" id="7wC-2i-eIb"/>
+                        <constraint firstItem="yCL-6Q-DTI" firstAttribute="top" secondItem="cgn-Tm-2eS" secondAttribute="top" constant="15" id="8r2-r4-HWZ"/>
+                        <constraint firstAttribute="trailing" secondItem="yCL-6Q-DTI" secondAttribute="trailing" constant="47" id="MkY-Df-KXh"/>
+                        <constraint firstItem="Jlp-GD-upd" firstAttribute="leading" secondItem="cgn-Tm-2eS" secondAttribute="leading" id="POq-Jk-YjW"/>
+                        <constraint firstAttribute="trailing" secondItem="Jlp-GD-upd" secondAttribute="trailing" constant="16" id="cMp-tT-eaI"/>
+                        <constraint firstItem="Jlp-GD-upd" firstAttribute="centerY" secondItem="cgn-Tm-2eS" secondAttribute="centerY" id="iCU-AV-U6t"/>
+                        <constraint firstItem="yCL-6Q-DTI" firstAttribute="centerY" secondItem="cgn-Tm-2eS" secondAttribute="centerY" id="wir-vH-iAW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="0.62352941176470589" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cgn-Tm-2eS" firstAttribute="top" secondItem="0V4-w4-482" secondAttribute="bottom" constant="5" id="muD-GP-85w"/>
+                <constraint firstItem="0V4-w4-482" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nKz-A1-jnw"/>
+                <constraint firstItem="cgn-Tm-2eS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oUx-4O-7mL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cgn-Tm-2eS" secondAttribute="trailing" id="pT0-Sz-GSX"/>
+                <constraint firstItem="0V4-w4-482" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rBk-UW-Huk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="115.3125" y="98.239436619718305"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_nextYellow" width="10" height="21"/>
+    </resources>
+</document>

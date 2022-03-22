@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import Foundation
+
+extension UIImage{
+    
+}
 
 extension UIImage
 {
@@ -22,8 +27,8 @@ extension UIImage
     }
     
     func convertToData() -> Data?{
-        let data = self.jpegData(compressionQuality: 1)
-        return data
+        let data1 = self.jpegData(compressionQuality: 1)
+        return data1
     }
     
     // resize image ---------------------------

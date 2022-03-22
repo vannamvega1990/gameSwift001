@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RenameFileView" customModule="Download98" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="Bzo-kI-z9o" id="p1b-um-jpE"/>
+                <outlet property="btnOK" destination="TbG-rB-7sK" id="bXg-EJ-iQy"/>
+                <outlet property="infoLabel" destination="f3I-nb-C3l" id="Odq-Yn-uGb"/>
+                <outlet property="textfild" destination="gdv-3Z-ErR" id="9gM-Eg-3B6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rename file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBp-ym-ksM">
+                    <rect key="frame" x="162.5" y="62" width="89.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="xmt-AN-mFv">
+                    <rect key="frame" x="18" y="187" width="378" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzo-kI-z9o">
+                            <rect key="frame" x="0.0" y="0.0" width="165.5" height="30"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="btnCancelPressed:" destination="-1" eventType="touchUpInside" id="Bdo-dj-oqO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbG-rB-7sK">
+                            <rect key="frame" x="212.5" y="0.0" width="165.5" height="30"/>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="btnOKPressed:" destination="-1" eventType="touchUpInside" id="LhX-BW-h6k"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EqB-Gy-wzb">
+                    <rect key="frame" x="18" y="108.5" width="378" height="62.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this name is exist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-nb-C3l">
+                            <rect key="frame" x="0.0" y="0.0" width="378" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter a name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdv-3Z-ErR">
+                            <rect key="frame" x="0.0" y="28.5" width="378" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xmt-AN-mFv" firstAttribute="width" secondItem="EqB-Gy-wzb" secondAttribute="width" id="0zR-Xq-XdZ"/>
+                <constraint firstItem="iBp-ym-ksM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="18" id="CBV-Pl-VQG"/>
+                <constraint firstItem="EqB-Gy-wzb" firstAttribute="top" secondItem="iBp-ym-ksM" secondAttribute="bottom" constant="26" id="DWd-9J-vbC"/>
+                <constraint firstItem="EqB-Gy-wzb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="L37-15-8SP"/>
+                <constraint firstItem="EqB-Gy-wzb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="a70-xT-qQZ"/>
+                <constraint firstItem="iBp-ym-ksM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="caC-Do-8aF"/>
+                <constraint firstItem="xmt-AN-mFv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nwk-68-fVs"/>
+                <constraint firstItem="xmt-AN-mFv" firstAttribute="top" secondItem="EqB-Gy-wzb" secondAttribute="bottom" constant="16" id="z6s-UC-YUV"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-36.231884057971016" y="67.96875"/>
+        </view>
+    </objects>
+</document>

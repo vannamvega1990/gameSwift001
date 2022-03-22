@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="CCQTableViewCell" customModule="FinTech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="agq-h9-7HR">
+                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VEOF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nea-Vw-urK">
+                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.62352941179999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINACAPITAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ve-sN-yks">
+                                <rect key="frame" x="0.0" y="41" width="65.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-Jt-sNE" customClass="FTBaseGraphicPrice" customModule="FinTech" customModuleProvider="target">
+                        <rect key="frame" x="81.5" y="0.0" width="314" height="75"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="e9e-vW-Ec2">
+                        <rect key="frame" x="411.5" y="0.0" width="80.5" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19,852.23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-QX-SaV">
+                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="35.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZS-QT-zpI">
+                                <rect key="frame" x="57" y="39.5" width="23.5" height="35.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="agq-h9-7HR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6pX-Va-amy"/>
+                    <constraint firstItem="agq-h9-7HR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CE8-vC-Dka"/>
+                    <constraint firstItem="e9e-vW-Ec2" firstAttribute="leading" secondItem="kaC-Jt-sNE" secondAttribute="trailing" constant="16" id="CIu-hM-7a4"/>
+                    <constraint firstAttribute="bottom" secondItem="e9e-vW-Ec2" secondAttribute="bottom" id="FO1-sk-K2e"/>
+                    <constraint firstItem="kaC-Jt-sNE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SWf-s9-NnQ"/>
+                    <constraint firstAttribute="trailing" secondItem="e9e-vW-Ec2" secondAttribute="trailing" id="bgU-2D-vDG"/>
+                    <constraint firstItem="e9e-vW-Ec2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gUm-Ga-ND9"/>
+                    <constraint firstAttribute="bottom" secondItem="agq-h9-7HR" secondAttribute="bottom" id="h0h-dN-FvG"/>
+                    <constraint firstItem="e9e-vW-Ec2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ihC-ly-hWY"/>
+                    <constraint firstItem="agq-h9-7HR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nrp-c1-Fpc"/>
+                    <constraint firstAttribute="bottom" secondItem="kaC-Jt-sNE" secondAttribute="bottom" id="nvN-wD-Nsg"/>
+                    <constraint firstItem="kaC-Jt-sNE" firstAttribute="leading" secondItem="agq-h9-7HR" secondAttribute="trailing" constant="16" id="ufO-fs-uPB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="92.753623188405811" y="73.995535714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="185" id="KGk-i7-Jjw" customClass="SocialTableViewCell" customModule="VegaFintech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eE8-tv-90A" customClass="BaseView" customModule="VegaFintech" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="184" width="369" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1yY-lH-Fzl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="createDashLine">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3pn-bS-HIZ">
+                        <rect key="frame" x="16" y="8" width="337" height="169"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMj-Zq-ayM">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs1-eJ-XP2">
+                                <rect key="frame" x="0.0" y="35.5" width="70.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialTypeSub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJC-SB-TPu">
+                                <rect key="frame" x="0.0" y="71" width="96" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialEmailOrMobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdy-1a-Mhv">
+                                <rect key="frame" x="0.0" y="106" width="132.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSX-VY-w4Z">
+                                <rect key="frame" x="0.0" y="141.5" width="77" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3pn-bS-HIZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="B5y-Mk-kaA"/>
+                    <constraint firstItem="3pn-bS-HIZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CCo-XW-85X"/>
+                    <constraint firstAttribute="bottom" secondItem="3pn-bS-HIZ" secondAttribute="bottom" constant="8" id="IDd-Pz-lpW"/>
+                    <constraint firstAttribute="trailing" secondItem="3pn-bS-HIZ" secondAttribute="trailing" constant="16" id="Wqz-qh-zgM"/>
+                    <constraint firstItem="eE8-tv-90A" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ef8-pK-NED"/>
+                    <constraint firstAttribute="bottom" secondItem="eE8-tv-90A" secondAttribute="bottom" id="hb8-Bq-2Ob"/>
+                    <constraint firstAttribute="trailing" secondItem="eE8-tv-90A" secondAttribute="trailing" id="kwH-oZ-AaN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelSocialEmailOrMobile" destination="mdy-1a-Mhv" id="HGN-uq-jW0"/>
+                <outlet property="labelSocialId" destination="YMj-Zq-ayM" id="goB-BZ-eii"/>
+                <outlet property="labelSocialName" destination="aSX-VY-w4Z" id="96j-Es-rgD"/>
+                <outlet property="labelSocialType" destination="bs1-eJ-XP2" id="HLD-Yq-v38"/>
+                <outlet property="labelSocialTypeSub" destination="ZJC-SB-TPu" id="0CI-TZ-CMZ"/>
+            </connections>
+            <point key="canvasLocation" x="167.39130434782609" y="193.19196428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

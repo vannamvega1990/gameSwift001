@@ -8,7 +8,11 @@
 import UIKit
 import CoreData
 
+let keyScore="keyScore"
 
+var beginApp:Bool = true
+var changeRootVC:Bool = false
+let commonShared = Commons.shared
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -52,6 +56,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func reset(){
+        TPCakeDefaults.shared.access_token = nil
     }
 
     // MARK: - Core Data stack

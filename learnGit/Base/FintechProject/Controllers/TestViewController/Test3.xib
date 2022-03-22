@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="866" height="832"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 110" translatesAutoresizingMaskIntoConstraints="NO" id="Px0-xn-BFD" userLabel="vien">
+                    <rect key="frame" x="0.0" y="0.0" width="866" height="453.5"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1560" translatesAutoresizingMaskIntoConstraints="NO" id="lKk-1D-3Kd" userLabel="vach">
+                    <rect key="frame" x="0.0" y="3" width="866" height="829"/>
+                </imageView>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 109" translatesAutoresizingMaskIntoConstraints="NO" id="NFO-iJ-JLc" userLabel="kim">
+                    <rect key="frame" x="0.0" y="412" width="433" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="sU1-Io-6ZC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfl-JM-JXY">
+                    <rect key="frame" x="98" y="345" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lKk-1D-3Kd" secondAttribute="trailing" id="6pr-WD-9LN"/>
+                <constraint firstAttribute="bottom" secondItem="lKk-1D-3Kd" secondAttribute="bottom" id="7Ja-fI-Htj"/>
+                <constraint firstItem="lKk-1D-3Kd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xhi-kr-iPT"/>
+                <constraint firstItem="Px0-xn-BFD" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1.09:2" id="bEA-Ev-0di"/>
+                <constraint firstItem="NFO-iJ-JLc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:2" id="cLI-95-nyO"/>
+                <constraint firstItem="NFO-iJ-JLc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="he4-Uc-cyi"/>
+                <constraint firstAttribute="trailing" secondItem="Px0-xn-BFD" secondAttribute="trailing" id="iiG-Fc-V0Q"/>
+                <constraint firstItem="Px0-xn-BFD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pwY-Sr-h5x"/>
+                <constraint firstItem="lKk-1D-3Kd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="t5w-UU-0aw"/>
+                <constraint firstItem="Px0-xn-BFD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uJk-KS-RHu"/>
+                <constraint firstItem="NFO-iJ-JLc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vKM-5S-9G4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="315.94202898550725" y="-196.20535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ellipse 109" width="71" height="48"/>
+        <image name="Ellipse 110" width="207" height="117"/>
+        <image name="Group 1560" width="207" height="207"/>
+    </resources>
+</document>

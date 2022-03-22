@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestTrumpPopupVC: TPBaseViewController {
+class TestTrumpPopupVC: FTBaseViewController {
     
     override func cellShowListPopupPressed(indexpath: IndexPath) {
         

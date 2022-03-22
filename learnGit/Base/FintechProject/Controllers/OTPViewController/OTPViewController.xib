@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPViewController" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="stackTextField" destination="gjZ-Z2-AJV" id="jeG-IL-R8y"/>
+                <outlet property="titleMobile" destination="XLf-xK-2DO" id="oWJ-wm-xsr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-Z2-AJV">
+                    <rect key="frame" x="88" y="251.5" width="238" height="48"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1w-Ju-7bm" customClass="FTBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="P1H-y0-waE"/>
+                                <constraint firstAttribute="height" constant="48" id="f5Z-vf-Pio"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jy6-kf-pM2" customClass="FTBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="61" y="0.0" width="55" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="aat-vw-CH9"/>
+                                <constraint firstAttribute="height" constant="48" id="nXy-yx-wyc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-il-1A8" customClass="FTBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="122" y="0.0" width="55" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="U3F-T4-NMD"/>
+                                <constraint firstAttribute="height" constant="48" id="cdu-9Y-4Xh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IOL-Mq-gUt" customClass="FTBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="183" y="0.0" width="55" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="BQj-cb-TbD"/>
+                                <constraint firstAttribute="width" constant="55" id="WUA-Tn-EGa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Poq-KS-Cfp" customClass="FTBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="238" y="0.0" width="55" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="5kV-Tk-D24"/>
+                                <constraint firstAttribute="width" constant="55" id="eUQ-Nn-d8v"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aF9-fg-OPC" customClass="FTBaseTextField" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="238" y="0.0" width="55" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Oa7-hI-0mr"/>
+                                <constraint firstAttribute="width" constant="55" id="tMd-Wn-D2J"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdM-x1-fIu">
+                    <rect key="frame" x="97.5" y="145" width="219.5" height="72.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác thực OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="687-fJ-643">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã OTP đã được gửi tới số 098745611." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLf-xK-2DO">
+                            <rect key="frame" x="0.0" y="58" width="219.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K0N-fe-qiQ">
+                    <rect key="frame" x="23" y="344.5" width="368" height="98"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOZ-PB-iLt" customClass="FTBaseUIButtonSubmit" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="368" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="n3d-g8-hjA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="defultColor" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="name" value="Đăng ký"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnVerifyPressed:" destination="-1" eventType="touchUpInside" id="LbJ-xR-wQ0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GV-cv-jAZ" customClass="FTBaseButtonUnderLine" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="68" width="368" height="30"/>
+                            <state key="normal" title="Gửi lại">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="showUnderLine" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnResendOTPPressed:" destination="-1" eventType="touchUpInside" id="aPY-oh-2wW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37C-Gp-7l2" customClass="FTBaseButtonBack" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="16" y="76" width="67" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="1nR-6a-8JA"/>
+                        <constraint firstAttribute="height" constant="18" id="EIo-4I-l12"/>
+                    </constraints>
+                    <color key="tintColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="ic_back"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="37C-Gp-7l2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="EKV-Sf-YCw"/>
+                <constraint firstItem="qdM-x1-fIu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="101" id="FNK-wP-lo3"/>
+                <constraint firstItem="K0N-fe-qiQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="Jrg-Zp-2Ro"/>
+                <constraint firstItem="gjZ-Z2-AJV" firstAttribute="top" secondItem="qdM-x1-fIu" secondAttribute="bottom" constant="34" id="LtX-bG-yTs"/>
+                <constraint firstItem="qdM-x1-fIu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eme-Ci-Plg"/>
+                <constraint firstItem="K0N-fe-qiQ" firstAttribute="top" secondItem="gjZ-Z2-AJV" secondAttribute="bottom" constant="45" id="n7x-3H-kVl"/>
+                <constraint firstItem="K0N-fe-qiQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ndt-6V-Xf7"/>
+                <constraint firstItem="gjZ-Z2-AJV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wt7-5c-lS5"/>
+                <constraint firstItem="37C-Gp-7l2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xsN-va-oSs"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="148.36956521739131"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="37C-Gp-7l2">
+            <size key="intrinsicContentSize" width="8" height="18"/>
+        </designable>
+        <designable name="9GV-cv-jAZ">
+            <size key="intrinsicContentSize" width="43" height="30"/>
+        </designable>
+        <designable name="HXR-il-1A8">
+            <size key="intrinsicContentSize" width="8" height="44.5"/>
+        </designable>
+        <designable name="IOL-Mq-gUt">
+            <size key="intrinsicContentSize" width="8" height="44.5"/>
+        </designable>
+        <designable name="Jy6-kf-pM2">
+            <size key="intrinsicContentSize" width="8" height="44.5"/>
+        </designable>
+        <designable name="Poq-KS-Cfp">
+            <size key="intrinsicContentSize" width="8" height="44.5"/>
+        </designable>
+        <designable name="aF9-fg-OPC">
+            <size key="intrinsicContentSize" width="8" height="44.5"/>
+        </designable>
+        <designable name="q1w-Ju-7bm">
+            <size key="intrinsicContentSize" width="8" height="44.5"/>
+        </designable>
+        <designable name="rOZ-PB-iLt">
+            <size key="intrinsicContentSize" width="86" height="41"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_back" width="8" height="14"/>
+    </resources>
+</document>

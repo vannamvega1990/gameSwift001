@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="TPHistoryTransactionTableViewCell" customModule="VegaFintech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="484" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4fb-yh-gNN">
+                        <rect key="frame" x="354.5" y="64" width="117.5" height="37"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/4/2021・20:15:10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ie4-iF-SHR">
+                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thành công" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbx-iK-QyH">
+                                <rect key="frame" x="50.5" y="22.5" width="67" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.60784313725490191" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nap" translatesAutoresizingMaskIntoConstraints="NO" id="2KL-h7-Wyy">
+                        <rect key="frame" x="12" y="70.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Xud-1W-qPi"/>
+                            <constraint firstAttribute="width" constant="24" id="wF9-Mz-kb0"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZZx-3d-9G2">
+                        <rect key="frame" x="48" y="63" width="181" height="39.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nạp - Tích lũy không kỳ hạn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg3-uX-RJH">
+                                <rect key="frame" x="0.0" y="0.0" width="181" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+100.000.000đ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKP-Hd-LvL">
+                                <rect key="frame" x="0.0" y="25" width="87" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4fb-yh-gNN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="A5b-pR-Ohv"/>
+                    <constraint firstItem="ZZx-3d-9G2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EmK-0D-gCj"/>
+                    <constraint firstItem="2KL-h7-Wyy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Z9v-PR-7XM"/>
+                    <constraint firstItem="2KL-h7-Wyy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cDO-EJ-Fxa"/>
+                    <constraint firstAttribute="trailing" secondItem="4fb-yh-gNN" secondAttribute="trailing" constant="12" id="x9q-Ig-Rzc"/>
+                    <constraint firstItem="ZZx-3d-9G2" firstAttribute="leading" secondItem="2KL-h7-Wyy" secondAttribute="trailing" constant="12" id="yG1-FS-eZv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.12941176469999999" green="0.13725490200000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="amount" destination="jKP-Hd-LvL" id="0uc-kk-Oi2"/>
+                <outlet property="name" destination="Wg3-uX-RJH" id="AlE-mn-yC9"/>
+                <outlet property="state" destination="qbx-iK-QyH" id="47c-jm-I5e"/>
+                <outlet property="time" destination="ie4-iF-SHR" id="ZcE-Kn-WGV"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="120.20089285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_nap" width="24" height="24"/>
+    </resources>
+</document>

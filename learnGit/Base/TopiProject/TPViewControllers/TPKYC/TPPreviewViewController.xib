@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TPPreviewViewController" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="kir-5I-Ip3" id="fFc-ht-VWt"/>
+                <outlet property="confirmLabel" destination="Ury-YV-U88" id="me8-OA-VSU"/>
+                <outlet property="descriptionLabel" destination="TV3-4c-Be1" id="IFu-LE-8mp"/>
+                <outlet property="reCaptureBtn" destination="ZQ9-1B-Vix" id="4XD-X7-Ftj"/>
+                <outlet property="reCaptureLabel" destination="Baw-6Q-XC4" id="7g4-qA-74N"/>
+                <outlet property="timerLabel" destination="cd0-gN-jgA" id="zkf-u8-HKZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận ảnh chụp?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV3-4c-Be1">
+                    <rect key="frame" x="129.5" y="703.5" width="155" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận và tiếp tục" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ury-YV-U88">
+                    <rect key="frame" x="129.5" y="807" width="155.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kir-5I-Ip3">
+                    <rect key="frame" x="175" y="740" width="64" height="64"/>
+                    <state key="normal" image="confirmBtn"/>
+                    <connections>
+                        <action selector="confirmAction:" destination="-1" eventType="touchUpInside" id="JX1-d9-Jwe"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd0-gN-jgA">
+                    <rect key="frame" x="193" y="833.5" width="28" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-AN-C4b">
+                    <rect key="frame" x="18" y="60" width="89" height="24"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close" translatesAutoresizingMaskIntoConstraints="NO" id="K8I-XF-tkm">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chụp lại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baw-6Q-XC4">
+                            <rect key="frame" x="30" y="2.5" width="59" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ9-1B-Vix">
+                    <rect key="frame" x="18" y="44" width="89" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="geT-Qt-jd7"/>
+                    </constraints>
+                    <connections>
+                        <action selector="reCaptureAction:" destination="-1" eventType="touchUpInside" id="zEG-Uh-FOa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZQ9-1B-Vix" firstAttribute="centerY" secondItem="B5F-AN-C4b" secondAttribute="centerY" id="4Lc-ya-sB7"/>
+                <constraint firstItem="B5F-AN-C4b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="60h-aw-VGE"/>
+                <constraint firstItem="Ury-YV-U88" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DPr-Bc-54o"/>
+                <constraint firstItem="B5F-AN-C4b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="JXD-Zi-SQo"/>
+                <constraint firstItem="cd0-gN-jgA" firstAttribute="top" secondItem="Ury-YV-U88" secondAttribute="bottom" constant="6" id="KTj-a1-3kS"/>
+                <constraint firstItem="ZQ9-1B-Vix" firstAttribute="leading" secondItem="B5F-AN-C4b" secondAttribute="leading" id="N4B-RF-rZ2"/>
+                <constraint firstItem="kir-5I-Ip3" firstAttribute="top" secondItem="TV3-4c-Be1" secondAttribute="bottom" constant="16" id="OVQ-Cj-VgK"/>
+                <constraint firstItem="TV3-4c-Be1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fEx-1E-Ujw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kir-5I-Ip3" secondAttribute="bottom" constant="58" id="lUo-U2-yPm"/>
+                <constraint firstItem="kir-5I-Ip3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nV1-6r-h1i"/>
+                <constraint firstItem="ZQ9-1B-Vix" firstAttribute="width" secondItem="B5F-AN-C4b" secondAttribute="width" id="s1a-fy-FnT"/>
+                <constraint firstItem="cd0-gN-jgA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vBf-yi-zIF"/>
+                <constraint firstItem="Ury-YV-U88" firstAttribute="top" secondItem="kir-5I-Ip3" secondAttribute="bottom" constant="3" id="yU5-zi-gW5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="confirmBtn" width="64" height="64"/>
+        <image name="ic_close" width="24" height="24"/>
+    </resources>
+</document>

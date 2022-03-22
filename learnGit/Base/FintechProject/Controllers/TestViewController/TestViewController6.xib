@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController6" customModule="VegaFintech" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uW-x6-aMu" customClass="BaseView" customModule="VegaFintech" customModuleProvider="target">
+                    <rect key="frame" x="16" y="212" width="382" height="102.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VID-6d-3uu">
+                            <rect key="frame" x="0.0" y="6" width="382" height="28"/>
+                            <color key="backgroundColor" name="CL#28D346"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="UZv-VE-SKp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngân hàng" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YRb-CF-PfX" customClass="TPBaseTextFieldWithLabel2" customModule="VegaFintech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="37" width="382" height="59.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftInsect">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightInsect">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="YRb-CF-PfX" firstAttribute="leading" secondItem="7uW-x6-aMu" secondAttribute="leading" id="FcN-0t-JX2"/>
+                        <constraint firstItem="YRb-CF-PfX" firstAttribute="top" secondItem="VID-6d-3uu" secondAttribute="bottom" constant="3" id="Hxr-Q0-y2E"/>
+                        <constraint firstAttribute="height" constant="102.5" id="KOg-gg-fdB"/>
+                        <constraint firstAttribute="trailing" secondItem="VID-6d-3uu" secondAttribute="trailing" id="RG6-hr-VeV"/>
+                        <constraint firstAttribute="trailing" secondItem="YRb-CF-PfX" secondAttribute="trailing" id="XYc-bg-VNU"/>
+                        <constraint firstItem="VID-6d-3uu" firstAttribute="leading" secondItem="7uW-x6-aMu" secondAttribute="leading" id="aP5-Os-Qdl"/>
+                        <constraint firstItem="VID-6d-3uu" firstAttribute="top" secondItem="7uW-x6-aMu" secondAttribute="top" constant="6" id="eSU-C2-kAI"/>
+                        <constraint firstAttribute="bottom" secondItem="YRb-CF-PfX" secondAttribute="bottom" constant="6" id="yqb-8y-OQ9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.91372549020000005" green="0.50588235290000005" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7uW-x6-aMu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D6r-zN-Qak"/>
+                <constraint firstItem="7uW-x6-aMu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="YNh-n5-u3f"/>
+                <constraint firstItem="7uW-x6-aMu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="168" id="maV-yX-PyQ"/>
+            </constraints>
+            <point key="canvasLocation" x="60.869565217391312" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="YRb-CF-PfX">
+            <size key="intrinsicContentSize" width="81.5" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="CL#28D346">
+            <color red="0.15700000524520874" green="0.82700002193450928" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
