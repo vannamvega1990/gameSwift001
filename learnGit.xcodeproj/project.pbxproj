@@ -11,6 +11,14 @@
 		420E4CF227E7FFD7004E6251 /* biDaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF127E7FFD7004E6251 /* biDaViewController.swift */; };
 		420E4CF427E800FA004E6251 /* scene001.sks in Resources */ = {isa = PBXBuildFile; fileRef = 420E4CF327E800FA004E6251 /* scene001.sks */; };
 		420E4CF627E80125004E6251 /* scene001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF527E80125004E6251 /* scene001.swift */; };
+		42178D3A27EAA513006386ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D2327EAA513006386ED /* GameViewController.swift */; };
+		42178D3E27EAA513006386ED /* chainsaw.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42178D2A27EAA513006386ED /* chainsaw.wav */; };
+		42178D3F27EAA513006386ED /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42178D2B27EAA513006386ED /* jump.wav */; };
+		42178D4027EAA513006386ED /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42178D2C27EAA513006386ED /* background.mp3 */; };
+		42178D4127EAA513006386ED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 42178D2D27EAA513006386ED /* art.scnassets */; };
+		42178D4327EAA513006386ED /* MotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D3027EAA513006386ED /* MotionHelper.swift */; };
+		42178D4427EAA513006386ED /* VectorOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D3127EAA513006386ED /* VectorOperations.swift */; };
+		42178D4627EAA513006386ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 42178D3627EAA513006386ED /* README.md */; };
 		4253484027E9782B0053E302 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253483827E9782B0053E302 /* Constants.swift */; };
 		4253484127E9782B0053E302 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253483927E9782B0053E302 /* Commons.swift */; };
 		4253484227E9782B0053E302 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253483A27E9782B0053E302 /* EncryptionHelper.swift */; };
@@ -532,6 +540,14 @@
 		420E4CF127E7FFD7004E6251 /* biDaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biDaViewController.swift; sourceTree = "<group>"; };
 		420E4CF327E800FA004E6251 /* scene001.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = scene001.sks; sourceTree = "<group>"; };
 		420E4CF527E80125004E6251 /* scene001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scene001.swift; sourceTree = "<group>"; };
+		42178D2327EAA513006386ED /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		42178D2A27EAA513006386ED /* chainsaw.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainsaw.wav; sourceTree = "<group>"; };
+		42178D2B27EAA513006386ED /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		42178D2C27EAA513006386ED /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		42178D2D27EAA513006386ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		42178D3027EAA513006386ED /* MotionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionHelper.swift; sourceTree = "<group>"; };
+		42178D3127EAA513006386ED /* VectorOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorOperations.swift; sourceTree = "<group>"; };
+		42178D3627EAA513006386ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4253483827E9782B0053E302 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4253483927E9782B0053E302 /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		4253483A27E9782B0053E302 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
@@ -1084,6 +1100,7 @@
 		420E4CEF27E7FCF8004E6251 /* 3d */ = {
 			isa = PBXGroup;
 			children = (
+				42178D2127EAA513006386ED /* vaChamCay */,
 				C1C375A026D252C5009C1BCA /* Example1 */,
 			);
 			path = 3d;
@@ -1097,6 +1114,45 @@
 				420E4CF327E800FA004E6251 /* scene001.sks */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		42178D2127EAA513006386ED /* vaChamCay */ = {
+			isa = PBXGroup;
+			children = (
+				42178D2227EAA513006386ED /* HitTheTree */,
+				42178D3627EAA513006386ED /* README.md */,
+			);
+			path = vaChamCay;
+			sourceTree = "<group>";
+		};
+		42178D2227EAA513006386ED /* HitTheTree */ = {
+			isa = PBXGroup;
+			children = (
+				42178D2327EAA513006386ED /* GameViewController.swift */,
+				42178D2927EAA513006386ED /* Sounds */,
+				42178D2D27EAA513006386ED /* art.scnassets */,
+				42178D2F27EAA513006386ED /* Helper */,
+			);
+			path = HitTheTree;
+			sourceTree = "<group>";
+		};
+		42178D2927EAA513006386ED /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				42178D2A27EAA513006386ED /* chainsaw.wav */,
+				42178D2B27EAA513006386ED /* jump.wav */,
+				42178D2C27EAA513006386ED /* background.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		42178D2F27EAA513006386ED /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				42178D3027EAA513006386ED /* MotionHelper.swift */,
+				42178D3127EAA513006386ED /* VectorOperations.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		4253483727E9782B0053E302 /* Helpers */ = {
@@ -3228,6 +3284,7 @@
 				42CBE3D727E9991A009ACB8A /* TPBankTableViewCell.xib in Resources */,
 				42CBE3D327E9991A009ACB8A /* TPFaceMatchViewController.xib in Resources */,
 				C18B56B926C8719B0000CC66 /* TestViewController1.xib in Resources */,
+				42178D4627EAA513006386ED /* README.md in Resources */,
 				42534ADC27E979230053E302 /* TitleAndTitleTableViewCell.xib in Resources */,
 				42C4657F27E9C82F00840C7D /* ViewOptionLinkSocial.xib in Resources */,
 				42CBE3D427E9991A009ACB8A /* TPOCRScanViewController.xib in Resources */,
@@ -3241,9 +3298,11 @@
 				4253486B27E978800053E302 /* FTBaseViewImageWithLabel2.xib in Resources */,
 				C1C375A626D25694009C1BCA /* GameScene2.sks in Resources */,
 				42C4658127E9C82F00840C7D /* LinkSocialTableViewController.xib in Resources */,
+				42178D4127EAA513006386ED /* art.scnassets in Resources */,
 				42CBE3BE27E99919009ACB8A /* FearView.xib in Resources */,
 				42C4656627E9C82F00840C7D /* RegisterViewController.xib in Resources */,
 				42C4658427E9C82F00840C7D /* LinkDislinkViewController.xib in Resources */,
+				42178D3F27EAA513006386ED /* jump.wav in Resources */,
 				42C4658527E9C82F00840C7D /* Test3.xib in Resources */,
 				42534ACB27E979230053E302 /* sample_audio_1.mp3 in Resources */,
 				42534AC827E979220053E302 /* dog-1.jpg in Resources */,
@@ -3291,8 +3350,10 @@
 				42CBE3D927E9991A009ACB8A /* TPBankAccountViewController.xib in Resources */,
 				42CBE3FE27E9991A009ACB8A /* SF-Pro-Display-Regular.otf in Resources */,
 				42534A7527E979220053E302 /* BaseCameraViewController.xib in Resources */,
+				42178D4027EAA513006386ED /* background.mp3 in Resources */,
 				42534A8727E979220053E302 /* BaseAudioPlayViewController2.xib in Resources */,
 				42C4657027E9C82F00840C7D /* CategoryItem.xib in Resources */,
+				42178D3E27EAA513006386ED /* chainsaw.wav in Resources */,
 				42C465A027E9C82F00840C7D /* ListAccountBankViewController.xib in Resources */,
 				42CBE3E927E9991A009ACB8A /* TPResultOCRViewController.xib in Resources */,
 				42CBE3F027E9991A009ACB8A /* TPVerifyEmailVC.xib in Resources */,
@@ -3701,6 +3762,7 @@
 				42CBE3DE27E9991A009ACB8A /* TPEnterMobileForgetPasswordVC.swift in Sources */,
 				42C4656B27E9C82F00840C7D /* ListInvestViews.swift in Sources */,
 				42534A1E27E979210053E302 /* swipeCellVC003.swift in Sources */,
+				42178D3A27EAA513006386ED /* GameViewController.swift in Sources */,
 				42534A1F27E979210053E302 /* BaseNetwork.swift in Sources */,
 				C139A6A626C9F7B20005E74A /* PushToViewController.swift in Sources */,
 				C1C3756726D24B9B009C1BCA /* Snipet.swift in Sources */,
@@ -3717,6 +3779,7 @@
 				42534A6327E979220053E302 /* BaseChart.swift in Sources */,
 				42534A1727E979210053E302 /* Data.swift in Sources */,
 				4253487027E978800053E302 /* FTBaseLabelUnderLine.swift in Sources */,
+				42178D4327EAA513006386ED /* MotionHelper.swift in Sources */,
 				425349F727E979210053E302 /* ZoomAndSnapFlowLayout.swift in Sources */,
 				42CBE3CB27E9991A009ACB8A /* TPFaceMatchViewController.swift in Sources */,
 				42C4659327E9C82F00840C7D /* TestViewController3.swift in Sources */,
@@ -3765,6 +3828,7 @@
 				42534A3A27E979220053E302 /* BaseDownloadFileVC.swift in Sources */,
 				4253484727E9782B0053E302 /* UserDefaults.swift in Sources */,
 				42534A6C27E979220053E302 /* BasePageTab.swift in Sources */,
+				42178D4427EAA513006386ED /* VectorOperations.swift in Sources */,
 				42CBE3CD27E9991A009ACB8A /* TPFaceMatchGuideViewController.swift in Sources */,
 				42534A0F27E979210053E302 /* SwipeOptions.swift in Sources */,
 				42534A4627E979220053E302 /* AddImageToVideoViewController.swift in Sources */,
