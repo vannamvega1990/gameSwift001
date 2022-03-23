@@ -312,6 +312,7 @@
 		42534AF427E979230053E302 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425349EA27E979210053E302 /* GradientButton.swift */; };
 		42534AF527E979230053E302 /* BaseUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425349EB27E979210053E302 /* BaseUIImageView.swift */; };
 		42534AF627E979230053E302 /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425349EE27E979210053E302 /* CircleProgress.swift */; };
+		4253F70927EAD43A00B0070B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4253F70827EAD43A00B0070B /* .gitignore */; };
 		42C464F027E9C80E00840C7D /* RenameFileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C464D627E9C80E00840C7D /* RenameFileView.xib */; };
 		42C464F127E9C80E00840C7D /* MessageView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C464D727E9C80E00840C7D /* MessageView1.swift */; };
 		42C464F227E9C80E00840C7D /* MessageView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C464D827E9C80E00840C7D /* MessageView1.xib */; };
@@ -849,6 +850,7 @@
 		425349EA27E979210053E302 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		425349EB27E979210053E302 /* BaseUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIImageView.swift; sourceTree = "<group>"; };
 		425349EE27E979210053E302 /* CircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgress.swift; sourceTree = "<group>"; };
+		4253F70827EAD43A00B0070B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		42C464D627E9C80E00840C7D /* RenameFileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenameFileView.xib; sourceTree = "<group>"; };
 		42C464D727E9C80E00840C7D /* MessageView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView1.swift; sourceTree = "<group>"; };
 		42C464D827E9C80E00840C7D /* MessageView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView1.xib; sourceTree = "<group>"; };
@@ -3176,6 +3178,7 @@
 		C1F6E8A726ABE5A500194CEA /* learnGit */ = {
 			isa = PBXGroup;
 			children = (
+				4253F70827EAD43A00B0070B /* .gitignore */,
 				42CBE40827E99A09009ACB8A /* learnGit-Bridging-Header.h */,
 				C1C3756626D24B9B009C1BCA /* Snipet.swift */,
 				C1C3755E26D24B0F009C1BCA /* Game */,
@@ -3360,6 +3363,7 @@
 				42534A2027E979220053E302 /* BaseTableViewForPopup.xib in Resources */,
 				42534AC927E979220053E302 /* dog-0.jpg in Resources */,
 				42C4659227E9C82F00840C7D /* TestTableViewController.xib in Resources */,
+				4253F70927EAD43A00B0070B /* .gitignore in Resources */,
 				42534ADD27E979230053E302 /* Toast001.xib in Resources */,
 				42534AEF27E979230053E302 /* EXBaseCLVHorizontalVC2.xib in Resources */,
 				42C465A227E9C83000840C7D /* StartViewController.xib in Resources */,
