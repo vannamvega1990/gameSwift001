@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3BFBDD2FB1A0B9A01C5790E4 /* Pods_learnGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC63FD0C305DBF7F38F55C5 /* Pods_learnGit.framework */; };
+		4201D36B27EADDBC007F8FA5 /* SearchingCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D36927EADDBC007F8FA5 /* SearchingCityViewController.swift */; };
+		4201D36C27EADDBC007F8FA5 /* SearchingCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4201D36A27EADDBC007F8FA5 /* SearchingCityViewController.xib */; };
+		4201D36F27EAE275007F8FA5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D36D27EAE275007F8FA5 /* CityCell.swift */; };
+		4201D37027EAE275007F8FA5 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4201D36E27EAE275007F8FA5 /* CityCell.xib */; };
 		420E4CF227E7FFD7004E6251 /* biDaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF127E7FFD7004E6251 /* biDaViewController.swift */; };
 		420E4CF427E800FA004E6251 /* scene001.sks in Resources */ = {isa = PBXBuildFile; fileRef = 420E4CF327E800FA004E6251 /* scene001.sks */; };
 		420E4CF627E80125004E6251 /* scene001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF527E80125004E6251 /* scene001.swift */; };
@@ -538,6 +542,10 @@
 
 /* Begin PBXFileReference section */
 		143977BDC785C5B2EA8CA106 /* Pods-learnGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnGit.debug.xcconfig"; path = "Target Support Files/Pods-learnGit/Pods-learnGit.debug.xcconfig"; sourceTree = "<group>"; };
+		4201D36927EADDBC007F8FA5 /* SearchingCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingCityViewController.swift; sourceTree = "<group>"; };
+		4201D36A27EADDBC007F8FA5 /* SearchingCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchingCityViewController.xib; sourceTree = "<group>"; };
+		4201D36D27EAE275007F8FA5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		4201D36E27EAE275007F8FA5 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
 		420E4CF127E7FFD7004E6251 /* biDaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biDaViewController.swift; sourceTree = "<group>"; };
 		420E4CF327E800FA004E6251 /* scene001.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = scene001.sks; sourceTree = "<group>"; };
 		420E4CF527E80125004E6251 /* scene001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scene001.swift; sourceTree = "<group>"; };
@@ -1091,6 +1099,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4201D36727EADD7A007F8FA5 /* rxswift */ = {
+			isa = PBXGroup;
+			children = (
+				4201D36827EADD89007F8FA5 /* rxswift001 */,
+			);
+			path = rxswift;
+			sourceTree = "<group>";
+		};
+		4201D36827EADD89007F8FA5 /* rxswift001 */ = {
+			isa = PBXGroup;
+			children = (
+				4201D36927EADDBC007F8FA5 /* SearchingCityViewController.swift */,
+				4201D36A27EADDBC007F8FA5 /* SearchingCityViewController.xib */,
+				4201D36D27EAE275007F8FA5 /* CityCell.swift */,
+				4201D36E27EAE275007F8FA5 /* CityCell.xib */,
+			);
+			path = rxswift001;
+			sourceTree = "<group>";
+		};
 		420E4CEE27E7FCED004E6251 /* 2d */ = {
 			isa = PBXGroup;
 			children = (
@@ -1265,6 +1292,7 @@
 		4253488527E979200053E302 /* base23 */ = {
 			isa = PBXGroup;
 			children = (
+				4201D36727EADD7A007F8FA5 /* rxswift */,
 				4253488627E979200053E302 /* slideMenu */,
 				4253488A27E979200053E302 /* carouselSlide */,
 				4253489027E979200053E302 /* botomSheet */,
@@ -3348,6 +3376,7 @@
 				42C464F827E9C80E00840C7D /* infoPersionTableViewCell.xib in Resources */,
 				425349F827E979210053E302 /* ScrollableBottomSheetViewController.xib in Resources */,
 				42CBE3ED27E9991A009ACB8A /* TPDiscriptionKYCViewController.xib in Resources */,
+				4201D37027EAE275007F8FA5 /* CityCell.xib in Resources */,
 				4253487627E978800053E302 /* FTBaseTextFildWithTitle.xib in Resources */,
 				42CBE3BC27E99919009ACB8A /* TPConfirmSaokeVC.xib in Resources */,
 				42CBE3D927E9991A009ACB8A /* TPBankAccountViewController.xib in Resources */,
@@ -3409,6 +3438,7 @@
 				42C464FC27E9C80E00840C7D /* CCCDTableViewCell.xib in Resources */,
 				C1F6E8B026ABE5A500194CEA /* Main.storyboard in Resources */,
 				42534AB627E979220053E302 /* BuildVideoViewController.xib in Resources */,
+				4201D36C27EADDBC007F8FA5 /* SearchingCityViewController.xib in Resources */,
 				42CBE3EB27E9991A009ACB8A /* TPInfoPersionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3646,6 +3676,7 @@
 				42534AA127E979220053E302 /* FaceMatchViewController.swift in Sources */,
 				42534A2D27E979220053E302 /* String+Extension.swift in Sources */,
 				42534AD527E979230053E302 /* ImageAndTitleCLVCell.swift in Sources */,
+				4201D36F27EAE275007F8FA5 /* CityCell.swift in Sources */,
 				42C464F927E9C80E00840C7D /* AccountBankTableViewCell.swift in Sources */,
 				42534A0327E979210053E302 /* SwipeCollectionViewCell+Display.swift in Sources */,
 				4253484227E9782B0053E302 /* EncryptionHelper.swift in Sources */,
@@ -3701,6 +3732,7 @@
 				42C4659A27E9C82F00840C7D /* infoPersionViewController.swift in Sources */,
 				42CBE3EE27E9991A009ACB8A /* TPDiscriptionKYCViewController.swift in Sources */,
 				42534A2427E979220053E302 /* BaseTableViewForPopup.swift in Sources */,
+				4201D36B27EADDBC007F8FA5 /* SearchingCityViewController.swift in Sources */,
 				42534AC427E979220053E302 /* CoreDataHandler.swift in Sources */,
 				42534A5827E979220053E302 /* UIView+Skeleton.m in Sources */,
 				42534A2627E979220053E302 /* UIColor+Extension.swift in Sources */,

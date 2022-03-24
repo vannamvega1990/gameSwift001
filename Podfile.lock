@@ -104,6 +104,12 @@ PODS:
   - nanopb/encode (2.30908.0)
   - ObjectMapper (3.5.3)
   - PromisesObjC (1.2.12)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - SwiftMessages (9.0.6):
     - SwiftMessages/App (= 9.0.6)
   - SwiftMessages/App (9.0.6)
@@ -121,6 +127,8 @@ DEPENDENCIES:
   - KLCPopup (~> 1.0)
   - MBProgressHUD (~> 1.0)
   - ObjectMapper (~> 3.0)
+  - RxCocoa
+  - RxSwift
   - SwiftMessages (~> 9.0.3)
 
 SPEC REPOS:
@@ -151,6 +159,9 @@ SPEC REPOS:
     - nanopb
     - ObjectMapper
     - PromisesObjC
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SwiftMessages
 
 SPEC CHECKSUMS:
@@ -180,8 +191,11 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
 
-PODFILE CHECKSUM: 64c3527fd19614913f873f099a0b84dd0c0b8dee
+PODFILE CHECKSUM: 4ecc176d3c33fdf742a0994ee60b9be6662b79ad
 
 COCOAPODS: 1.11.2

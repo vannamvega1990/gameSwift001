@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //let vc = ViewController()
 //            let vc = ExGameViewController1()
 //            let vc = ExGameViewController2()
-//            let vc = biDaViewController()
-            let vc = GameViewController()
+            let vc = biDaViewController()
+//            let vc = SearchingCityViewController()
             
             let nav = UINavigationController(rootViewController: vc)
             nav.setNavigationBarHidden(true, animated: true)

@@ -10,32 +10,36 @@ import SpriteKit
 import GameplayKit
 
 
-class biDaViewController: UIViewController {
+class biDaViewController: FTBaseViewController {
     
     var gameView:SKView?
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//    }
+    let top: CGFloat = 56
+    let bottom: CGFloat = 26
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        setBackgroundColor()
+        
         gameView = SKView(frame: view.bounds.resizeAtCenter(offsetX: 16, offsetY: 16))
+        let heightOfGameView = sizeScreen.height - (top + bottom)
+        let sacle: CGFloat = sizeScreen.width / sizeScreen.height
+        let width = heightOfGameView * sacle
+        let xOffset: CGFloat = (sizeScreen.width - width) / 2
+        gameView = SKView(frame: CGRect(x: xOffset, y: top, width: width , height: heightOfGameView))
         view.addSubview(gameView!)
-        if let view = self.gameView {
+        if let view1 = self.gameView {
             // ------------ Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "scene001") {
                 // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
+                scene.scaleMode = .aspectFit
                 // Present the scene
-                view.presentScene(scene)
+                view1.presentScene(scene)
             }
             // ---------- setup something
-            view.ignoresSiblingOrder = true
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view1.ignoresSiblingOrder = true
+            view1.showsFPS = true
+            view1.showsNodeCount = true
         }
     }
     

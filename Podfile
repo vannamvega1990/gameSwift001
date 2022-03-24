@@ -14,6 +14,9 @@ target 'learnGit' do
 	pod 'KLCPopup', '~> 1.0'
   pod 'IQKeyboardManagerSwift', '~> 6.5.6'
   pod 'ObjectMapper', '~> 3.0'
+  
+  pod "RxSwift"
+  pod "RxCocoa"
 
 	#pod for goole sign in
 #	pod 'GoogleSignIn'
