@@ -9,12 +9,24 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+let widthOfTableBall: CGFloat = 15 * 100
+let heightOfTableBall: CGFloat = 8.5 * 100
+let sizeOfTableBoder: CGFloat = 0.8 * 100
+//let sizeOfBall: CGFloat = 0.4 * 100
+let sizeOfBall: CGFloat = 0.7 * 100
+let sizeOHold: CGFloat = 0.8 * 100 // duong kinh
+let ngatCanh: CGFloat = 0.3 * 100
+let ngatGoc = 2 * sizeOfBall * sin(Double.pi/4)
+
+
 
 class biDaViewController: FTBaseViewController {
     
     var gameView:SKView?
     let top: CGFloat = 56
     let bottom: CGFloat = 26
+//W: 15cm
+//Hei: 8.5 cm
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -23,7 +35,8 @@ class biDaViewController: FTBaseViewController {
         
         gameView = SKView(frame: view.bounds.resizeAtCenter(offsetX: 16, offsetY: 16))
         let heightOfGameView = sizeScreen.height - (top + bottom)
-        let sacle: CGFloat = sizeScreen.width / sizeScreen.height
+//        let sacle: CGFloat = sizeScreen.width / sizeScreen.height
+        let sacle: CGFloat = 15 / 8.5
         let width = heightOfGameView * sacle
         let xOffset: CGFloat = (sizeScreen.width - width) / 2
         gameView = SKView(frame: CGRect(x: xOffset, y: top, width: width , height: heightOfGameView))

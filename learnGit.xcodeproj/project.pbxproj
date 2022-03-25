@@ -12,6 +12,10 @@
 		4201D36C27EADDBC007F8FA5 /* SearchingCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4201D36A27EADDBC007F8FA5 /* SearchingCityViewController.xib */; };
 		4201D36F27EAE275007F8FA5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D36D27EAE275007F8FA5 /* CityCell.swift */; };
 		4201D37027EAE275007F8FA5 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4201D36E27EAE275007F8FA5 /* CityCell.xib */; };
+		4201D37327EC226D007F8FA5 /* BaseSKShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D37227EC226C007F8FA5 /* BaseSKShapeNode.swift */; };
+		4201D37527EC2330007F8FA5 /* ExtensionSKShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D37427EC2330007F8FA5 /* ExtensionSKShapeNode.swift */; };
+		4201D37727ED5665007F8FA5 /* scene00111.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D37627ED5665007F8FA5 /* scene00111.swift */; };
+		4201D37927ED65C5007F8FA5 /* ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D37827ED65C5007F8FA5 /* ball.swift */; };
 		420E4CF227E7FFD7004E6251 /* biDaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF127E7FFD7004E6251 /* biDaViewController.swift */; };
 		420E4CF427E800FA004E6251 /* scene001.sks in Resources */ = {isa = PBXBuildFile; fileRef = 420E4CF327E800FA004E6251 /* scene001.sks */; };
 		420E4CF627E80125004E6251 /* scene001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF527E80125004E6251 /* scene001.swift */; };
@@ -546,6 +550,10 @@
 		4201D36A27EADDBC007F8FA5 /* SearchingCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchingCityViewController.xib; sourceTree = "<group>"; };
 		4201D36D27EAE275007F8FA5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		4201D36E27EAE275007F8FA5 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		4201D37227EC226C007F8FA5 /* BaseSKShapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSKShapeNode.swift; sourceTree = "<group>"; };
+		4201D37427EC2330007F8FA5 /* ExtensionSKShapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSKShapeNode.swift; sourceTree = "<group>"; };
+		4201D37627ED5665007F8FA5 /* scene00111.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scene00111.swift; sourceTree = "<group>"; };
+		4201D37827ED65C5007F8FA5 /* ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ball.swift; sourceTree = "<group>"; };
 		420E4CF127E7FFD7004E6251 /* biDaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biDaViewController.swift; sourceTree = "<group>"; };
 		420E4CF327E800FA004E6251 /* scene001.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = scene001.sks; sourceTree = "<group>"; };
 		420E4CF527E80125004E6251 /* scene001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scene001.swift; sourceTree = "<group>"; };
@@ -1118,6 +1126,15 @@
 			path = rxswift001;
 			sourceTree = "<group>";
 		};
+		4201D37127EC224F007F8FA5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4201D37227EC226C007F8FA5 /* BaseSKShapeNode.swift */,
+				4201D37427EC2330007F8FA5 /* ExtensionSKShapeNode.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		420E4CEE27E7FCED004E6251 /* 2d */ = {
 			isa = PBXGroup;
 			children = (
@@ -1138,8 +1155,11 @@
 		420E4CF027E7FD7B004E6251 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				4201D37127EC224F007F8FA5 /* Base */,
 				420E4CF127E7FFD7004E6251 /* biDaViewController.swift */,
 				420E4CF527E80125004E6251 /* scene001.swift */,
+				4201D37827ED65C5007F8FA5 /* ball.swift */,
+				4201D37627ED5665007F8FA5 /* scene00111.swift */,
 				420E4CF327E800FA004E6251 /* scene001.sks */,
 			);
 			path = "New Group";
@@ -3572,6 +3592,7 @@
 				42C464F727E9C80E00840C7D /* infoFileTableViewCell.swift in Sources */,
 				42534A0E27E979210053E302 /* SwipeTableViewCell+Display.swift in Sources */,
 				42534A8027E979220053E302 /* BaseDate.swift in Sources */,
+				4201D37927ED65C5007F8FA5 /* ball.swift in Sources */,
 				42534A4127E979220053E302 /* BasePopup2.swift in Sources */,
 				4253486C27E978800053E302 /* FTBaseViewImageWithLabel2.swift in Sources */,
 				42534A3127E979220053E302 /* AppDelegate+Extension.swift in Sources */,
@@ -3805,6 +3826,7 @@
 				4253487527E978800053E302 /* FTBaseUIButtonSubmit.swift in Sources */,
 				C1C3756426D24B55009C1BCA /* ExGameViewController1.swift in Sources */,
 				42534A7227E979220053E302 /* LoginGoogle.swift in Sources */,
+				4201D37527EC2330007F8FA5 /* ExtensionSKShapeNode.swift in Sources */,
 				42534A3C27E979220053E302 /* ExSearchTableView1.swift in Sources */,
 				42534ABF27E979220053E302 /* EXCoreData2.swift in Sources */,
 				42534A7C27E979220053E302 /* BaseGoogleMap.swift in Sources */,
@@ -3821,6 +3843,7 @@
 				42C4659327E9C82F00840C7D /* TestViewController3.swift in Sources */,
 				42534A9527E979220053E302 /* OCRBack.swift in Sources */,
 				42C4659627E9C82F00840C7D /* OTPViewController.swift in Sources */,
+				4201D37727ED5665007F8FA5 /* scene00111.swift in Sources */,
 				42C4656527E9C82F00840C7D /* StreechRegisterViewController.swift in Sources */,
 				42534AAD27E979220053E302 /* CoreGraphicsExtensions.swift in Sources */,
 				42534A6A27E979220053E302 /* PieChartView.swift in Sources */,
@@ -3853,6 +3876,7 @@
 				425349EF27E979210053E302 /* BaseAnimation.swift in Sources */,
 				42534A3827E979220053E302 /* LoginFacebook.swift in Sources */,
 				42534A9827E979220053E302 /* Face2Face.swift in Sources */,
+				4201D37327EC226D007F8FA5 /* BaseSKShapeNode.swift in Sources */,
 				42CBE3BB27E99919009ACB8A /* TPConfirmSaokeVC.swift in Sources */,
 				42534A5427E979220053E302 /* MergeVideoViewController.swift in Sources */,
 				42534A6F27E979220053E302 /* ScannerQRCodeViewController.swift in Sources */,
