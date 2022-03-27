@@ -321,6 +321,86 @@
 		42534AF527E979230053E302 /* BaseUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425349EB27E979210053E302 /* BaseUIImageView.swift */; };
 		42534AF627E979230053E302 /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425349EE27E979210053E302 /* CircleProgress.swift */; };
 		4253F70927EAD43A00B0070B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4253F70827EAD43A00B0070B /* .gitignore */; };
+		4254E3E827F0615A00008D07 /* animated-nyancoin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37527F0615800008D07 /* animated-nyancoin.gif */; };
+		4254E3E927F0615A00008D07 /* animated-lifealope-nyan.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37627F0615800008D07 /* animated-lifealope-nyan.gif */; };
+		4254E3EA27F0615A00008D07 /* animated-gamecat-nyan.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37727F0615800008D07 /* animated-gamecat-nyan.gif */; };
+		4254E3EB27F0615A00008D07 /* animated-jazz-nyan.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37827F0615800008D07 /* animated-jazz-nyan.gif */; };
+		4254E3EC27F0615A00008D07 /* animated-nyan-squirrel.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37927F0615800008D07 /* animated-nyan-squirrel.gif */; };
+		4254E3ED27F0615A00008D07 /* animated-nyan-hip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37A27F0615800008D07 /* animated-nyan-hip.gif */; };
+		4254E3EE27F0615A00008D07 /* SettingsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37D27F0615800008D07 /* SettingsScene.sks */; };
+		4254E3EF27F0615A00008D07 /* ScoreScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37E27F0615800008D07 /* ScoreScene.sks */; };
+		4254E3F027F0615A00008D07 /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E37F27F0615800008D07 /* TitleScene.sks */; };
+		4254E3F127F0615A00008D07 /* SettingsScene iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38027F0615800008D07 /* SettingsScene iPad.sks */; };
+		4254E3F227F0615A00008D07 /* ScoreScene iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38127F0615800008D07 /* ScoreScene iPad.sks */; };
+		4254E3F327F0615A00008D07 /* CharactersScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38227F0615800008D07 /* CharactersScene.sks */; };
+		4254E3F427F0615A00008D07 /* GameScene iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38327F0615800008D07 /* GameScene iPad.sks */; };
+		4254E3F527F0615A00008D07 /* TitleScene iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38427F0615800008D07 /* TitleScene iPad.sks */; };
+		4254E3F627F0615A00008D07 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38527F0615800008D07 /* GameScene.sks */; };
+		4254E3F727F0615A00008D07 /* CharactersScene iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38627F0615800008D07 /* CharactersScene iPad.sks */; };
+		4254E3F827F0615A00008D07 /* FailedScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38827F0615800008D07 /* FailedScene.sks */; };
+		4254E3F927F0615A00008D07 /* PauseScene iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38927F0615800008D07 /* PauseScene iPad.sks */; };
+		4254E3FA27F0615A00008D07 /* FailedScene iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38A27F0615800008D07 /* FailedScene iPad.sks */; };
+		4254E3FB27F0615A00008D07 /* PauseScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38B27F0615800008D07 /* PauseScene.sks */; };
+		4254E3FC27F0615A00008D07 /* PrePlayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38D27F0615800008D07 /* PrePlayScene.sks */; };
+		4254E3FD27F0615A00008D07 /* TouchToFlyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E38E27F0615800008D07 /* TouchToFlyScene.sks */; };
+		4254E3FF27F0615A00008D07 /* RainParticleEffect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39127F0615800008D07 /* RainParticleEffect.sks */; };
+		4254E40027F0615A00008D07 /* SnowParticleEffect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39227F0615800008D07 /* SnowParticleEffect.sks */; };
+		4254E40127F0615A00008D07 /* Particles.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39327F0615800008D07 /* Particles.xcassets */; };
+		4254E40227F0615A00008D07 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39527F0615800008D07 /* Actions.sks */; };
+		4254E40327F0615A00008D07 /* retro_transition_fade_to_centre.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39827F0615800008D07 /* retro_transition_fade_to_centre.fsh */; };
+		4254E40427F0615A00008D07 /* retro_transition_fade_from_centre.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39927F0615800008D07 /* retro_transition_fade_from_centre.fsh */; };
+		4254E40527F0615A00008D07 /* retro_transition_fade_from_top_left.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39A27F0615800008D07 /* retro_transition_fade_from_top_left.fsh */; };
+		4254E40627F0615A00008D07 /* retro_transition_fade_from_top.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39B27F0615800008D07 /* retro_transition_fade_from_top.fsh */; };
+		4254E40727F0615A00008D07 /* Pixel Digivolve.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4254E39D27F0615800008D07 /* Pixel Digivolve.otf */; };
+		4254E40827F0615A00008D07 /* clock-final-tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A027F0615800008D07 /* clock-final-tick.mp3 */; };
+		4254E40927F0615A00008D07 /* clock-tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A127F0615800008D07 /* clock-tick.mp3 */; };
+		4254E40A27F0615A00008D07 /* click2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A227F0615800008D07 /* click2.mp3 */; };
+		4254E40B27F0615A00008D07 /* click1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A327F0615800008D07 /* click1.mp3 */; };
+		4254E40C27F0615A00008D07 /* switch3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A427F0615800008D07 /* switch3.mp3 */; };
+		4254E40D27F0615A00008D07 /* switch2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A527F0615800008D07 /* switch2.mp3 */; };
+		4254E40E27F0615A00008D07 /* rollover1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A627F0615800008D07 /* rollover1.mp3 */; };
+		4254E40F27F0615A00008D07 /* rollover2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3A727F0615800008D07 /* rollover2.mp3 */; };
+		4254E41027F0615A00008D07 /* POL-catch-them-all-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3AA27F0615800008D07 /* POL-catch-them-all-short.wav */; };
+		4254E41127F0615A00008D07 /* POL-flight-master-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3AB27F0615800008D07 /* POL-flight-master-short.wav */; };
+		4254E41227F0615A00008D07 /* Hit_Hurt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3AD27F0615800008D07 /* Hit_Hurt.wav */; };
+		4254E41327F0615A00008D07 /* Coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4254E3AE27F0615800008D07 /* Coin.wav */; };
+		4254E41527F0615A00008D07 /* PhysicsContactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3B127F0615900008D07 /* PhysicsContactable.swift */; };
+		4254E41627F0615A00008D07 /* Touchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3B227F0615900008D07 /* Touchable.swift */; };
+		4254E41727F0615A00008D07 /* GameSceneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3B327F0615900008D07 /* GameSceneProtocol.swift */; };
+		4254E41827F0615A00008D07 /* Playable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3B427F0615900008D07 /* Playable.swift */; };
+		4254E41927F0615A00008D07 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3B527F0615900008D07 /* Updatable.swift */; };
+		4254E41A27F0615A00008D07 /* PipeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3B727F0615900008D07 /* PipeFactory.swift */; };
+		4254E41B27F0615A00008D07 /* ControlInputDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3B927F0615900008D07 /* ControlInputDirection.swift */; };
+		4254E41D27F0615A00008D07 /* PausedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3BC27F0615900008D07 /* PausedState.swift */; };
+		4254E41E27F0615A00008D07 /* GameOverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3BD27F0615900008D07 /* GameOverState.swift */; };
+		4254E41F27F0615B00008D07 /* PlayingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3BE27F0615900008D07 /* PlayingState.swift */; };
+		4254E42027F0615B00008D07 /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C027F0615900008D07 /* SettingsScene.swift */; };
+		4254E42127F0615B00008D07 /* CharactersScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C127F0615900008D07 /* CharactersScene.swift */; };
+		4254E42227F0615B00008D07 /* SceneOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C227F0615900008D07 /* SceneOverlay.swift */; };
+		4254E42327F0615B00008D07 /* ScoresScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C327F0615900008D07 /* ScoresScene.swift */; };
+		4254E42427F0615B00008D07 /* RoutingUtilityScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C427F0615900008D07 /* RoutingUtilityScene.swift */; };
+		4254E42527F0615B00008D07 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C527F0615900008D07 /* GameScene.swift */; };
+		4254E42627F0615B00008D07 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C627F0615900008D07 /* TitleScene.swift */; };
+		4254E42727F0615B00008D07 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C827F0615900008D07 /* UserDefaults.swift */; };
+		4254E42827F0615B00008D07 /* PhysicsCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3C927F0615900008D07 /* PhysicsCategories.swift */; };
+		4254E42927F0615B00008D07 /* FlapyBirdGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3CB27F0615A00008D07 /* FlapyBirdGameVC.swift */; };
+		4254E42A27F0615B00008D07 /* CGFloat+MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3CD27F0615A00008D07 /* CGFloat+MathUtils.swift */; };
+		4254E42B27F0615B00008D07 /* SKTexture+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3CE27F0615A00008D07 /* SKTexture+Gradient.swift */; };
+		4254E42C27F0615B00008D07 /* SKEmitterNode+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3CF27F0615A00008D07 /* SKEmitterNode+Utils.swift */; };
+		4254E42D27F0615B00008D07 /* SKSpriteNode+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3D027F0615A00008D07 /* SKSpriteNode+GIF.swift */; };
+		4254E42E27F0615B00008D07 /* Bool+PipeRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3D127F0615A00008D07 /* Bool+PipeRandom.swift */; };
+		4254E42F27F0615B00008D07 /* SKScene+ShaderTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3D227F0615A00008D07 /* SKScene+ShaderTransition.swift */; };
+		4254E43027F0615B00008D07 /* SKScene+SpriteUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3D327F0615A00008D07 /* SKScene+SpriteUploader.swift */; };
+		4254E43127F0615B00008D07 /* SKTextureAtlas+FrameUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3D427F0615A00008D07 /* SKTextureAtlas+FrameUploader.swift */; };
+		4254E43227F0615B00008D07 /* GameSceneAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3D627F0615A00008D07 /* GameSceneAdapter.swift */; };
+		4254E43327F0615B00008D07 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3D927F0615A00008D07 /* ButtonNode.swift */; };
+		4254E43427F0615B00008D07 /* TriggleButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3DA27F0615A00008D07 /* TriggleButtonNode.swift */; };
+		4254E43527F0615B00008D07 /* ToggleButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3DB27F0615A00008D07 /* ToggleButtonNode.swift */; };
+		4254E43627F0615B00008D07 /* PipeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3DD27F0615A00008D07 /* PipeNode.swift */; };
+		4254E43727F0615B00008D07 /* InfiniteSpriteScrollNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3DE27F0615A00008D07 /* InfiniteSpriteScrollNode.swift */; };
+		4254E43827F0615B00008D07 /* NyancatRainbowNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3E027F0615A00008D07 /* NyancatRainbowNode.swift */; };
+		4254E43927F0615B00008D07 /* NyancatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3E127F0615A00008D07 /* NyancatNode.swift */; };
+		4254E43A27F0615B00008D07 /* BirdNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254E3E227F0615A00008D07 /* BirdNode.swift */; };
 		42C464F027E9C80E00840C7D /* RenameFileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C464D627E9C80E00840C7D /* RenameFileView.xib */; };
 		42C464F127E9C80E00840C7D /* MessageView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C464D727E9C80E00840C7D /* MessageView1.swift */; };
 		42C464F227E9C80E00840C7D /* MessageView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C464D827E9C80E00840C7D /* MessageView1.xib */; };
@@ -867,6 +947,86 @@
 		425349EB27E979210053E302 /* BaseUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIImageView.swift; sourceTree = "<group>"; };
 		425349EE27E979210053E302 /* CircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgress.swift; sourceTree = "<group>"; };
 		4253F70827EAD43A00B0070B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		4254E37527F0615800008D07 /* animated-nyancoin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-nyancoin.gif"; sourceTree = "<group>"; };
+		4254E37627F0615800008D07 /* animated-lifealope-nyan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-lifealope-nyan.gif"; sourceTree = "<group>"; };
+		4254E37727F0615800008D07 /* animated-gamecat-nyan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-gamecat-nyan.gif"; sourceTree = "<group>"; };
+		4254E37827F0615800008D07 /* animated-jazz-nyan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-jazz-nyan.gif"; sourceTree = "<group>"; };
+		4254E37927F0615800008D07 /* animated-nyan-squirrel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-nyan-squirrel.gif"; sourceTree = "<group>"; };
+		4254E37A27F0615800008D07 /* animated-nyan-hip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-nyan-hip.gif"; sourceTree = "<group>"; };
+		4254E37D27F0615800008D07 /* SettingsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SettingsScene.sks; sourceTree = "<group>"; };
+		4254E37E27F0615800008D07 /* ScoreScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ScoreScene.sks; sourceTree = "<group>"; };
+		4254E37F27F0615800008D07 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
+		4254E38027F0615800008D07 /* SettingsScene iPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "SettingsScene iPad.sks"; sourceTree = "<group>"; };
+		4254E38127F0615800008D07 /* ScoreScene iPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "ScoreScene iPad.sks"; sourceTree = "<group>"; };
+		4254E38227F0615800008D07 /* CharactersScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CharactersScene.sks; sourceTree = "<group>"; };
+		4254E38327F0615800008D07 /* GameScene iPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "GameScene iPad.sks"; sourceTree = "<group>"; };
+		4254E38427F0615800008D07 /* TitleScene iPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "TitleScene iPad.sks"; sourceTree = "<group>"; };
+		4254E38527F0615800008D07 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		4254E38627F0615800008D07 /* CharactersScene iPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "CharactersScene iPad.sks"; sourceTree = "<group>"; };
+		4254E38827F0615800008D07 /* FailedScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FailedScene.sks; sourceTree = "<group>"; };
+		4254E38927F0615800008D07 /* PauseScene iPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "PauseScene iPad.sks"; sourceTree = "<group>"; };
+		4254E38A27F0615800008D07 /* FailedScene iPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "FailedScene iPad.sks"; sourceTree = "<group>"; };
+		4254E38B27F0615800008D07 /* PauseScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PauseScene.sks; sourceTree = "<group>"; };
+		4254E38D27F0615800008D07 /* PrePlayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PrePlayScene.sks; sourceTree = "<group>"; };
+		4254E38E27F0615800008D07 /* TouchToFlyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TouchToFlyScene.sks; sourceTree = "<group>"; };
+		4254E39127F0615800008D07 /* RainParticleEffect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RainParticleEffect.sks; sourceTree = "<group>"; };
+		4254E39227F0615800008D07 /* SnowParticleEffect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SnowParticleEffect.sks; sourceTree = "<group>"; };
+		4254E39327F0615800008D07 /* Particles.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Particles.xcassets; sourceTree = "<group>"; };
+		4254E39527F0615800008D07 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		4254E39827F0615800008D07 /* retro_transition_fade_to_centre.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = retro_transition_fade_to_centre.fsh; sourceTree = "<group>"; };
+		4254E39927F0615800008D07 /* retro_transition_fade_from_centre.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = retro_transition_fade_from_centre.fsh; sourceTree = "<group>"; };
+		4254E39A27F0615800008D07 /* retro_transition_fade_from_top_left.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = retro_transition_fade_from_top_left.fsh; sourceTree = "<group>"; };
+		4254E39B27F0615800008D07 /* retro_transition_fade_from_top.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = retro_transition_fade_from_top.fsh; sourceTree = "<group>"; };
+		4254E39D27F0615800008D07 /* Pixel Digivolve.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pixel Digivolve.otf"; sourceTree = "<group>"; };
+		4254E3A027F0615800008D07 /* clock-final-tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "clock-final-tick.mp3"; sourceTree = "<group>"; };
+		4254E3A127F0615800008D07 /* clock-tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "clock-tick.mp3"; sourceTree = "<group>"; };
+		4254E3A227F0615800008D07 /* click2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click2.mp3; sourceTree = "<group>"; };
+		4254E3A327F0615800008D07 /* click1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click1.mp3; sourceTree = "<group>"; };
+		4254E3A427F0615800008D07 /* switch3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch3.mp3; sourceTree = "<group>"; };
+		4254E3A527F0615800008D07 /* switch2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch2.mp3; sourceTree = "<group>"; };
+		4254E3A627F0615800008D07 /* rollover1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollover1.mp3; sourceTree = "<group>"; };
+		4254E3A727F0615800008D07 /* rollover2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollover2.mp3; sourceTree = "<group>"; };
+		4254E3AA27F0615800008D07 /* POL-catch-them-all-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "POL-catch-them-all-short.wav"; sourceTree = "<group>"; };
+		4254E3AB27F0615800008D07 /* POL-flight-master-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "POL-flight-master-short.wav"; sourceTree = "<group>"; };
+		4254E3AD27F0615800008D07 /* Hit_Hurt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hit_Hurt.wav; sourceTree = "<group>"; };
+		4254E3AE27F0615800008D07 /* Coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Coin.wav; sourceTree = "<group>"; };
+		4254E3B127F0615900008D07 /* PhysicsContactable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsContactable.swift; sourceTree = "<group>"; };
+		4254E3B227F0615900008D07 /* Touchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Touchable.swift; sourceTree = "<group>"; };
+		4254E3B327F0615900008D07 /* GameSceneProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneProtocol.swift; sourceTree = "<group>"; };
+		4254E3B427F0615900008D07 /* Playable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playable.swift; sourceTree = "<group>"; };
+		4254E3B527F0615900008D07 /* Updatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		4254E3B727F0615900008D07 /* PipeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipeFactory.swift; sourceTree = "<group>"; };
+		4254E3B927F0615900008D07 /* ControlInputDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlInputDirection.swift; sourceTree = "<group>"; };
+		4254E3BC27F0615900008D07 /* PausedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PausedState.swift; sourceTree = "<group>"; };
+		4254E3BD27F0615900008D07 /* GameOverState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverState.swift; sourceTree = "<group>"; };
+		4254E3BE27F0615900008D07 /* PlayingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingState.swift; sourceTree = "<group>"; };
+		4254E3C027F0615900008D07 /* SettingsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
+		4254E3C127F0615900008D07 /* CharactersScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersScene.swift; sourceTree = "<group>"; };
+		4254E3C227F0615900008D07 /* SceneOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneOverlay.swift; sourceTree = "<group>"; };
+		4254E3C327F0615900008D07 /* ScoresScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresScene.swift; sourceTree = "<group>"; };
+		4254E3C427F0615900008D07 /* RoutingUtilityScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingUtilityScene.swift; sourceTree = "<group>"; };
+		4254E3C527F0615900008D07 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4254E3C627F0615900008D07 /* TitleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		4254E3C827F0615900008D07 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		4254E3C927F0615900008D07 /* PhysicsCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsCategories.swift; sourceTree = "<group>"; };
+		4254E3CB27F0615A00008D07 /* FlapyBirdGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlapyBirdGameVC.swift; sourceTree = "<group>"; };
+		4254E3CD27F0615A00008D07 /* CGFloat+MathUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+MathUtils.swift"; sourceTree = "<group>"; };
+		4254E3CE27F0615A00008D07 /* SKTexture+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKTexture+Gradient.swift"; sourceTree = "<group>"; };
+		4254E3CF27F0615A00008D07 /* SKEmitterNode+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKEmitterNode+Utils.swift"; sourceTree = "<group>"; };
+		4254E3D027F0615A00008D07 /* SKSpriteNode+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+GIF.swift"; sourceTree = "<group>"; };
+		4254E3D127F0615A00008D07 /* Bool+PipeRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+PipeRandom.swift"; sourceTree = "<group>"; };
+		4254E3D227F0615A00008D07 /* SKScene+ShaderTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKScene+ShaderTransition.swift"; sourceTree = "<group>"; };
+		4254E3D327F0615A00008D07 /* SKScene+SpriteUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKScene+SpriteUploader.swift"; sourceTree = "<group>"; };
+		4254E3D427F0615A00008D07 /* SKTextureAtlas+FrameUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+FrameUploader.swift"; sourceTree = "<group>"; };
+		4254E3D627F0615A00008D07 /* GameSceneAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneAdapter.swift; sourceTree = "<group>"; };
+		4254E3D927F0615A00008D07 /* ButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		4254E3DA27F0615A00008D07 /* TriggleButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriggleButtonNode.swift; sourceTree = "<group>"; };
+		4254E3DB27F0615A00008D07 /* ToggleButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButtonNode.swift; sourceTree = "<group>"; };
+		4254E3DD27F0615A00008D07 /* PipeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipeNode.swift; sourceTree = "<group>"; };
+		4254E3DE27F0615A00008D07 /* InfiniteSpriteScrollNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteSpriteScrollNode.swift; sourceTree = "<group>"; };
+		4254E3E027F0615A00008D07 /* NyancatRainbowNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyancatRainbowNode.swift; sourceTree = "<group>"; };
+		4254E3E127F0615A00008D07 /* NyancatNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyancatNode.swift; sourceTree = "<group>"; };
+		4254E3E227F0615A00008D07 /* BirdNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdNode.swift; sourceTree = "<group>"; };
 		42C464D627E9C80E00840C7D /* RenameFileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenameFileView.xib; sourceTree = "<group>"; };
 		42C464D727E9C80E00840C7D /* MessageView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView1.swift; sourceTree = "<group>"; };
 		42C464D827E9C80E00840C7D /* MessageView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView1.xib; sourceTree = "<group>"; };
@@ -1138,6 +1298,7 @@
 		420E4CEE27E7FCED004E6251 /* 2d */ = {
 			isa = PBXGroup;
 			children = (
+				4254E37227F060F000008D07 /* flapy_bird */,
 				C1C3759F26D252AB009C1BCA /* Example2 */,
 			);
 			path = 2d;
@@ -2303,6 +2464,325 @@
 			path = CircleProgress;
 			sourceTree = "<group>";
 		};
+		4254E37227F060F000008D07 /* flapy_bird */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3D527F0615A00008D07 /* Adapeters */,
+				4254E37327F0615800008D07 /* Assets */,
+				4254E3B827F0615900008D07 /* Control */,
+				4254E3CC27F0615A00008D07 /* Extensions */,
+				4254E3B627F0615900008D07 /* Factories */,
+				4254E3BB27F0615900008D07 /* Game States */,
+				4254E3D727F0615A00008D07 /* Nodes */,
+				4254E3B027F0615900008D07 /* Protocols */,
+				4254E3BF27F0615900008D07 /* Scenes */,
+				4254E3C727F0615900008D07 /* Utils */,
+				4254E3CA27F0615A00008D07 /* View Controllers */,
+			);
+			path = flapy_bird;
+			sourceTree = "<group>";
+		};
+		4254E37327F0615800008D07 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4254E37427F0615800008D07 /* Animated Players */,
+				4254E37B27F0615800008D07 /* Scenes */,
+				4254E39027F0615800008D07 /* Particles */,
+				4254E39427F0615800008D07 /* Actions */,
+				4254E39627F0615800008D07 /* Shaders */,
+				4254E39C27F0615800008D07 /* Fonts */,
+				4254E39E27F0615800008D07 /* Sound */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4254E37427F0615800008D07 /* Animated Players */ = {
+			isa = PBXGroup;
+			children = (
+				4254E37527F0615800008D07 /* animated-nyancoin.gif */,
+				4254E37627F0615800008D07 /* animated-lifealope-nyan.gif */,
+				4254E37727F0615800008D07 /* animated-gamecat-nyan.gif */,
+				4254E37827F0615800008D07 /* animated-jazz-nyan.gif */,
+				4254E37927F0615800008D07 /* animated-nyan-squirrel.gif */,
+				4254E37A27F0615800008D07 /* animated-nyan-hip.gif */,
+			);
+			path = "Animated Players";
+			sourceTree = "<group>";
+		};
+		4254E37B27F0615800008D07 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4254E37C27F0615800008D07 /* Main Scenes */,
+				4254E38727F0615800008D07 /* Game Overlay */,
+				4254E38C27F0615800008D07 /* Utility Overlay */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4254E37C27F0615800008D07 /* Main Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4254E37D27F0615800008D07 /* SettingsScene.sks */,
+				4254E37E27F0615800008D07 /* ScoreScene.sks */,
+				4254E37F27F0615800008D07 /* TitleScene.sks */,
+				4254E38027F0615800008D07 /* SettingsScene iPad.sks */,
+				4254E38127F0615800008D07 /* ScoreScene iPad.sks */,
+				4254E38227F0615800008D07 /* CharactersScene.sks */,
+				4254E38327F0615800008D07 /* GameScene iPad.sks */,
+				4254E38427F0615800008D07 /* TitleScene iPad.sks */,
+				4254E38527F0615800008D07 /* GameScene.sks */,
+				4254E38627F0615800008D07 /* CharactersScene iPad.sks */,
+			);
+			path = "Main Scenes";
+			sourceTree = "<group>";
+		};
+		4254E38727F0615800008D07 /* Game Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				4254E38827F0615800008D07 /* FailedScene.sks */,
+				4254E38927F0615800008D07 /* PauseScene iPad.sks */,
+				4254E38A27F0615800008D07 /* FailedScene iPad.sks */,
+				4254E38B27F0615800008D07 /* PauseScene.sks */,
+			);
+			path = "Game Overlay";
+			sourceTree = "<group>";
+		};
+		4254E38C27F0615800008D07 /* Utility Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				4254E38D27F0615800008D07 /* PrePlayScene.sks */,
+				4254E38E27F0615800008D07 /* TouchToFlyScene.sks */,
+			);
+			path = "Utility Overlay";
+			sourceTree = "<group>";
+		};
+		4254E39027F0615800008D07 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				4254E39127F0615800008D07 /* RainParticleEffect.sks */,
+				4254E39227F0615800008D07 /* SnowParticleEffect.sks */,
+				4254E39327F0615800008D07 /* Particles.xcassets */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		4254E39427F0615800008D07 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				4254E39527F0615800008D07 /* Actions.sks */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		4254E39627F0615800008D07 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				4254E39727F0615800008D07 /* Transitions */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		4254E39727F0615800008D07 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				4254E39827F0615800008D07 /* retro_transition_fade_to_centre.fsh */,
+				4254E39927F0615800008D07 /* retro_transition_fade_from_centre.fsh */,
+				4254E39A27F0615800008D07 /* retro_transition_fade_from_top_left.fsh */,
+				4254E39B27F0615800008D07 /* retro_transition_fade_from_top.fsh */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		4254E39C27F0615800008D07 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4254E39D27F0615800008D07 /* Pixel Digivolve.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4254E39E27F0615800008D07 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				4254E39F27F0615800008D07 /* UI */,
+				4254E3A827F0615800008D07 /* Game */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		4254E39F27F0615800008D07 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3A027F0615800008D07 /* clock-final-tick.mp3 */,
+				4254E3A127F0615800008D07 /* clock-tick.mp3 */,
+				4254E3A227F0615800008D07 /* click2.mp3 */,
+				4254E3A327F0615800008D07 /* click1.mp3 */,
+				4254E3A427F0615800008D07 /* switch3.mp3 */,
+				4254E3A527F0615800008D07 /* switch2.mp3 */,
+				4254E3A627F0615800008D07 /* rollover1.mp3 */,
+				4254E3A727F0615800008D07 /* rollover2.mp3 */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4254E3A827F0615800008D07 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3A927F0615800008D07 /* Music */,
+				4254E3AC27F0615800008D07 /* Sound */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		4254E3A927F0615800008D07 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3AA27F0615800008D07 /* POL-catch-them-all-short.wav */,
+				4254E3AB27F0615800008D07 /* POL-flight-master-short.wav */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		4254E3AC27F0615800008D07 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3AD27F0615800008D07 /* Hit_Hurt.wav */,
+				4254E3AE27F0615800008D07 /* Coin.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		4254E3B027F0615900008D07 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3B127F0615900008D07 /* PhysicsContactable.swift */,
+				4254E3B227F0615900008D07 /* Touchable.swift */,
+				4254E3B327F0615900008D07 /* GameSceneProtocol.swift */,
+				4254E3B427F0615900008D07 /* Playable.swift */,
+				4254E3B527F0615900008D07 /* Updatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4254E3B627F0615900008D07 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3B727F0615900008D07 /* PipeFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		4254E3B827F0615900008D07 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3B927F0615900008D07 /* ControlInputDirection.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		4254E3BB27F0615900008D07 /* Game States */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3BC27F0615900008D07 /* PausedState.swift */,
+				4254E3BD27F0615900008D07 /* GameOverState.swift */,
+				4254E3BE27F0615900008D07 /* PlayingState.swift */,
+			);
+			path = "Game States";
+			sourceTree = "<group>";
+		};
+		4254E3BF27F0615900008D07 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3C027F0615900008D07 /* SettingsScene.swift */,
+				4254E3C127F0615900008D07 /* CharactersScene.swift */,
+				4254E3C227F0615900008D07 /* SceneOverlay.swift */,
+				4254E3C327F0615900008D07 /* ScoresScene.swift */,
+				4254E3C427F0615900008D07 /* RoutingUtilityScene.swift */,
+				4254E3C527F0615900008D07 /* GameScene.swift */,
+				4254E3C627F0615900008D07 /* TitleScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4254E3C727F0615900008D07 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3C827F0615900008D07 /* UserDefaults.swift */,
+				4254E3C927F0615900008D07 /* PhysicsCategories.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4254E3CA27F0615A00008D07 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3CB27F0615A00008D07 /* FlapyBirdGameVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4254E3CC27F0615A00008D07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3CD27F0615A00008D07 /* CGFloat+MathUtils.swift */,
+				4254E3CE27F0615A00008D07 /* SKTexture+Gradient.swift */,
+				4254E3CF27F0615A00008D07 /* SKEmitterNode+Utils.swift */,
+				4254E3D027F0615A00008D07 /* SKSpriteNode+GIF.swift */,
+				4254E3D127F0615A00008D07 /* Bool+PipeRandom.swift */,
+				4254E3D227F0615A00008D07 /* SKScene+ShaderTransition.swift */,
+				4254E3D327F0615A00008D07 /* SKScene+SpriteUploader.swift */,
+				4254E3D427F0615A00008D07 /* SKTextureAtlas+FrameUploader.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4254E3D527F0615A00008D07 /* Adapeters */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3D627F0615A00008D07 /* GameSceneAdapter.swift */,
+			);
+			path = Adapeters;
+			sourceTree = "<group>";
+		};
+		4254E3D727F0615A00008D07 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3D827F0615A00008D07 /* UI Components */,
+				4254E3DC27F0615A00008D07 /* Game Componens */,
+				4254E3DF27F0615A00008D07 /* Playables */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		4254E3D827F0615A00008D07 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3D927F0615A00008D07 /* ButtonNode.swift */,
+				4254E3DA27F0615A00008D07 /* TriggleButtonNode.swift */,
+				4254E3DB27F0615A00008D07 /* ToggleButtonNode.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		4254E3DC27F0615A00008D07 /* Game Componens */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3DD27F0615A00008D07 /* PipeNode.swift */,
+				4254E3DE27F0615A00008D07 /* InfiniteSpriteScrollNode.swift */,
+			);
+			path = "Game Componens";
+			sourceTree = "<group>";
+		};
+		4254E3DF27F0615A00008D07 /* Playables */ = {
+			isa = PBXGroup;
+			children = (
+				4254E3E027F0615A00008D07 /* NyancatRainbowNode.swift */,
+				4254E3E127F0615A00008D07 /* NyancatNode.swift */,
+				4254E3E227F0615A00008D07 /* BirdNode.swift */,
+			);
+			path = Playables;
+			sourceTree = "<group>";
+		};
 		42C464D327E9C7D100840C7D /* FintechProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -3309,17 +3789,22 @@
 				42C4659927E9C82F00840C7D /* infoPersionViewController.xib in Resources */,
 				42534AE527E979230053E302 /* AlertDialog.xib in Resources */,
 				42C4657C27E9C82F00840C7D /* SocialTableViewCell.xib in Resources */,
+				4254E40A27F0615A00008D07 /* click2.mp3 in Resources */,
 				42534AA627E979220053E302 /* FaceMatchGuideViewController.xib in Resources */,
 				42CBE3F227E9991A009ACB8A /* TPRegisterViewController.xib in Resources */,
 				42534ACA27E979220053E302 /* sample_video_1.mp4 in Resources */,
+				4254E40227F0615A00008D07 /* Actions.sks in Resources */,
 				42C4659427E9C82F00840C7D /* Test.xib in Resources */,
 				42CBE3C327E9991A009ACB8A /* TPAccountViewController.xib in Resources */,
 				42534AC627E979220053E302 /* dog-2.jpg in Resources */,
 				42C4659E27E9C82F00840C7D /* ProfileViewController.xib in Resources */,
+				4254E3EF27F0615A00008D07 /* ScoreScene.sks in Resources */,
 				42CBE3DD27E9991A009ACB8A /* TPEnterMobileForgetPasswordVC.xib in Resources */,
 				42534A2327E979220053E302 /* BaseTableView.xib in Resources */,
+				4254E3FA27F0615A00008D07 /* FailedScene iPad.sks in Resources */,
 				42C4658E27E9C82F00840C7D /* TestViewController2.xib in Resources */,
 				425349FB27E979210053E302 /* LandingViewController.xib in Resources */,
+				4254E3EB27F0615A00008D07 /* animated-jazz-nyan.gif in Resources */,
 				42534AA427E979220053E302 /* OCRPreviewViewController.xib in Resources */,
 				42CBE3DC27E9991A009ACB8A /* TPCompleteRegisterBySocialVC.xib in Resources */,
 				42CBE3F427E9991A009ACB8A /* TPRegisterStatementVC.xib in Resources */,
@@ -3331,8 +3816,10 @@
 				42CBE3C527E9991A009ACB8A /* TPAddBankAcountVC.xib in Resources */,
 				42CBE3BD27E99919009ACB8A /* ListAssetView.xib in Resources */,
 				42534AF327E979230053E302 /* BaseCollectionView.xib in Resources */,
+				4254E3ED27F0615A00008D07 /* animated-nyan-hip.gif in Resources */,
 				42534A7627E979220053E302 /* VideoRecordViewController.xib in Resources */,
 				42CBE3D727E9991A009ACB8A /* TPBankTableViewCell.xib in Resources */,
+				4254E3F427F0615A00008D07 /* GameScene iPad.sks in Resources */,
 				42CBE3D327E9991A009ACB8A /* TPFaceMatchViewController.xib in Resources */,
 				C18B56B926C8719B0000CC66 /* TestViewController1.xib in Resources */,
 				42178D4627EAA513006386ED /* README.md in Resources */,
@@ -3350,6 +3837,7 @@
 				C1C375A626D25694009C1BCA /* GameScene2.sks in Resources */,
 				42C4658127E9C82F00840C7D /* LinkSocialTableViewController.xib in Resources */,
 				42178D4127EAA513006386ED /* art.scnassets in Resources */,
+				4254E3E927F0615A00008D07 /* animated-lifealope-nyan.gif in Resources */,
 				42CBE3BE27E99919009ACB8A /* FearView.xib in Resources */,
 				42C4656627E9C82F00840C7D /* RegisterViewController.xib in Resources */,
 				42C4658427E9C82F00840C7D /* LinkDislinkViewController.xib in Resources */,
@@ -3357,6 +3845,7 @@
 				42C4658527E9C82F00840C7D /* Test3.xib in Resources */,
 				42534ACB27E979230053E302 /* sample_audio_1.mp3 in Resources */,
 				42534AC827E979220053E302 /* dog-1.jpg in Resources */,
+				4254E3FC27F0615A00008D07 /* PrePlayScene.sks in Resources */,
 				42CBE3E527E9991A009ACB8A /* TPBioTokenViewController.xib in Resources */,
 				42CBE3F727E9991A009ACB8A /* TPDetailBankViewController.xib in Resources */,
 				42C464F427E9C80E00840C7D /* CCQTableViewCell.xib in Resources */,
@@ -3370,18 +3859,27 @@
 				42CBE3E427E9991A009ACB8A /* TPSplashViewController.xib in Resources */,
 				42C4658327E9C82F00840C7D /* LinkSocialViewController.xib in Resources */,
 				420E4CF427E800FA004E6251 /* scene001.sks in Resources */,
+				4254E3F027F0615A00008D07 /* TitleScene.sks in Resources */,
 				425349FC27E979210053E302 /* BottomSheetViewController.xib in Resources */,
 				42C4659527E9C82F00840C7D /* OTPViewController.xib in Resources */,
 				42534AD427E979230053E302 /* ImageAndTitleCLVCell.xib in Resources */,
+				4254E40C27F0615A00008D07 /* switch3.mp3 in Resources */,
 				4253487727E978800053E302 /* FTBaseTableView.xib in Resources */,
 				42534A6827E979220053E302 /* ExchangeChart.xib in Resources */,
+				4254E3EC27F0615A00008D07 /* animated-nyan-squirrel.gif in Resources */,
 				4253486D27E978800053E302 /* FTBaseInfoView.xib in Resources */,
 				42CBE3C127E9991A009ACB8A /* TPHomeViewController.xib in Resources */,
 				42534AE127E979230053E302 /* TempeteUIScrollView.xib in Resources */,
 				42C4659727E9C82F00840C7D /* AddAccountBankViewController.xib in Resources */,
 				42534AE927E979230053E302 /* TPConfirmDialog.xib in Resources */,
+				4254E3FB27F0615A00008D07 /* PauseScene.sks in Resources */,
+				4254E3F127F0615A00008D07 /* SettingsScene iPad.sks in Resources */,
 				42534AE827E979230053E302 /* TPAlertDialog.xib in Resources */,
 				42534ADA27E979230053E302 /* TitleAndSubTitleTableViewCell.xib in Resources */,
+				4254E40627F0615A00008D07 /* retro_transition_fade_from_top.fsh in Resources */,
+				4254E40927F0615A00008D07 /* clock-tick.mp3 in Resources */,
+				4254E40F27F0615A00008D07 /* rollover2.mp3 in Resources */,
+				4254E3EE27F0615A00008D07 /* SettingsScene.sks in Resources */,
 				42534A9E27E979220053E302 /* PreviewViewController.xib in Resources */,
 				42C4658727E9C82F00840C7D /* TestViewController5.xib in Resources */,
 				42CBE40127E9991A009ACB8A /* TPEmptyView.xib in Resources */,
@@ -3389,6 +3887,7 @@
 				42C465A727E9C83000840C7D /* ViewOptionRegister.xib in Resources */,
 				42C4658C27E9C82F00840C7D /* TestViewController3.xib in Resources */,
 				42C4656827E9C82F00840C7D /* HomeViewController.xib in Resources */,
+				4254E41327F0615A00008D07 /* Coin.wav in Resources */,
 				42C465A327E9C83000840C7D /* StreechStartViewController.xib in Resources */,
 				42534A4527E979220053E302 /* VideoMakerViewController.xib in Resources */,
 				42C4656E27E9C82F00840C7D /* ListInvestViews.xib in Resources */,
@@ -3398,8 +3897,11 @@
 				42CBE3ED27E9991A009ACB8A /* TPDiscriptionKYCViewController.xib in Resources */,
 				4201D37027EAE275007F8FA5 /* CityCell.xib in Resources */,
 				4253487627E978800053E302 /* FTBaseTextFildWithTitle.xib in Resources */,
+				4254E3EA27F0615A00008D07 /* animated-gamecat-nyan.gif in Resources */,
 				42CBE3BC27E99919009ACB8A /* TPConfirmSaokeVC.xib in Resources */,
 				42CBE3D927E9991A009ACB8A /* TPBankAccountViewController.xib in Resources */,
+				4254E3F227F0615A00008D07 /* ScoreScene iPad.sks in Resources */,
+				4254E41227F0615A00008D07 /* Hit_Hurt.wav in Resources */,
 				42CBE3FE27E9991A009ACB8A /* SF-Pro-Display-Regular.otf in Resources */,
 				42534A7527E979220053E302 /* BaseCameraViewController.xib in Resources */,
 				42178D4027EAA513006386ED /* background.mp3 in Resources */,
@@ -3412,19 +3914,25 @@
 				42534A2027E979220053E302 /* BaseTableViewForPopup.xib in Resources */,
 				42534AC927E979220053E302 /* dog-0.jpg in Resources */,
 				42C4659227E9C82F00840C7D /* TestTableViewController.xib in Resources */,
+				4254E40727F0615A00008D07 /* Pixel Digivolve.otf in Resources */,
 				4253F70927EAD43A00B0070B /* .gitignore in Resources */,
 				42534ADD27E979230053E302 /* Toast001.xib in Resources */,
 				42534AEF27E979230053E302 /* EXBaseCLVHorizontalVC2.xib in Resources */,
 				42C465A227E9C83000840C7D /* StartViewController.xib in Resources */,
+				4254E40827F0615A00008D07 /* clock-final-tick.mp3 in Resources */,
 				42C4657427E9C82F00840C7D /* ViewInvest.xib in Resources */,
 				42C464F227E9C80E00840C7D /* MessageView1.xib in Resources */,
 				42534A9D27E979220053E302 /* DisconnectViewController.xib in Resources */,
 				C1C3759D26D25252009C1BCA /* Actions.sks in Resources */,
 				42CBE3E827E9991A009ACB8A /* TPMobileRegisterViewController.xib in Resources */,
+				4254E3FD27F0615A00008D07 /* TouchToFlyScene.sks in Resources */,
 				42C4658A27E9C82F00840C7D /* TestViewController6.xib in Resources */,
 				42534AA927E979220053E302 /* OCRScanViewController.xib in Resources */,
+				4254E3F827F0615A00008D07 /* FailedScene.sks in Resources */,
 				42C4657827E9C82F00840C7D /* ChangePasswordViewController.xib in Resources */,
 				42CBE40027E9991A009ACB8A /* TPConfirmView.xib in Resources */,
+				4254E40027F0615A00008D07 /* SnowParticleEffect.sks in Resources */,
+				4254E40E27F0615A00008D07 /* rollover1.mp3 in Resources */,
 				42C4656C27E9C82F00840C7D /* ViewNoteCompliteProfile.xib in Resources */,
 				42CBE3E227E9991A009ACB8A /* TPSettingsViewController.xib in Resources */,
 				42534A8427E979220053E302 /* BaseAudioPlayViewController.xib in Resources */,
@@ -3435,29 +3943,44 @@
 				42C464F627E9C80E00840C7D /* profileTableViewCell.xib in Resources */,
 				C1C3759A26D2517F009C1BCA /* GameScene.sks in Resources */,
 				42534AD827E979230053E302 /* ImageAndTitleTableViewCell.xib in Resources */,
+				4254E41027F0615A00008D07 /* POL-catch-them-all-short.wav in Resources */,
+				4254E3F727F0615A00008D07 /* CharactersScene iPad.sks in Resources */,
 				C1F6E8B826ABE5A600194CEA /* LaunchScreen.storyboard in Resources */,
 				C1F6E8B526ABE5A600194CEA /* Assets.xcassets in Resources */,
 				42534AA727E979220053E302 /* ExampleBaseKYCViewController11.xib in Resources */,
+				4254E3FF27F0615A00008D07 /* RainParticleEffect.sks in Resources */,
+				4254E40127F0615A00008D07 /* Particles.xcassets in Resources */,
 				42534ACF27E979230053E302 /* ToolbarForUITextfild.xib in Resources */,
+				4254E3F927F0615A00008D07 /* PauseScene iPad.sks in Resources */,
 				42CBE3C727E9991A009ACB8A /* TPCreateNewPasswordVC.xib in Resources */,
 				42CBE3E027E9991A009ACB8A /* TPChangePasswordViewController.xib in Resources */,
 				42534A1B27E979210053E302 /* MailCell.xib in Resources */,
 				42CBE3CC27E9991A009ACB8A /* TPPreviewViewController.xib in Resources */,
 				42534A6127E979220053E302 /* ExampleKeyboardViewController.xib in Resources */,
+				4254E41127F0615A00008D07 /* POL-flight-master-short.wav in Resources */,
 				42C465A827E9C83000840C7D /* ForgetPasswordViewController.xib in Resources */,
+				4254E3E827F0615A00008D07 /* animated-nyancoin.gif in Resources */,
+				4254E40427F0615A00008D07 /* retro_transition_fade_from_centre.fsh in Resources */,
 				42CBE3B827E99919009ACB8A /* TPHistoryTransactionTableViewCell.xib in Resources */,
 				42CBE40227E9991A009ACB8A /* TPLissenView.xib in Resources */,
 				42C465AB27E9C83000840C7D /* LoginViewController.xib in Resources */,
 				42534A5227E979220053E302 /* CutVideoViewController.xib in Resources */,
 				42534A3927E979220053E302 /* DownloadFilesViewController.xib in Resources */,
+				4254E40D27F0615A00008D07 /* switch2.mp3 in Resources */,
 				42534ACC27E979230053E302 /* sample_video_2.mp4 in Resources */,
+				4254E40327F0615A00008D07 /* retro_transition_fade_to_centre.fsh in Resources */,
 				42C4650027E9C80E00840C7D /* TestView.xib in Resources */,
 				4253487127E978800053E302 /* FTBaseHeaderView.xib in Resources */,
 				425349FA27E979210053E302 /* DefaultTableViewCell.xib in Resources */,
+				4254E40527F0615A00008D07 /* retro_transition_fade_from_top_left.fsh in Resources */,
 				42534AC727E979220053E302 /* dog-3.jpg in Resources */,
 				42C464FC27E9C80E00840C7D /* CCCDTableViewCell.xib in Resources */,
 				C1F6E8B026ABE5A500194CEA /* Main.storyboard in Resources */,
 				42534AB627E979220053E302 /* BuildVideoViewController.xib in Resources */,
+				4254E3F527F0615A00008D07 /* TitleScene iPad.sks in Resources */,
+				4254E3F627F0615A00008D07 /* GameScene.sks in Resources */,
+				4254E3F327F0615A00008D07 /* CharactersScene.sks in Resources */,
+				4254E40B27F0615A00008D07 /* click1.mp3 in Resources */,
 				4201D36C27EADDBC007F8FA5 /* SearchingCityViewController.xib in Resources */,
 				42CBE3EB27E9991A009ACB8A /* TPInfoPersionViewController.xib in Resources */,
 			);
@@ -3532,6 +4055,7 @@
 				42534AB327E979220053E302 /* ExampleIndicator1.swift in Sources */,
 				42534AC227E979220053E302 /* EXCoreData3.swift in Sources */,
 				42CBE3D227E9991A009ACB8A /* TPOCRScanViewController.swift in Sources */,
+				4254E42327F0615B00008D07 /* ScoresScene.swift in Sources */,
 				42CBE3E127E9991A009ACB8A /* TPSettingsViewController.swift in Sources */,
 				C1C3755326D23B20009C1BCA /* ExTableView2.swift in Sources */,
 				42534AC327E979220053E302 /* FileInfo.swift in Sources */,
@@ -3539,6 +4063,8 @@
 				42534A5327E979220053E302 /* RecordVideoViewController.swift in Sources */,
 				4253487B27E978800053E302 /* FTBaseTableView.swift in Sources */,
 				42534A0127E979210053E302 /* SwipeTableViewCellDelegate.swift in Sources */,
+				4254E43427F0615B00008D07 /* TriggleButtonNode.swift in Sources */,
+				4254E42227F0615B00008D07 /* SceneOverlay.swift in Sources */,
 				42C465BE27E9CA8200840C7D /* TPTransactionProductObject.swift in Sources */,
 				42534A8927E979220053E302 /* ManyQueue.swift in Sources */,
 				42CBE3F527E9991A009ACB8A /* TPDetailBankTableViewCell.swift in Sources */,
@@ -3547,6 +4073,7 @@
 				42534A6527E979220053E302 /* FTPieChartView.swift in Sources */,
 				42C4658027E9C82F00840C7D /* ViewOptionLinkSocial.swift in Sources */,
 				42CBE3DF27E9991A009ACB8A /* TPChangePasswordViewController.swift in Sources */,
+				4254E43527F0615B00008D07 /* ToggleButtonNode.swift in Sources */,
 				42534AE427E979230053E302 /* TPConfirmDialog.swift in Sources */,
 				42C4659D27E9C82F00840C7D /* TabBarViewController.swift in Sources */,
 				42534A7E27E979220053E302 /* EXFireBaseViewController.swift in Sources */,
@@ -3554,9 +4081,11 @@
 				42534A7927E979220053E302 /* VideoPlaybackViewController.swift in Sources */,
 				42C465AA27E9C83000840C7D /* ForgetPasswordViewController.swift in Sources */,
 				C16E072226C9EBEA00CB4FAD /* TestVCSwiftUIView3.swift in Sources */,
+				4254E43A27F0615B00008D07 /* BirdNode.swift in Sources */,
 				42534A2F27E979220053E302 /* Math+Extenstion.swift in Sources */,
 				42CBE3C027E9991A009ACB8A /* ListAssetView.swift in Sources */,
 				4253487227E978800053E302 /* FTBaseInfoView.swift in Sources */,
+				4254E41F27F0615B00008D07 /* PlayingState.swift in Sources */,
 				42534A3627E979220053E302 /* TopiTabbarVC.swift in Sources */,
 				42C4657D27E9C82F00840C7D /* LinkSocialTableViewController.swift in Sources */,
 				42534A2527E979220053E302 /* UIImageView+Extension.swift in Sources */,
@@ -3575,6 +4104,7 @@
 				42534A1527E979210053E302 /* SwipeActionsView.swift in Sources */,
 				42534A0A27E979210053E302 /* SwipeController.swift in Sources */,
 				42C4657627E9C82F00840C7D /* ChangePasswordViewController.swift in Sources */,
+				4254E43327F0615B00008D07 /* ButtonNode.swift in Sources */,
 				42534A1627E979210053E302 /* SwipeTableViewCell.swift in Sources */,
 				42C465B027E9C9E700840C7D /* Example3.xcdatamodeld in Sources */,
 				42534A6227E979220053E302 /* BaseKeyboard.swift in Sources */,
@@ -3624,6 +4154,8 @@
 				4253486927E978800053E302 /* FTBaseViewController.swift in Sources */,
 				42CBE3B527E99919009ACB8A /* TPBaseTextField2.swift in Sources */,
 				42534A0627E979210053E302 /* SwipeActionButton.swift in Sources */,
+				4254E43627F0615B00008D07 /* PipeNode.swift in Sources */,
+				4254E42427F0615B00008D07 /* RoutingUtilityScene.swift in Sources */,
 				42CBE3C227E9991A009ACB8A /* TPHomeViewController.swift in Sources */,
 				42534A5C27E979220053E302 /* RemoteNotification.swift in Sources */,
 				42534A7427E979220053E302 /* BaseMapkit.swift in Sources */,
@@ -3646,6 +4178,7 @@
 				42C465BA27E9CA8200840C7D /* Objects.swift in Sources */,
 				42534ADB27E979230053E302 /* TitleAndSubTitleTableViewCell.swift in Sources */,
 				42CBE3B427E99919009ACB8A /* TPBaseViewImageWithLabel2.swift in Sources */,
+				4254E43727F0615B00008D07 /* InfiniteSpriteScrollNode.swift in Sources */,
 				42534A0927E979210053E302 /* Extensions.swift in Sources */,
 				42CBE3B127E99919009ACB8A /* TPBaseTextField.swift in Sources */,
 				42C4658227E9C82F00840C7D /* LinkDislinkViewController.swift in Sources */,
@@ -3653,9 +4186,11 @@
 				4253484627E9782B0053E302 /* KeyChain.swift in Sources */,
 				42C464FA27E9C80E00840C7D /* colorTableViewCell.swift in Sources */,
 				42C465BB27E9CA8200840C7D /* TPProductTypeObject.swift in Sources */,
+				4254E43227F0615B00008D07 /* GameSceneAdapter.swift in Sources */,
 				42534A6B27E979220053E302 /* EXAttributedString1.swift in Sources */,
 				42534AEC27E979230053E302 /* BaseCollectionView.swift in Sources */,
 				42534A8827E979220053E302 /* BaseSwipeTableViewCell.swift in Sources */,
+				4254E43827F0615B00008D07 /* NyancatRainbowNode.swift in Sources */,
 				42534AB427E979220053E302 /* ExampleIndicator2.swift in Sources */,
 				42534A4227E979220053E302 /* BasePopup3.swift in Sources */,
 				42534A1A27E979210053E302 /* swipeCellVC001.swift in Sources */,
@@ -3699,6 +4234,7 @@
 				42534AD527E979230053E302 /* ImageAndTitleCLVCell.swift in Sources */,
 				4201D36F27EAE275007F8FA5 /* CityCell.swift in Sources */,
 				42C464F927E9C80E00840C7D /* AccountBankTableViewCell.swift in Sources */,
+				4254E41E27F0615A00008D07 /* GameOverState.swift in Sources */,
 				42534A0327E979210053E302 /* SwipeCollectionViewCell+Display.swift in Sources */,
 				4253484227E9782B0053E302 /* EncryptionHelper.swift in Sources */,
 				42534AF527E979230053E302 /* BaseUIImageView.swift in Sources */,
@@ -3709,8 +4245,10 @@
 				4253484B27E9784F0053E302 /* NetworkManager.swift in Sources */,
 				42CBE3CE27E9991A009ACB8A /* TPOCRScanViewController1.swift in Sources */,
 				42534A3F27E979220053E302 /* ExamplePopupViewController.swift in Sources */,
+				4254E43927F0615B00008D07 /* NyancatNode.swift in Sources */,
 				42CBE3EC27E9991A009ACB8A /* TPInfoPersionViewController.swift in Sources */,
 				42534AAA27E979220053E302 /* ExampleBaseKYCViewController11.swift in Sources */,
+				4254E41B27F0615A00008D07 /* ControlInputDirection.swift in Sources */,
 				42CBE3B227E99919009ACB8A /* TPBaseButton.swift in Sources */,
 				42534AF127E979230053E302 /* EXBaseCLVCell.swift in Sources */,
 				42534AB827E979220053E302 /* FakeSwipeViewController.swift in Sources */,
@@ -3722,8 +4260,11 @@
 				C1C3758D26D24E6F009C1BCA /* ExGameViewController2.swift in Sources */,
 				42CBE3E727E9991A009ACB8A /* TPMobileRegisterViewController.swift in Sources */,
 				42CBE40627E9991A009ACB8A /* TPFaceIDView.swift in Sources */,
+				4254E42B27F0615B00008D07 /* SKTexture+Gradient.swift in Sources */,
+				4254E42C27F0615B00008D07 /* SKEmitterNode+Utils.swift in Sources */,
 				42534AD027E979230053E302 /* CustomDashedView.swift in Sources */,
 				42CBE3D827E9991A009ACB8A /* TPBankTableViewCell.swift in Sources */,
+				4254E42027F0615B00008D07 /* SettingsScene.swift in Sources */,
 				42534A9927E979220053E302 /* FaceMatchViewController1.swift in Sources */,
 				42534A4327E979220053E302 /* VideoMakerViewController.swift in Sources */,
 				42534AE327E979230053E302 /* AlertDialog.swift in Sources */,
@@ -3735,6 +4276,7 @@
 				42534A9327E979220053E302 /* CircularProgressView.swift in Sources */,
 				42534A4B27E979220053E302 /* BaseVideo+Extension5.swift in Sources */,
 				42534A1D27E979210053E302 /* MailTableViewController.swift in Sources */,
+				4254E41D27F0615A00008D07 /* PausedState.swift in Sources */,
 				42534ABA27E979220053E302 /* BasePhoto.swift in Sources */,
 				42534A5927E979220053E302 /* BaseSkeletonView.m in Sources */,
 				42534AB027E979220053E302 /* FaceCollectionViewCell.swift in Sources */,
@@ -3744,6 +4286,7 @@
 				42C465A127E9C82F00840C7D /* ListAccountBankViewController.swift in Sources */,
 				42534A5B27E979220053E302 /* FireBaseMessageBase.swift in Sources */,
 				42C4650527E9C80E00840C7D /* LoadingIndicatorView.swift in Sources */,
+				4254E42D27F0615B00008D07 /* SKSpriteNode+GIF.swift in Sources */,
 				42534A2E27E979220053E302 /* Extension.swift in Sources */,
 				42534AED27E979230053E302 /* BaseColectionViewHorizontal.swift in Sources */,
 				42CBE3F327E9991A009ACB8A /* TPRegisterStatementVC.swift in Sources */,
@@ -3759,6 +4302,7 @@
 				42534A2627E979220053E302 /* UIColor+Extension.swift in Sources */,
 				4253484127E9782B0053E302 /* Commons.swift in Sources */,
 				42CBE3FF27E9991A009ACB8A /* TPConstants.swift in Sources */,
+				4254E42E27F0615B00008D07 /* Bool+PipeRandom.swift in Sources */,
 				4253487C27E978800053E302 /* FTBaseViewImageWithLabel.swift in Sources */,
 				42534A5A27E979220053E302 /* BaseSkeleton.m in Sources */,
 				42534A8527E979220053E302 /* BaseAudioPlayViewController2.swift in Sources */,
@@ -3774,10 +4318,12 @@
 				4253484427E9782B0053E302 /* Common.swift in Sources */,
 				42534A5D27E979220053E302 /* BasePushNotification.swift in Sources */,
 				4253484027E9782B0053E302 /* Constants.swift in Sources */,
+				4254E42627F0615B00008D07 /* TitleScene.swift in Sources */,
 				4253487327E978800053E302 /* FTBaseAppleButton.swift in Sources */,
 				C1C3755726D23F70009C1BCA /* ExNavigationBar1.swift in Sources */,
 				42534AEA27E979230053E302 /* ConfirmDialog.swift in Sources */,
 				42534A4C27E979220053E302 /* BaseVideo+Extension2.swift in Sources */,
+				4254E41627F0615A00008D07 /* Touchable.swift in Sources */,
 				42534A9427E979220053E302 /* VegaFintecheKYC.swift in Sources */,
 				42534A0827E979210053E302 /* SwipeAction.swift in Sources */,
 				42534A2127E979220053E302 /* BaseTableViewCanEdit.swift in Sources */,
@@ -3795,15 +4341,20 @@
 				42CBE3AF27E99919009ACB8A /* TPBaseTextFieldWithLabel.swift in Sources */,
 				42534A0427E979210053E302 /* Swipeable.swift in Sources */,
 				C19CBA3526C9DEE300846AFC /* TestVCSwiftUIView2.swift in Sources */,
+				4254E41927F0615A00008D07 /* Updatable.swift in Sources */,
 				42534A1127E979210053E302 /* SwipeCollectionViewCell.swift in Sources */,
 				42534A0D27E979210053E302 /* SwipeCollectionViewCellDelegate.swift in Sources */,
 				42CBE3FD27E9991A009ACB8A /* TPCoreData.swift in Sources */,
+				4254E42A27F0615B00008D07 /* CGFloat+MathUtils.swift in Sources */,
 				42534A9627E979220053E302 /* Reachability.swift in Sources */,
 				42C464FB27E9C80E00840C7D /* infoPersionTableViewCell.swift in Sources */,
 				42534ABD27E979220053E302 /* EXBaseKeyChainViewController.swift in Sources */,
 				42534A3227E979220053E302 /* UITableView+Extension.swift in Sources */,
+				4254E41827F0615A00008D07 /* Playable.swift in Sources */,
 				42CBE3F827E9991A009ACB8A /* TPOTPViewController.swift in Sources */,
 				C1C3759326D250FD009C1BCA /* GameScene.swift in Sources */,
+				4254E42727F0615B00008D07 /* UserDefaults.swift in Sources */,
+				4254E43027F0615B00008D07 /* SKScene+SpriteUploader.swift in Sources */,
 				C1C3755026D2390E009C1BCA /* ExTableView1.swift in Sources */,
 				42534A7B27E979220053E302 /* EXBaseGoogleMapVC.swift in Sources */,
 				4253484C27E9784F0053E302 /* NetworkUtil.swift in Sources */,
@@ -3822,13 +4373,16 @@
 				42178D3A27EAA513006386ED /* GameViewController.swift in Sources */,
 				42534A1F27E979210053E302 /* BaseNetwork.swift in Sources */,
 				C139A6A626C9F7B20005E74A /* PushToViewController.swift in Sources */,
+				4254E42F27F0615B00008D07 /* SKScene+ShaderTransition.swift in Sources */,
 				C1C3756726D24B9B009C1BCA /* Snipet.swift in Sources */,
 				4253487527E978800053E302 /* FTBaseUIButtonSubmit.swift in Sources */,
 				C1C3756426D24B55009C1BCA /* ExGameViewController1.swift in Sources */,
 				42534A7227E979220053E302 /* LoginGoogle.swift in Sources */,
+				4254E41727F0615A00008D07 /* GameSceneProtocol.swift in Sources */,
 				4201D37527EC2330007F8FA5 /* ExtensionSKShapeNode.swift in Sources */,
 				42534A3C27E979220053E302 /* ExSearchTableView1.swift in Sources */,
 				42534ABF27E979220053E302 /* EXCoreData2.swift in Sources */,
+				4254E41527F0615A00008D07 /* PhysicsContactable.swift in Sources */,
 				42534A7C27E979220053E302 /* BaseGoogleMap.swift in Sources */,
 				42CBE3C927E9991A009ACB8A /* TPTabBarViewController.swift in Sources */,
 				42534A8C27E979220053E302 /* BaseDatePicker.swift in Sources */,
@@ -3837,6 +4391,7 @@
 				42534A6327E979220053E302 /* BaseChart.swift in Sources */,
 				42534A1727E979210053E302 /* Data.swift in Sources */,
 				4253487027E978800053E302 /* FTBaseLabelUnderLine.swift in Sources */,
+				4254E41A27F0615A00008D07 /* PipeFactory.swift in Sources */,
 				42178D4327EAA513006386ED /* MotionHelper.swift in Sources */,
 				425349F727E979210053E302 /* ZoomAndSnapFlowLayout.swift in Sources */,
 				42CBE3CB27E9991A009ACB8A /* TPFaceMatchViewController.swift in Sources */,
@@ -3867,6 +4422,7 @@
 				4253487927E978800053E302 /* FTBaseButton.swift in Sources */,
 				42534ADF27E979230053E302 /* TPToastView.swift in Sources */,
 				42C4658F27E9C82F00840C7D /* TestViewController2.swift in Sources */,
+				4254E42127F0615B00008D07 /* CharactersScene.swift in Sources */,
 				42CBE3D527E9991A009ACB8A /* TPLoginViewController.swift in Sources */,
 				C18B56B826C8719B0000CC66 /* TestViewController1.swift in Sources */,
 				42C4657727E9C82F00840C7D /* StreechChangePasswordVC.swift in Sources */,
@@ -3891,8 +4447,10 @@
 				42178D4427EAA513006386ED /* VectorOperations.swift in Sources */,
 				42CBE3CD27E9991A009ACB8A /* TPFaceMatchGuideViewController.swift in Sources */,
 				42534A0F27E979210053E302 /* SwipeOptions.swift in Sources */,
+				4254E42927F0615B00008D07 /* FlapyBirdGameVC.swift in Sources */,
 				42534A4627E979220053E302 /* AddImageToVideoViewController.swift in Sources */,
 				C1203F4126C9C782009E55A2 /* TestVCSwiftUIView1.swift in Sources */,
+				4254E42827F0615B00008D07 /* PhysicsCategories.swift in Sources */,
 				42C4657E27E9C82F00840C7D /* LinkSocialViewController.swift in Sources */,
 				42534A8F27E979220053E302 /* APIServices.swift in Sources */,
 				42534ACE27E979230053E302 /* ToolbarForUITextfild.swift in Sources */,
@@ -3901,8 +4459,10 @@
 				42C4657227E9C82F00840C7D /* CCQView.swift in Sources */,
 				42534A3327E979220053E302 /* VariableGlobal.swift in Sources */,
 				42534AF627E979230053E302 /* CircleProgress.swift in Sources */,
+				4254E43127F0615B00008D07 /* SKTextureAtlas+FrameUploader.swift in Sources */,
 				425349FE27E979210053E302 /* botomSheet001.swift in Sources */,
 				42C464F127E9C80E00840C7D /* MessageView1.swift in Sources */,
+				4254E42527F0615B00008D07 /* GameScene.swift in Sources */,
 				42534A2227E979220053E302 /* BaseTableView.swift in Sources */,
 				42534A8E27E979220053E302 /* BaseDatePicker2.swift in Sources */,
 				42CBE3BF27E9991A009ACB8A /* FearView.swift in Sources */,

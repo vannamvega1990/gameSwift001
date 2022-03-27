@@ -20,8 +20,7 @@ class ball: SKShapeNode {
 //        // Do stuff
 //    }
     
-        init(circleOfRadius: CGFloat = sizeOfBall / 2 , numberString: String, color: UIColor){
-    
+        init(circleOfRadius: CGFloat = sizeOfBall / 2, numberString: String, color: UIColor){
             super.init()
             self.fillColor = color
             let diameter = circleOfRadius * 2
@@ -46,6 +45,13 @@ class ball: SKShapeNode {
             physicsBody?.friction = 1.6
     
         }
+    
+    init(circleOfRadius: CGFloat = sizeOHold / 2, holdColor color: UIColor = .gray) {
+        super.init()
+        self.fillColor = color
+        let diameter = circleOfRadius * 2
+        self.path = CGPath(ellipseIn: CGRect(origin: CGPoint(x: -diameter/2, y: -diameter/2), size: CGSize(width: diameter, height: diameter)), transform: nil)
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -13,10 +13,12 @@ let widthOfTableBall: CGFloat = 15 * 100
 let heightOfTableBall: CGFloat = 8.5 * 100
 let sizeOfTableBoder: CGFloat = 0.8 * 100
 //let sizeOfBall: CGFloat = 0.4 * 100
-let sizeOfBall: CGFloat = 0.7 * 100
-let sizeOHold: CGFloat = 0.8 * 100 // duong kinh
+let sizeOfBall: CGFloat = 0.4 * 100
+let sizeOHold: CGFloat = 0.6 * 100 // duong kinh
+let sizeOfHoldGoc: CGFloat = 0.8 * 100
 let ngatCanh: CGFloat = 0.3 * 100
-let ngatGoc = 2 * sizeOfBall * sin(Double.pi/4)
+//let ngatGoc = 2 * sizeOfBall * sin(Double.pi/4)
+let ngatGoc = 0.6 * 100 * sin(Double.pi/4)
 
 
 
@@ -51,6 +53,7 @@ class biDaViewController: FTBaseViewController {
             }
             // ---------- setup something
             view1.ignoresSiblingOrder = true
+            view1.showsPhysics = true
             view1.showsFPS = true
             view1.showsNodeCount = true
         }
