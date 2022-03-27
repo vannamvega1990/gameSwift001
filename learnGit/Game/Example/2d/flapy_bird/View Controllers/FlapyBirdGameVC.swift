@@ -62,15 +62,18 @@ class FlapyBirdGameVC: UIViewController {
         super.viewDidLoad()
         
         let sceneName = Scenes.title.getName()
+        let gameView = SKView(frame: view.bounds)
+        view.addSubview(gameView)
         
         if let scene = SKScene(fileNamed: sceneName) as? TitleScene {
 
             // Set the scale mode to scale to fit the window
 //            scene.scaleMode = .aspectFit
             scene.scaleMode = .aspectFill
+            gameView.presentScene(scene)
             
             // Present the scene
-            if let view = self.view as! SKView? {
+            if let view = self.view as? SKView {
                 view.presentScene(scene)
                 
                 view.ignoresSiblingOrder = true
