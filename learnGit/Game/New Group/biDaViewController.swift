@@ -18,7 +18,7 @@ let sizeOHold: CGFloat = 0.6 * 100 // duong kinh
 let sizeOfHoldGoc: CGFloat = 0.8 * 100
 let ngatCanh: CGFloat = 0.3 * 100
 //let ngatGoc = 2 * sizeOfBall * sin(Double.pi/4)
-let ngatGoc = 0.6 * 100 * sin(Double.pi/4)
+let ngatGoc: CGFloat = CGFloat(0.6 * 100 * sin(Double.pi/4))
 
 
 
@@ -45,7 +45,7 @@ class biDaViewController: FTBaseViewController {
         view.addSubview(gameView!)
         if let view1 = self.gameView {
             // ------------ Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "scene001") {
+            if let scene = SKScene(fileNamed: "scene_1") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFit
                 // Present the scene

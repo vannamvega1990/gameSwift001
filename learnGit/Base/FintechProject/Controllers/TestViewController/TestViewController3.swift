@@ -41,9 +41,9 @@ class TestViewController3: BaseViewControllers {
             
         }, animationOut: {
             topConstraint.constant = 0
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.3,animations: {
                 viewWantPop.superview?.layoutIfNeeded()
-            } completion: { (_) in
+            }) { (_) in
                 viewWantPop.removeFromSuperview()
                 viewBackgroundForPopup.removeFromSuperview()
             }
@@ -71,9 +71,9 @@ class TestViewController3: BaseViewControllers {
                 
             }, animationOut: {
                 topConstraint2.constant = 0
-                UIView.animate(withDuration: 0.3) {
+                UIView.animate(withDuration: 0.3,animations: {
                     viewWantPop2.superview?.layoutIfNeeded()
-                } completion: { (_) in
+                } ){ (_) in
                     viewWantPop2.removeFromSuperview()
                     viewBackgroundForPopup2.removeFromSuperview()
                 }

@@ -17,8 +17,8 @@
 		4201D37727ED5665007F8FA5 /* scene00111.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D37627ED5665007F8FA5 /* scene00111.swift */; };
 		4201D37927ED65C5007F8FA5 /* ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201D37827ED65C5007F8FA5 /* ball.swift */; };
 		420E4CF227E7FFD7004E6251 /* biDaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF127E7FFD7004E6251 /* biDaViewController.swift */; };
-		420E4CF427E800FA004E6251 /* scene001.sks in Resources */ = {isa = PBXBuildFile; fileRef = 420E4CF327E800FA004E6251 /* scene001.sks */; };
-		420E4CF627E80125004E6251 /* scene001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF527E80125004E6251 /* scene001.swift */; };
+		420E4CF427E800FA004E6251 /* scene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 420E4CF327E800FA004E6251 /* scene_1.sks */; };
+		420E4CF627E80125004E6251 /* scene_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E4CF527E80125004E6251 /* scene_1.swift */; };
 		42178D3A27EAA513006386ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D2327EAA513006386ED /* GameViewController.swift */; };
 		42178D3E27EAA513006386ED /* chainsaw.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42178D2A27EAA513006386ED /* chainsaw.wav */; };
 		42178D3F27EAA513006386ED /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42178D2B27EAA513006386ED /* jump.wav */; };
@@ -594,6 +594,8 @@
 		42CBE40527E9991A009ACB8A /* TPEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CBE3AB27E99919009ACB8A /* TPEmptyView.swift */; };
 		42CBE40627E9991A009ACB8A /* TPFaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CBE3AC27E99919009ACB8A /* TPFaceIDView.swift */; };
 		42CBE40727E9991A009ACB8A /* TPFaceIDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42CBE3AD27E99919009ACB8A /* TPFaceIDView.xib */; };
+		65133FD027F53257008CFEE1 /* scene_1 2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65133FCF27F53257008CFEE1 /* scene_1 2.sks */; };
+		658EF87027F5916A0070E051 /* scene_1 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658EF86F27F5916A0070E051 /* scene_1 2.swift */; };
 		C1203F3A26C9B5CD009E55A2 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F3926C9B5CD009E55A2 /* popUpAnimation.swift */; };
 		C1203F4126C9C782009E55A2 /* TestVCSwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F4026C9C782009E55A2 /* TestVCSwiftUIView1.swift */; };
 		C139A6A626C9F7B20005E74A /* PushToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C139A6A526C9F7B20005E74A /* PushToViewController.swift */; };
@@ -635,8 +637,8 @@
 		4201D37627ED5665007F8FA5 /* scene00111.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scene00111.swift; sourceTree = "<group>"; };
 		4201D37827ED65C5007F8FA5 /* ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ball.swift; sourceTree = "<group>"; };
 		420E4CF127E7FFD7004E6251 /* biDaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biDaViewController.swift; sourceTree = "<group>"; };
-		420E4CF327E800FA004E6251 /* scene001.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = scene001.sks; sourceTree = "<group>"; };
-		420E4CF527E80125004E6251 /* scene001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scene001.swift; sourceTree = "<group>"; };
+		420E4CF327E800FA004E6251 /* scene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = scene_1.sks; sourceTree = "<group>"; };
+		420E4CF527E80125004E6251 /* scene_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scene_1.swift; sourceTree = "<group>"; };
 		42178D2327EAA513006386ED /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		42178D2A27EAA513006386ED /* chainsaw.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainsaw.wav; sourceTree = "<group>"; };
 		42178D2B27EAA513006386ED /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
@@ -1221,6 +1223,8 @@
 		42CBE3AC27E99919009ACB8A /* TPFaceIDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPFaceIDView.swift; sourceTree = "<group>"; };
 		42CBE3AD27E99919009ACB8A /* TPFaceIDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPFaceIDView.xib; sourceTree = "<group>"; };
 		42CBE40827E99A09009ACB8A /* learnGit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "learnGit-Bridging-Header.h"; sourceTree = "<group>"; };
+		65133FCF27F53257008CFEE1 /* scene_1 2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "scene_1 2.sks"; sourceTree = "<group>"; };
+		658EF86F27F5916A0070E051 /* scene_1 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "scene_1 2.swift"; sourceTree = "<group>"; };
 		6F01341CB18F5BD70A39320F /* Pods-learnGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnGit.release.xcconfig"; path = "Target Support Files/Pods-learnGit/Pods-learnGit.release.xcconfig"; sourceTree = "<group>"; };
 		ABC63FD0C305DBF7F38F55C5 /* Pods_learnGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learnGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1203F3926C9B5CD009E55A2 /* popUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAnimation.swift; sourceTree = "<group>"; };
@@ -1316,12 +1320,11 @@
 		420E4CF027E7FD7B004E6251 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				65133FCD27F52EFD008CFEE1 /* scenes */,
 				4201D37127EC224F007F8FA5 /* Base */,
 				420E4CF127E7FFD7004E6251 /* biDaViewController.swift */,
-				420E4CF527E80125004E6251 /* scene001.swift */,
 				4201D37827ED65C5007F8FA5 /* ball.swift */,
 				4201D37627ED5665007F8FA5 /* scene00111.swift */,
-				420E4CF327E800FA004E6251 /* scene001.sks */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -3532,6 +3535,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		65133FCD27F52EFD008CFEE1 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				65133FCE27F52F0D008CFEE1 /* scene_1 */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		65133FCE27F52F0D008CFEE1 /* scene_1 */ = {
+			isa = PBXGroup;
+			children = (
+				658EF86F27F5916A0070E051 /* scene_1 2.swift */,
+				420E4CF527E80125004E6251 /* scene_1.swift */,
+				420E4CF327E800FA004E6251 /* scene_1.sks */,
+				65133FCF27F53257008CFEE1 /* scene_1 2.sks */,
+			);
+			path = scene_1;
+			sourceTree = "<group>";
+		};
 		B6D3A2B42BA898A62E951842 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -3858,7 +3880,7 @@
 				4253486827E978800053E302 /* FTBaseViewControllerWithTitle.xib in Resources */,
 				42CBE3E427E9991A009ACB8A /* TPSplashViewController.xib in Resources */,
 				42C4658327E9C82F00840C7D /* LinkSocialViewController.xib in Resources */,
-				420E4CF427E800FA004E6251 /* scene001.sks in Resources */,
+				420E4CF427E800FA004E6251 /* scene_1.sks in Resources */,
 				4254E3F027F0615A00008D07 /* TitleScene.sks in Resources */,
 				425349FC27E979210053E302 /* BottomSheetViewController.xib in Resources */,
 				42C4659527E9C82F00840C7D /* OTPViewController.xib in Resources */,
@@ -3977,6 +3999,7 @@
 				42C464FC27E9C80E00840C7D /* CCCDTableViewCell.xib in Resources */,
 				C1F6E8B026ABE5A500194CEA /* Main.storyboard in Resources */,
 				42534AB627E979220053E302 /* BuildVideoViewController.xib in Resources */,
+				65133FD027F53257008CFEE1 /* scene_1 2.sks in Resources */,
 				4254E3F527F0615A00008D07 /* TitleScene iPad.sks in Resources */,
 				4254E3F627F0615A00008D07 /* GameScene.sks in Resources */,
 				4254E3F327F0615A00008D07 /* CharactersScene.sks in Resources */,
@@ -4309,7 +4332,7 @@
 				42534A9027E979220053E302 /* OCRResult.swift in Sources */,
 				42534A9B27E979220053E302 /* ResultViewController.swift in Sources */,
 				42534A9C27E979220053E302 /* PreviewViewController.swift in Sources */,
-				420E4CF627E80125004E6251 /* scene001.swift in Sources */,
+				420E4CF627E80125004E6251 /* scene_1.swift in Sources */,
 				42C4656A27E9C82F00840C7D /* CategoryInvestView.swift in Sources */,
 				42534A2927E979220053E302 /* NSObject+Extension.swift in Sources */,
 				425349F027E979210053E302 /* BaseCommons.swift in Sources */,
@@ -4320,6 +4343,7 @@
 				4253484027E9782B0053E302 /* Constants.swift in Sources */,
 				4254E42627F0615B00008D07 /* TitleScene.swift in Sources */,
 				4253487327E978800053E302 /* FTBaseAppleButton.swift in Sources */,
+				658EF87027F5916A0070E051 /* scene_1 2.swift in Sources */,
 				C1C3755726D23F70009C1BCA /* ExNavigationBar1.swift in Sources */,
 				42534AEA27E979230053E302 /* ConfirmDialog.swift in Sources */,
 				42534A4C27E979220053E302 /* BaseVideo+Extension2.swift in Sources */,
@@ -4615,10 +4639,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = MAXC5P62P3;
 				INFOPLIST_FILE = learnGit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4637,10 +4663,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = MAXC5P62P3;
 				INFOPLIST_FILE = learnGit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

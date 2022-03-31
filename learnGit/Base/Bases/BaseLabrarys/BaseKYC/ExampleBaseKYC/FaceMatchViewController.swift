@@ -436,24 +436,28 @@ extension FaceMatchViewController {
 //            }
         //        }
         if isDetecting {
-            if let yaw = result.yaw as? Float {
-                switch currentYaw {
-                case .center:
-                    if yaw == 0 {
-                        isDetecting = false
-                        startTimer()
-                    }
-                case .left:
-                    if yaw < 0 {
-                        isDetecting = false
-                        startTimer()
-                    }
-                case .right:
-                    if yaw > 0 {
-                        isDetecting = false
-                        startTimer()
+            if #available(iOS 12.0, *) {
+                if let yaw = result.yaw as? Float {
+                    switch currentYaw {
+                    case .center:
+                        if yaw == 0 {
+                            isDetecting = false
+                            startTimer()
+                        }
+                    case .left:
+                        if yaw < 0 {
+                            isDetecting = false
+                            startTimer()
+                        }
+                    case .right:
+                        if yaw > 0 {
+                            isDetecting = false
+                            startTimer()
+                        }
                     }
                 }
+            } else {
+                // Fallback on earlier versions
             }
         }
     }

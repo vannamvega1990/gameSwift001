@@ -67,8 +67,8 @@ class FTBaseTableView: BaseView {
         //configs()
         tbv.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
         if #available(iOS 15.0, *){
-            tbv.sectionHeaderTopPadding = 0.0
-            UITableView.appearance().sectionHeaderTopPadding = 0
+            //tbv.sectionHeaderTopPadding = 0.0
+            //UITableView.appearance().sectionHeaderTopPadding = 0
         }
         
     }

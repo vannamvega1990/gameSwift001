@@ -240,9 +240,9 @@ extension BaseViewControllers {
         
         func removePop(){
             centerYConstraint.constant = 150
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.3,animations: {
                 viewWantPop.superview?.layoutIfNeeded()
-            } completion: { (_) in
+            } ){ (_) in
                 viewWantPop.removeFromSuperview()
                 viewBackgroundForPopup?.removeFromSuperview()
                 //removePop()
@@ -259,9 +259,9 @@ extension BaseViewControllers {
             
         }, animationOut: {
             centerYConstraint.constant = 150
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.3,animations: {
                 viewWantPop.superview?.layoutIfNeeded()
-            } completion: { (_) in
+            } ) { (_) in
                 viewWantPop.removeFromSuperview()
                 viewBackgroundForPopup?.removeFromSuperview()
                 //removePop()

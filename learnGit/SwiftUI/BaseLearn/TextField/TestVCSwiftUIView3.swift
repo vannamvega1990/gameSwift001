@@ -10,6 +10,7 @@ import UIKit
 
 // UIView To View ------------------------
 
+@available(iOS 13.0, *)
 struct TextView: UIViewRepresentable {
     @Binding var text: NSMutableAttributedString
 
@@ -25,6 +26,7 @@ struct TextView: UIViewRepresentable {
 
 // editing Textfild ---------------------
 
+@available(iOS 13.0, *)
 struct ContentView1: View {
 
     var colll:Color = .red
@@ -38,6 +40,7 @@ struct ContentView1: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct MyTextFieldStyle: TextFieldStyle {
     @Binding var focused: Bool
     func _body(configuration: TextField<Self._Label>) -> some View {
@@ -55,6 +58,7 @@ struct MyTextFieldStyle: TextFieldStyle {
 
 
 
+@available(iOS 13.0, *)
 struct TestVCSwiftUIView3: View {
     @State var text = NSMutableAttributedString(string: "123")
     
@@ -64,6 +68,7 @@ struct TestVCSwiftUIView3: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct TestVCSwiftUIView3_Previews: PreviewProvider {
     static var previews: some View {
         //TestVCSwiftUIView3()

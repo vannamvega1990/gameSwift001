@@ -132,14 +132,14 @@ class BaseFireBase {
     
     func readDataObserver(){
         //ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { snapshot in
-        ref.child("users").child("id12/0").observe(.value) { (snapshot) in
+        ref.child("users").child("id12/0").observe(.value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
             let username = value?["username"] as? String ?? ""
               print(username)
             let pass = value?["password"] as? String ?? ""
               print(pass)
-        } withCancel: { (error) in
+        }) { (error) in
             print(error.localizedDescription)
         }
     }

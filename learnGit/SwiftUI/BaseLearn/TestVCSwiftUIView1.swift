@@ -10,6 +10,7 @@ import SwiftUI
 //let swiftUIView = ContentView() // swiftUIView is View
 //let viewCtrl = UIHostingController(rootView: swiftUIView)
 
+@available(iOS 13.0, *)
 extension Button {
     var testVar:String {
         get{
@@ -22,6 +23,7 @@ extension Button {
     }
 }
 
+@available(iOS 13.0, *)
 struct SubView: View {
     var body: some View {
         Text("Hello, world!")
@@ -37,6 +39,7 @@ struct Data1: Identifiable {
     let imageTokenDate: String
 }
 
+@available(iOS 13.0, *)
 struct ContentView: View {
     
     @State private var showDetails = false
@@ -51,12 +54,13 @@ struct ContentView: View {
     
     var body: some View {
         
-        if showDetails {
-            Text("You should follow me on Twitter: @twostraws")
-                .font(.largeTitle)
-        }
+        
         
         VStack{
+            if showDetails {
+                Text("You should follow me on Twitter: @twostraws")
+                    .font(.largeTitle)
+            }
             NavigationView {
                 List(items){data in
                     Image(data.imageName).resizable().frame(width: 98, height: 98, alignment: .center)
@@ -77,11 +81,11 @@ struct ContentView: View {
             .background(didTap ? Color.red : Color.yellow)
             //  ---------------------------
             Button("btn") {
-                showDetails.toggle()
+                self.showDetails.toggle()
             }
             //  ---------------------------
             Button("tap") {
-                actionOfButton()
+                self.actionOfButton()
                 
             }.foregroundColor(.red)
         }
@@ -92,6 +96,7 @@ struct ContentView: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 8"))

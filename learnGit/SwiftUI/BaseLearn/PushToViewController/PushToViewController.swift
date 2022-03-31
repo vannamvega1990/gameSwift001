@@ -9,10 +9,12 @@ import SwiftUI
 
 
 
+@available(iOS 13.0, *)
 class Model: ObservableObject {
     @Published var pushed = false
 }
 
+@available(iOS 13.0, *)
 struct PushToViewController: View {
     
     @EnvironmentObject var model: Model
@@ -30,6 +32,7 @@ struct PushToViewController: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct DetailView: View {
     @EnvironmentObject var model: Model
 
@@ -44,6 +47,7 @@ struct DetailView: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct MyBackButton: View {
     let label: String
     let closure: () -> ()
@@ -58,6 +62,7 @@ struct MyBackButton: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct PushToViewController_Previews: PreviewProvider {
     static var previews: some View {
         PushToViewController()

@@ -8,7 +8,7 @@
 import SpriteKit
 import GameplayKit
 
-class scene001: SKScene, SKPhysicsContactDelegate{
+class scene_1_2: SKScene, SKPhysicsContactDelegate{
     
     //let node1 = SKSpriteNode(color: .yellow, size: CGSize(width: 36, height: 36))
 //    let node1 = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 36, height: 36), cornerRadius: 18)
