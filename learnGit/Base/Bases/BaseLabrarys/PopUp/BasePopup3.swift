@@ -163,9 +163,9 @@ extension BaseViewControllers {
                 switch typeAnimation {
                 case .Move:
                     centerContrain.constant = 150
-                    UIView.animate(withDuration: 0.1) {
+                    UIView.animate(withDuration: 0.1, animations:{
                         arrayTrumpViewPop.last?.superview?.layoutIfNeeded()
-                    } completion: { (flag) in
+                    }) { (flag) in
                         arrayTrumpViewPop.last?.removeFromSuperview()
                         arrayTrumpViewPop.removeLast()
                         
@@ -178,9 +178,9 @@ extension BaseViewControllers {
                     
                     break
                 case .Opacity:
-                    UIView.animate(withDuration: 0.3) {
+                    UIView.animate(withDuration: 0.3, animations:  {
                         arrayTrumpViewPop.last?.layer.opacity = 0
-                    } completion: { (flag) in
+                    }) { (flag) in
                         if !arrayTrumpViewPop.isEmpty {
                             arrayTrumpViewPop.last?.removeFromSuperview()
                             arrayTrumpViewPop.removeLast()
@@ -201,9 +201,9 @@ extension BaseViewControllers {
                 switch typeAnimation {
                 case .Move:
                     botomContrain.constant = 150
-                    UIView.animate(withDuration: 0.1) {
+                    UIView.animate(withDuration: 0.1,animations: {
                         arrayTrumpViewPop.last?.superview?.layoutIfNeeded()
-                    } completion: { (flag) in
+                    })  { (flag) in
                         arrayTrumpViewPop.last?.removeFromSuperview()
                         arrayTrumpViewPop.removeLast()
                         
@@ -215,9 +215,9 @@ extension BaseViewControllers {
                     }
                     break
                 case .Opacity:
-                    UIView.animate(withDuration: 0.3) {
+                    UIView.animate(withDuration: 0.3, animations: {
                         arrayTrumpViewPop.last?.layer.opacity = 0
-                    } completion: { (flag) in
+                    }) { (flag) in
                         if !arrayTrumpViewPop.isEmpty {
                             arrayTrumpViewPop.last?.removeFromSuperview()
                             arrayTrumpViewPop.removeLast()
@@ -238,9 +238,9 @@ extension BaseViewControllers {
                 switch typeAnimation {
                 case .Move:
                     topContrain.constant = topContrain.constant + 150
-                    UIView.animate(withDuration: 0.1) {
+                    UIView.animate(withDuration: 0.1,animations: {
                         arrayTrumpViewPop.last?.superview?.layoutIfNeeded()
-                    } completion: { (flag) in
+                    }) { (flag) in
                         arrayTrumpViewPop.last?.removeFromSuperview()
                         arrayTrumpViewPop.removeLast()
                         
@@ -252,9 +252,9 @@ extension BaseViewControllers {
                     }
                     break
                 case .Opacity:
-                    UIView.animate(withDuration: 0.3) {
+                    UIView.animate(withDuration: 0.3,animations: {
                         arrayTrumpViewPop.last?.layer.opacity = 0
-                    } completion: { (flag) in
+                    }){ (flag) in
                         if !arrayTrumpViewPop.isEmpty {
                             arrayTrumpViewPop.last?.removeFromSuperview()
                             arrayTrumpViewPop.removeLast()

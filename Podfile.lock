@@ -1,9 +1,10 @@
 PODS:
-  - AppAuth (1.4.0):
-    - AppAuth/Core (= 1.4.0)
-    - AppAuth/ExternalUserAgent (= 1.4.0)
-  - AppAuth/Core (1.4.0)
-  - AppAuth/ExternalUserAgent (1.4.0)
+  - AppAuth (1.5.0):
+    - AppAuth/Core (= 1.5.0)
+    - AppAuth/ExternalUserAgent (= 1.5.0)
+  - AppAuth/Core (1.5.0)
+  - AppAuth/ExternalUserAgent (1.5.0):
+    - AppAuth/Core
   - CryptoSwift (0.11.0)
   - FBSDKCoreKit (9.0.1):
     - FBSDKCoreKit/Basics (= 9.0.1)
@@ -62,10 +63,10 @@ PODS:
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (~> 1.2)
-  - GoogleMaps (5.1.0):
-    - GoogleMaps/Maps (= 5.1.0)
-  - GoogleMaps/Base (5.1.0)
-  - GoogleMaps/Maps (5.1.0):
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
     - GoogleMaps/Base
   - GooglePlaces (5.0.0)
   - GoogleSignIn (5.0.2):
@@ -89,10 +90,10 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
-  - GTMAppAuth (1.2.2):
+  - GTMAppAuth (1.2.3):
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
-  - GTMSessionFetcher/Core (1.7.0)
+  - GTMSessionFetcher/Core (1.7.1)
   - IQKeyboardManagerSwift (6.5.9)
   - KLCPopup (1.0)
   - leveldb-library (1.22.1)
@@ -120,7 +121,7 @@ DEPENDENCIES:
   - Firebase/Database (~> 7.7.0)
   - Firebase/Messaging (~> 7.7.0)
   - Firebase/Storage (~> 7.7.0)
-  - GoogleMaps (= 5.1.0)
+  - GoogleMaps (= 2.5.0)
   - GooglePlaces (= 5.0.0)
   - GoogleSignIn (~> 5.0.0)
   - IQKeyboardManagerSwift (~> 6.5.6)
@@ -165,7 +166,7 @@ SPEC REPOS:
     - SwiftMessages
 
 SPEC CHECKSUMS:
-  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
   CryptoSwift: ad5208dd2aae0a764ea4ce2c2d34bd067cae67f0
   FBSDKCoreKit: fada1a6a0076724678993ff05a633848765ff18c
   FBSDKLoginKit: d5ffe6d808897019ccf16feb6f0a7ab260bc5cd6
@@ -178,12 +179,12 @@ SPEC CHECKSUMS:
   FirebaseMessaging: ce33c2537fdda1d1a4bc82b2245e3c3bf9107684
   FirebaseStorage: 9b940765fa33494258fab6131b6180fc7c2d80f5
   GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
-  GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
   GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
-  GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
-  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
+  GTMAppAuth: 987526d41b07efb1bedda5e936fe0cb718a03113
+  GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
@@ -196,6 +197,6 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
 
-PODFILE CHECKSUM: 4ecc176d3c33fdf742a0994ee60b9be6662b79ad
+PODFILE CHECKSUM: 91a3337582b57e178578b935163dc539f7856d1e
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.10.0

@@ -306,9 +306,9 @@ class BaseViewControllers: UIViewController {
         }
         dispatchGroup.notify(queue: .main) {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                UIView.animate(withDuration: 0.6) {
+                UIView.animate(withDuration: 0.6, animations:  {
                     toastView.layer.opacity = 1
-                } completion: { (flag) in
+                } ){ (flag) in
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         //let _ = self.createTimer(timeInterval: 1, selector: #selector(self.hadleToast), repeats: false)
                         let selector = #selector(self.moveToNextTextField(sender:))
@@ -353,11 +353,11 @@ class BaseViewControllers: UIViewController {
         toastView.rootView.clipsToBounds = true
         //timerForToast = self.createTimer(timeInterval: timeIntervalForToast, selector: #selector(handleTimerToast), repeats: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.3,animations:  {
                 toastView.layer.opacity = 0
-            } completion: { (flag) in
+            }, completion: { (flag) in
                 toastView.removeFromSuperview()
-            }
+            })
 
         }
         let centerContrain = toastView.centerXAnchor.constraint(equalTo: window.centerXAnchor)

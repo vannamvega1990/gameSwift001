@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct TestVCSwiftUIView2: View {
     @State var kind = Text.Kind.primary
 
@@ -24,12 +25,14 @@ struct TestVCSwiftUIView2: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct TestVCSwiftUIView2_Previews: PreviewProvider {
     static var previews: some View {
         TestVCSwiftUIView2()
     }
 }
 
+@available(iOS 13.0, *)
 extension View {
    
     func Handle() -> some View{
@@ -39,6 +42,7 @@ extension View {
     }
 }
 
+@available(iOS 13.0.0, *)
 extension UIImage {
     func Handle() -> some UIImage{
         print("-----------")
@@ -53,6 +57,7 @@ extension UIImageView {
     }
 }
 
+@available(iOS 13.0, *)
 extension Text {
     enum Kind {
         case primary

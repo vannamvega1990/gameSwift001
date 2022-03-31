@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct ExTableView1: View {
     var body: some View {
         UIList(rows: generateRows())
@@ -17,10 +18,12 @@ struct ExTableView1: View {
     }
 }
 
+@available(iOS 13.0, *)
 class HostingCell: UITableViewCell { // just to hold hosting controller
     var host: UIHostingController<AnyView>?
 }
 
+@available(iOS 13.0, *)
 struct UIList: UIViewRepresentable {
     
     var rows: [String]
@@ -41,6 +44,7 @@ struct UIList: UIViewRepresentable {
         Coordinator(rows: rows)
     }
     
+    @available(iOS 13.0, *)
     class Coordinator: NSObject, UITableViewDataSource, UITableViewDelegate {
         
         var rows: [String]
@@ -82,6 +86,7 @@ struct UIList: UIViewRepresentable {
     }
 }
 
+@available(iOS 13.0, *)
 struct ExTableView1_Previews: PreviewProvider {
     static var previews: some View {
         ExTableView1()

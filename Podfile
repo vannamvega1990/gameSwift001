@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '11.0'
 
 target 'learnGit' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -27,8 +27,10 @@ target 'learnGit' do
 #pod 'FBSDKCoreKit', '~> 4.10.0'
   pod 'FBSDKLoginKit', '~> 9.0.1'
   
-  pod 'GoogleMaps', '5.1.0'
+#  pod 'GoogleMaps', '5.1.0'
+  pod 'GoogleMaps', '2.5.0'
   pod 'GooglePlaces', '5.0.0'
+#  pod 'GooglePlaces', '~> 2.5.0'
   
 #  pod 'Firebase/Analytics', '~> 7.7.0'
 #  pod 'Firebase/Auth', '~> 7.7.0'

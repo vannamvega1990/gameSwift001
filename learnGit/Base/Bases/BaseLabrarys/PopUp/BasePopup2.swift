@@ -35,9 +35,9 @@ extension BaseViewControllers {
                 switch typeAnimation {
                 case .Move:
                     centerContrain.constant = 150
-                    UIView.animate(withDuration: 0.1) {
+                    UIView.animate(withDuration: 0.1, animations: {
                         arrayViewPopup.last?.superview?.layoutIfNeeded()
-                    } completion: { (flag) in
+                    }) { (flag) in
                         arrayViewPopup.last?.removeFromSuperview()
                         arrayViewPopup.removeLast()
                         
@@ -49,12 +49,11 @@ extension BaseViewControllers {
                             complete()
                         }
                     }
-                    
                     break
                 case .Opacity:
-                    UIView.animate(withDuration: 0.3) {
+                    UIView.animate(withDuration: 0.3, animations: {
                         arrayViewPopup.last?.layer.opacity = 0
-                    } completion: { (flag) in
+                    }) { (flag) in
                         if !arrayViewPopup.isEmpty {
                             arrayViewPopup.last?.removeFromSuperview()
                             arrayViewPopup.removeLast()
@@ -77,9 +76,9 @@ extension BaseViewControllers {
                 switch typeAnimation {
                 case .Move:
                     botomContrain.constant = 150
-                    UIView.animate(withDuration: 0.1) {
+                    UIView.animate(withDuration: 0.1, animations: {
                         arrayViewPopup.last?.superview?.layoutIfNeeded()
-                    } completion: { (flag) in
+                    }) { (flag) in
                         arrayViewPopup.last?.removeFromSuperview()
                         arrayViewPopup.removeLast()
                         
@@ -92,9 +91,9 @@ extension BaseViewControllers {
                     }
                     break
                 case .Opacity:
-                    UIView.animate(withDuration: 0.3) {
+                    UIView.animate(withDuration: 0.3, animations: {
                         arrayViewPopup.last?.layer.opacity = 0
-                    } completion: { (flag) in
+                    }) { (flag) in
                         if !arrayViewPopup.isEmpty {
                             arrayViewPopup.last?.removeFromSuperview()
                             arrayViewPopup.removeLast()

@@ -41,7 +41,7 @@ extension BaseViewControllers {
         //datePicker.backgroundColor = .red
         datePicker.datePickerMode = .date
         if #available(iOS 13.4, *) {
-            datePicker.preferredDatePickerStyle = .wheels
+            //datePicker.preferredDatePickerStyle = .wheels
         }
         
         self.datePicker = datePicker

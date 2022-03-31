@@ -63,9 +63,9 @@ class FakeSwipeViewController: UIViewController {
             print(locationOfBeganTap)
 
         } else if gesture.state == UIGestureRecognizer.State.ended {
-            UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut) {
+            UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut,animations: {
                 self.pagetab.topConstraint!.constant = self.oldPointY
-            } completion: { (flag) in
+            }) { (flag) in
                 
             }
 

@@ -38,7 +38,7 @@ class slideMenu: UIViewController {
                                                object: nil)
         bgView = UIView()
         bgView.frame = view.bounds
-        bgView.backgroundColor = .gray.withAlphaComponent(0.6)
+        bgView.backgroundColor = UIColor.gray.withAlphaComponent(0.6)
     }
     
     @objc func hideMenu(_ notification: NSNotification){
@@ -69,9 +69,9 @@ class slideMenu: UIViewController {
     }
     
     func openMenu1(){
-        UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseOut]) {
+        UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseOut], animations: {
             self.menuVC.view.frame.origin.x = 0
-        } completion: { state in
+        })  { state in
             
         }
     }
@@ -79,9 +79,9 @@ class slideMenu: UIViewController {
     
     func closeMenu(){
         bgView.isHidden = true
-        UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseIn]) {
+        UIView.animate(withDuration: 0.4, delay: 0, options: [.curveEaseIn], animations: {
             self.menuVC.view.frame.origin.x = -self.widthOfMenu
-        } completion: { state in
+        }) { state in
             
         }
     }
