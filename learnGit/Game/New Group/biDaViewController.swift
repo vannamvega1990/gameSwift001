@@ -53,7 +53,7 @@ class biDaViewController: FTBaseViewController {
             }
             // ---------- setup something
             view1.ignoresSiblingOrder = true
-            view1.showsPhysics = true
+            //view1.showsPhysics = true
             view1.showsFPS = true
             view1.showsNodeCount = true
         }
