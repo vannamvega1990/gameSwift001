@@ -596,6 +596,7 @@
 		42CBE40727E9991A009ACB8A /* TPFaceIDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42CBE3AD27E99919009ACB8A /* TPFaceIDView.xib */; };
 		65133FD027F53257008CFEE1 /* scene_1 2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65133FCF27F53257008CFEE1 /* scene_1 2.sks */; };
 		658EF87027F5916A0070E051 /* scene_1 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658EF86F27F5916A0070E051 /* scene_1 2.swift */; };
+		65F634B727F9562D00AA2EE9 /* MathUtity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F634B627F9562D00AA2EE9 /* MathUtity.swift */; };
 		C1203F3A26C9B5CD009E55A2 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F3926C9B5CD009E55A2 /* popUpAnimation.swift */; };
 		C1203F4126C9C782009E55A2 /* TestVCSwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F4026C9C782009E55A2 /* TestVCSwiftUIView1.swift */; };
 		C139A6A626C9F7B20005E74A /* PushToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C139A6A526C9F7B20005E74A /* PushToViewController.swift */; };
@@ -1225,6 +1226,7 @@
 		42CBE40827E99A09009ACB8A /* learnGit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "learnGit-Bridging-Header.h"; sourceTree = "<group>"; };
 		65133FCF27F53257008CFEE1 /* scene_1 2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "scene_1 2.sks"; sourceTree = "<group>"; };
 		658EF86F27F5916A0070E051 /* scene_1 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "scene_1 2.swift"; sourceTree = "<group>"; };
+		65F634B627F9562D00AA2EE9 /* MathUtity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtity.swift; sourceTree = "<group>"; };
 		6F01341CB18F5BD70A39320F /* Pods-learnGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnGit.release.xcconfig"; path = "Target Support Files/Pods-learnGit/Pods-learnGit.release.xcconfig"; sourceTree = "<group>"; };
 		ABC63FD0C305DBF7F38F55C5 /* Pods_learnGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learnGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1203F3926C9B5CD009E55A2 /* popUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAnimation.swift; sourceTree = "<group>"; };
@@ -3673,6 +3675,7 @@
 				420E4CF027E7FD7B004E6251 /* New Group */,
 				C1C3756226D24B3D009C1BCA /* Example */,
 				C1C3755F26D24B3A009C1BCA /* BaseGame.swift */,
+				65F634B627F9562D00AA2EE9 /* MathUtity.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -4446,6 +4449,7 @@
 				4253487927E978800053E302 /* FTBaseButton.swift in Sources */,
 				42534ADF27E979230053E302 /* TPToastView.swift in Sources */,
 				42C4658F27E9C82F00840C7D /* TestViewController2.swift in Sources */,
+				65F634B727F9562D00AA2EE9 /* MathUtity.swift in Sources */,
 				4254E42127F0615B00008D07 /* CharactersScene.swift in Sources */,
 				42CBE3D527E9991A009ACB8A /* TPLoginViewController.swift in Sources */,
 				C18B56B826C8719B0000CC66 /* TestViewController1.swift in Sources */,

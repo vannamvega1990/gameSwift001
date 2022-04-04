@@ -10,11 +10,25 @@ import GameplayKit
 
 class scene_1: SKScene, SKPhysicsContactDelegate{
     
-    var ball_main, ball_8, table, table_body: SKSpriteNode!
+    var ball_main, ball_8, table, table_body, stick: SKSpriteNode!
     var ball_1, ball_2, ball_3, ball_4, ball_5, ball_6, ball_7: SKSpriteNode!
     var ball_9, ball_10, ball_11, ball_12, ball_13, ball_14, ball_15: SKSpriteNode!
     
     var ball_array: [SKSpriteNode] = [SKSpriteNode]()
+    var flagBeginCheckAllNodeIsStanding: Bool = false {
+        didSet {
+//            if flagBeginCheckAllNodeIsStanding {
+//                if checkAllNodeIsStanding() {
+//                                print("------all node is standing")
+//                    flagBeginCheckAllNodeIsStanding = true
+//                            }else{
+//                                print("------have a node is moving")
+//                    flagBeginCheckAllNodeIsStanding = true
+//                            }
+//                
+//            }
+        }
+    }
     
     
     // -------- xu lý va chạm -------------
@@ -32,22 +46,26 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
     override func didMove(to view: SKView)
     {
         getObjects(callbak: {
-//            self.ball_array.append(contentsOf: [self.ball_main, self.ball_1, self.ball_2, self.ball_3, self.ball_4, self.ball_5 , self.ball_6, self.ball_7, self.ball_8, self.ball_9,self.ball_10 , self.ball_11, self.ball_12, self.ball_13, self.ball_14, self.ball_15])
-//            for (key,each) in self.ball_array.enumerated() {
-//                each.physicsBody = SKPhysicsBody(circleOfRadius: each.frame.size.width / 2)
-//                let img_name = "ball_" + "\(key)"
-//                
-//                let image = UIImage(named: img_name)
-//                 let texture = SKTexture(image: image!)
-//                //let player = texture
-//                each.texture = texture
-//                each.physicsBody!.mass = 0.03
-//                each.physicsBody!.allowsRotation =  false
-//                each.physicsBody!.affectedByGravity = false
-//                each.physicsBody?.friction = 5.9
-//                
-//            }
+            self.ball_array.append(contentsOf: [self.ball_main, self.ball_1, self.ball_2, self.ball_3, self.ball_4, self.ball_5 , self.ball_6, self.ball_7, self.ball_8, self.ball_9,self.ball_10 , self.ball_11, self.ball_12, self.ball_13, self.ball_14, self.ball_15])
+            for (key,each) in self.ball_array.enumerated() {
+                let node = SKSpriteNode()
+                
+                each.physicsBody = SKPhysicsBody(circleOfRadius: each.frame.size.width / 2)
+                let img_name = "ball_" + "\(key)"
+                
+                let image = UIImage(named: img_name)
+                 let texture = SKTexture(image: image!)
+                //let player = texture
+                each.texture = texture
+                each.physicsBody!.mass = 0.03
+                each.anchorPoint = CGPoint(x:0.5, y: 0.5)
+                each.physicsBody!.allowsRotation =  false
+                each.physicsBody!.affectedByGravity = false
+                each.physicsBody?.friction = 5.9
+                
+            }
         })
+        stick.anchorPoint = CGPoint(x: 0, y: 0.5)
     }
     
     func getObjects(callbak:@escaping ()->Void){
@@ -68,6 +86,7 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
         ball_13 = self.childNode(withName: "ball_13") as? SKSpriteNode
         ball_14 = self.childNode(withName: "ball_14") as? SKSpriteNode
         ball_15 = self.childNode(withName: "ball_15") as? SKSpriteNode
+        stick = self.childNode(withName: "stick") as? SKSpriteNode
         callbak()
         table_body = self.childNode(withName: "table_body") as? SKSpriteNode
         table_body.physicsBody = SKPhysicsBody(texture: table_body.texture!, size: table_body.frame.size)
@@ -87,14 +106,53 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
     func changePosistionStick(){
         
     }
-    
+    var count: Int = 0
     override func update(_ currentTime: TimeInterval) {
         //        print(currentTime)
-        if checkAllNodeIsStanding() {
-            print("------all node is standing")
-        }else{
-            print("------have a node is moving")
+        count += 1
+        
+        if ball_1 != nil {
+            //print(ball_1.physicsBody!.velocity)
+            //print(sqrt(9))
+            if ball_1.physicsBody!.isResting {
+                //print("ball_1 is resting")
+            }
+            let lengMove = sqrt(ball_1.physicsBody!.velocity.dx * ball_1.physicsBody!.velocity.dx + ball_1.physicsBody!.velocity.dy * ball_1.physicsBody!.velocity.dy)
+            //print(lengMove)
+            if lengMove < 6 {
+                //ball_1.physicsBody!.velocity = CGVector(dx:0,dy:0)
+                //print("ball_1 is resting")
+            }else{
+                //print("ball_1 is running")
+            }
+            
+            if flagBeginCheckAllNodeIsStanding {
+                flagBeginCheckAllNodeIsStanding = false
+                if !checkAllNodeIsStanding() {
+                    //print("------have a node is moving")
+                    flagBeginCheckAllNodeIsStanding = true
+                    hideStick()
+                }else{
+                    //print("------have no node is moving")
+                    showStick()
+                    flagBeginCheckAllNodeIsStanding = false
+                }
+            }
+//        }
+//        else{
+//            print("------all node is standing")
+//            flagBeginCheckAllNodeIsStanding = true
+//            }
+//        }
+//        if flagBeginCheckAllNodeIsStanding {
+//            flagBeginCheckAllNodeIsStanding = false
+//            if checkAllNodeIsStanding() {
+//                print("------all node is standing")
+//            }else{
+//                print("------have a node is moving")
+//            }
         }
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -102,29 +160,90 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
         for touch in touches {
             let location=touch.location(in: self)
             print(location.x,location.y)
+            flagBeginCheckAllNodeIsStanding = true
             let dx = location.x - ball_main!.position.x
             let dy = location.y - ball_main!.position.y
             //ball_1!.physicsBody?.applyImpulse(CGVector(dx: -526, dy: 60))
-            ball_main!.physicsBody?.applyImpulse(CGVector(dx: dx, dy: dy))
+            //ball_main!.physicsBody?.applyImpulse(CGVector(dx: dx, dy: dy))
+            oldPoint = stick.position
+            count1 += 1
+            print(count1)
+            
+            let vector = MathUtity.createVector(rootPoint: ball_main.position, to: location)
+            if let goc = MathUtity.getDegreeOfVector(vector: vector) {
+                stick.zRotation = goc
+            }
+//            if count1 == 1 {
+//               stick.zRotation = .pi/3
+//            }
+//            else if count1 == 2 {
+//               stick.zRotation = 0
+//            }
+//            else if count1 == 3 {
+//               stick.zRotation = -.pi/3
+//            }
+//            else if count1 == 4 {
+//                stick.zRotation = .pi + .pi/3
+//            }
             
         }
-        
-        
+    }
+
+    var oldPoint: CGPoint  = .init()
+    var count1: Int = 0
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
+        print("touchesMoved")
+        for touch in touches {
+        let location=touch.location(in: self)
+            let dx = location.x - oldPoint.x
+            let dy = location.y - oldPoint.y
+            oldPoint = location
+        print(location.x,location.y)
+            let newPosX = stick.position.x + dx
+            let newPosY = stick.position.y + dy
+            stick.position = CGPoint(x: newPosX, y: newPosY)
+            
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
 }
 
 
 extension scene_1 {
+    func showStick(){
+        stick.position = ball_main.position
+        stick.isHidden = false
+    }
+    func hideStick(){
+        stick.isHidden = true
+    }
+    func checkANodeIsStanding(node:SKSpriteNode) -> Bool {
+        let lengMove = sqrt(node.physicsBody!.velocity.dx * node.physicsBody!.velocity.dx + node.physicsBody!.velocity.dy * node.physicsBody!.velocity.dy)
+        print(lengMove)
+        return lengMove < 6
+    }
+    
     func checkAllNodeIsStanding() -> Bool{
         var flagStanding: Bool = true
         for node in ball_array {
-            if node.physicsBody!.velocity.dx != 0 && node.physicsBody!.velocity.dy != 0 {
+            //if node.physicsBody!.velocity != CGVector(dx: 0, dy: 0) {
+            //if !node.physicsBody!.isResting {
+            if !checkANodeIsStanding(node: node){
                 flagStanding = false
                 break
             }
         }
         return flagStanding
     }
+    
 }
 
 

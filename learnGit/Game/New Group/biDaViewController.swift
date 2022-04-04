@@ -46,6 +46,7 @@ class biDaViewController: FTBaseViewController {
         if let view1 = self.gameView {
             // ------------ Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "scene_1") {
+            //if let scene =  GameScene(fileNamed: "scene_1") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFit
                 // Present the scene
