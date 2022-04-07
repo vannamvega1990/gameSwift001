@@ -180,8 +180,9 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
             //ball_1!.physicsBody?.applyImpulse(CGVector(dx: -526, dy: 60))
             //ball_main!.physicsBody?.applyImpulse(CGVector(dx: dx, dy: dy))
             oldPoint = stick.position
-            count1 += 1
-            print(count1)
+            
+            flagCaculateGoc = true
+            
             
             let vector = MathUtity.createVector(rootPoint: ball_main.position, to: location)
             if flagFirstTouch, let goc = MathUtity.getDegreeOfVector(vector: vector) {
@@ -190,25 +191,6 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
                 stick.zRotation = goc1
                 flagFirstTouch = false
             }
-            if allowTimer {
-                //allowTimer = false
-                timer = Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(self.handleTimer), userInfo: nil, repeats: true)
-            }
-            
-            
-//            if count1 == 1 {
-//               stick.zRotation = .pi/3
-//            }
-//            else if count1 == 2 {
-//               stick.zRotation = 0
-//            }
-//            else if count1 == 3 {
-//               stick.zRotation = -.pi/3
-//            }
-//            else if count1 == 4 {
-//                stick.zRotation = .pi + .pi/3
-//            }
-            
         }
     }
 
@@ -218,49 +200,48 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
         //for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
         //print("touchesMoved")
         for touch in touches {
-            let location=touch.location(in: self)
+            //let location=touch.location(in: self)
             if flagCaculateGoc {
                 flagCaculateGoc = false
                 let v1 = MathUtity.createVector(rootPoint: ball_main.position, to: touchBeginPosition)
-                let v2 = MathUtity.createVector(rootPoint: ball_main.position, to: location)
-                let goc = MathUtity.getDegree2Vector(fromVecter: v1, toVector: v2)
-                if abs(goc) > MathUtity.DegreeToRadiant(goc: 1) {
-                    print("------- chinh goc")
-                    //var goc = MathUtity.getDegreeOfVector(vector: v2)
-                    //goc = MathUtity.gocDoixung(goc: goc!)
-                    //goc = MathUtity.reduceGocOver180(goc: goc!)
-                    let goc = stick.zRotation + goc
-                    let goc1 = MathUtity.reduceGocOver180(goc: goc)
-                    stick.zRotation = goc1
-                }else {
-                    print("------ chinh luc")
+                DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 0.03) {[weak self] in
+                    guard let weakSelf = self else {
+                        return
+                    }
+                    let location=touch.location(in: weakSelf)
+                    let v2 = MathUtity.createVector(rootPoint: weakSelf.ball_main.position, to: location)
+                    let goc = MathUtity.getDegree2Vector(fromVecter: v1, toVector: v2)
+                    if abs(goc) > MathUtity.DegreeToRadiant(goc: 1) {
+                        print("------- chinh goc")
+                        //var goc = MathUtity.getDegreeOfVector(vector: v2)
+                        //goc = MathUtity.gocDoixung(goc: goc!)
+                        //goc = MathUtity.reduceGocOver180(goc: goc!)
+                        let goc = weakSelf.stick.zRotation + goc
+                        let goc1 = MathUtity.reduceGocOver180(goc: goc)
+                        DispatchQueue.main.async {
+                            weakSelf.stick.zRotation = goc1
+                        }
+                    }else {
+                        print("------ chinh luc")
+                    }
+                    weakSelf.touchBeginPosition = location
+                    weakSelf.flagCaculateGoc = true
                 }
-                touchBeginPosition = location
-                //timer?.invalidate()
-                //timer = Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(self.handleTimer), userInfo: nil, repeats: false)
             }
-//            let dx = location.x - oldPoint.x
-//            let dy = location.y - oldPoint.y
-//            oldPoint = location
-//            print(location.x,location.y)
-//            let newPosX = stick.position.x + dx
-//            let newPosY = stick.position.y + dy
-//            stick.position = CGPoint(x: newPosX, y: newPosY)
-            
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         //for t in touches { self.touchUp(atPoint: t.location(in: self)) }
         //allowTimer = true
-        //flagCaculateGoc = false
+        flagCaculateGoc = false
         timer?.invalidate()
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         //for t in touches { self.touchUp(atPoint: t.location(in: self)) }
         //allowTimer = true
-        //flagCaculateGoc = false
+        flagCaculateGoc = false
         timer?.invalidate()
     }
 }
