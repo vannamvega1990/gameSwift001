@@ -46,6 +46,37 @@ class MathUtity {
         return nil
         //return atan2(vector.dx, -vetcor.dy) * 180.0 / CGFloat.pi
     }
+    
+    class func gocDoixung(goc: CGFloat) -> CGFloat{
+        return .pi + goc
+    }
+    
+    class func reduceGocOver180(goc: CGFloat) -> CGFloat {
+        if goc <= .pi && goc >= -.pi {
+            return goc
+        }else if goc > .pi {
+            return -2 * .pi + goc
+        }else {
+            return 2 * .pi + goc
+        }
+    }
+    
+    class func getDegree2Vector(fromVecter: CGVector, toVector: CGVector) -> CGFloat {
+        let goc1 = MathUtity.getDegreeOfVector(vector: fromVecter)!
+        let goc2 = MathUtity.getDegreeOfVector(vector: toVector)!
+        return goc2 - goc1
+    }
+    
+    class func convertAnchorPont(point: CGPoint, oldAnchopoint: CGPoint, objectFrame: CGRect) -> CGPoint {
+        let x_goc = objectFrame.origin.x - objectFrame.size.width * oldAnchopoint.x
+        let y_goc = objectFrame.origin.y - objectFrame.size.height * oldAnchopoint.y
+        let dx = point.x - x_goc
+        let x: CGFloat = dx / objectFrame.size.width
+        let dy = point.y - y_goc
+        let y: CGFloat = dy / objectFrame.size.height
+        return CGPoint(x: x, y: y)
+    }
+    
     class func DegreeToRadiant(goc: CGFloat) -> CGFloat{
         return goc * CGFloat.pi / 180.0 
     }

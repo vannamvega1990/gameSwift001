@@ -13,6 +13,7 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
     var ball_main, ball_8, table, table_body, stick: SKSpriteNode!
     var ball_1, ball_2, ball_3, ball_4, ball_5, ball_6, ball_7: SKSpriteNode!
     var ball_9, ball_10, ball_11, ball_12, ball_13, ball_14, ball_15: SKSpriteNode!
+    var timer: Timer?
     
     var ball_array: [SKSpriteNode] = [SKSpriteNode]()
     var flagBeginCheckAllNodeIsStanding: Bool = false {
@@ -66,6 +67,7 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
             }
         })
         stick.anchorPoint = CGPoint(x: 0, y: 0.5)
+        showStick()
     }
     
     func getObjects(callbak:@escaping ()->Void){
@@ -134,7 +136,7 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
                     hideStick()
                 }else{
                     //print("------have no node is moving")
-                    showStick()
+                    //showStick()
                     flagBeginCheckAllNodeIsStanding = false
                 }
             }
@@ -155,11 +157,23 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
         
     }
     
+    var flagCaculateGoc = false
+    var allowTimer = true
+    var touchBeginPosition: CGPoint = .init()
+    
+    @objc func handleTimer(){
+        flagCaculateGoc = true
+        print("----- timer")
+    }
+    
+    var flagFirstTouch = true
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //MARK: sự kiện click vào màn hình
         for touch in touches {
             let location=touch.location(in: self)
             print(location.x,location.y)
+            touchBeginPosition = location
             flagBeginCheckAllNodeIsStanding = true
             let dx = location.x - ball_main!.position.x
             let dy = location.y - ball_main!.position.y
@@ -170,9 +184,18 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
             print(count1)
             
             let vector = MathUtity.createVector(rootPoint: ball_main.position, to: location)
-            if let goc = MathUtity.getDegreeOfVector(vector: vector) {
-                stick.zRotation = goc
+            if flagFirstTouch, let goc = MathUtity.getDegreeOfVector(vector: vector) {
+                var goc1 = MathUtity.gocDoixung(goc: goc)
+                goc1 = MathUtity.reduceGocOver180(goc: goc1)
+                stick.zRotation = goc1
+                flagFirstTouch = false
             }
+            if allowTimer {
+                //allowTimer = false
+                timer = Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(self.handleTimer), userInfo: nil, repeats: true)
+            }
+            
+            
 //            if count1 == 1 {
 //               stick.zRotation = .pi/3
 //            }
@@ -193,32 +216,62 @@ class scene_1: SKScene, SKPhysicsContactDelegate{
     var count1: Int = 0
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         //for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-        print("touchesMoved")
+        //print("touchesMoved")
         for touch in touches {
-        let location=touch.location(in: self)
-            let dx = location.x - oldPoint.x
-            let dy = location.y - oldPoint.y
-            oldPoint = location
-        print(location.x,location.y)
-            let newPosX = stick.position.x + dx
-            let newPosY = stick.position.y + dy
-            stick.position = CGPoint(x: newPosX, y: newPosY)
+            let location=touch.location(in: self)
+            if flagCaculateGoc {
+                flagCaculateGoc = false
+                let v1 = MathUtity.createVector(rootPoint: ball_main.position, to: touchBeginPosition)
+                let v2 = MathUtity.createVector(rootPoint: ball_main.position, to: location)
+                let goc = MathUtity.getDegree2Vector(fromVecter: v1, toVector: v2)
+                if abs(goc) > MathUtity.DegreeToRadiant(goc: 1) {
+                    print("------- chinh goc")
+                    //var goc = MathUtity.getDegreeOfVector(vector: v2)
+                    //goc = MathUtity.gocDoixung(goc: goc!)
+                    //goc = MathUtity.reduceGocOver180(goc: goc!)
+                    let goc = stick.zRotation + goc
+                    let goc1 = MathUtity.reduceGocOver180(goc: goc)
+                    stick.zRotation = goc1
+                }else {
+                    print("------ chinh luc")
+                }
+                touchBeginPosition = location
+                //timer?.invalidate()
+                //timer = Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(self.handleTimer), userInfo: nil, repeats: false)
+            }
+//            let dx = location.x - oldPoint.x
+//            let dy = location.y - oldPoint.y
+//            oldPoint = location
+//            print(location.x,location.y)
+//            let newPosX = stick.position.x + dx
+//            let newPosY = stick.position.y + dy
+//            stick.position = CGPoint(x: newPosX, y: newPosY)
             
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         //for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+        //allowTimer = true
+        //flagCaculateGoc = false
+        timer?.invalidate()
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         //for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+        //allowTimer = true
+        //flagCaculateGoc = false
+        timer?.invalidate()
     }
 }
 
 
 extension scene_1 {
     func showStick(){
+        stick.position = CGPoint(x: ball_main.position.x + ball_main.size.width/2 + 32 , y: ball_main.position.y)
+        //stick.position = ball_main.position
+        let p = stick.anchorPoint
+        stick.anchorPoint = MathUtity.convertAnchorPont(point: ball_main.position, oldAnchopoint: p, objectFrame: stick.frame)
         stick.position = ball_main.position
         stick.isHidden = false
     }
