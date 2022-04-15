@@ -58,6 +58,17 @@ class biDaViewController: FTBaseViewController {
             view1.showsFPS = true
             view1.showsNodeCount = true
         }
+        setupStick()
+    }
+    
+    func setupStick(){
+        let v = stickControlView()
+        self.addChild(v)
+        v.view.frame = CGRect(x: 0, y: 0, width: 56, height: 160)
+        self.view.addSubview(v.view)
+        //v.stick.image = UIImage(named: "stick_dung")
+        v.delegate = self
+        v.didMove(toParent: self)
     }
     
     override var shouldAutorotate: Bool {
@@ -75,6 +86,18 @@ class biDaViewController: FTBaseViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+}
+
+extension biDaViewController: stickDelegate {
+    func stickDraging(percent: CGFloat) {
+        print(percent)
+    }
+    
+    func stickTouchUp() {
+        
+    }
+    
+    
 }
 
 

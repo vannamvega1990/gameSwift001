@@ -594,8 +594,11 @@
 		42CBE40527E9991A009ACB8A /* TPEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CBE3AB27E99919009ACB8A /* TPEmptyView.swift */; };
 		42CBE40627E9991A009ACB8A /* TPFaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CBE3AC27E99919009ACB8A /* TPFaceIDView.swift */; };
 		42CBE40727E9991A009ACB8A /* TPFaceIDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42CBE3AD27E99919009ACB8A /* TPFaceIDView.xib */; };
+		65024ED827FEA8B100EDF99F /* stickControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65024ED627FEA8B100EDF99F /* stickControlView.swift */; };
+		65024ED927FEA8B100EDF99F /* stickControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65024ED727FEA8B100EDF99F /* stickControlView.xib */; };
 		65133FD027F53257008CFEE1 /* scene_1 2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65133FCF27F53257008CFEE1 /* scene_1 2.sks */; };
 		658EF87027F5916A0070E051 /* scene_1 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658EF86F27F5916A0070E051 /* scene_1 2.swift */; };
+		65D93C2427FFD2350033B632 /* testScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 65D93C2327FFD2350033B632 /* testScene.scn */; };
 		65F634B727F9562D00AA2EE9 /* MathUtity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F634B627F9562D00AA2EE9 /* MathUtity.swift */; };
 		C1203F3A26C9B5CD009E55A2 /* popUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F3926C9B5CD009E55A2 /* popUpAnimation.swift */; };
 		C1203F4126C9C782009E55A2 /* TestVCSwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1203F4026C9C782009E55A2 /* TestVCSwiftUIView1.swift */; };
@@ -1224,8 +1227,11 @@
 		42CBE3AC27E99919009ACB8A /* TPFaceIDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPFaceIDView.swift; sourceTree = "<group>"; };
 		42CBE3AD27E99919009ACB8A /* TPFaceIDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPFaceIDView.xib; sourceTree = "<group>"; };
 		42CBE40827E99A09009ACB8A /* learnGit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "learnGit-Bridging-Header.h"; sourceTree = "<group>"; };
+		65024ED627FEA8B100EDF99F /* stickControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickControlView.swift; sourceTree = "<group>"; };
+		65024ED727FEA8B100EDF99F /* stickControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = stickControlView.xib; sourceTree = "<group>"; };
 		65133FCF27F53257008CFEE1 /* scene_1 2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "scene_1 2.sks"; sourceTree = "<group>"; };
 		658EF86F27F5916A0070E051 /* scene_1 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "scene_1 2.swift"; sourceTree = "<group>"; };
+		65D93C2327FFD2350033B632 /* testScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = testScene.scn; sourceTree = "<group>"; };
 		65F634B627F9562D00AA2EE9 /* MathUtity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtity.swift; sourceTree = "<group>"; };
 		6F01341CB18F5BD70A39320F /* Pods-learnGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnGit.release.xcconfig"; path = "Target Support Files/Pods-learnGit/Pods-learnGit.release.xcconfig"; sourceTree = "<group>"; };
 		ABC63FD0C305DBF7F38F55C5 /* Pods_learnGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learnGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1325,6 +1331,8 @@
 				65133FCD27F52EFD008CFEE1 /* scenes */,
 				4201D37127EC224F007F8FA5 /* Base */,
 				420E4CF127E7FFD7004E6251 /* biDaViewController.swift */,
+				65024ED627FEA8B100EDF99F /* stickControlView.swift */,
+				65024ED727FEA8B100EDF99F /* stickControlView.xib */,
 				4201D37827ED65C5007F8FA5 /* ball.swift */,
 				4201D37627ED5665007F8FA5 /* scene00111.swift */,
 			);
@@ -1347,6 +1355,7 @@
 				42178D2927EAA513006386ED /* Sounds */,
 				42178D2D27EAA513006386ED /* art.scnassets */,
 				42178D2F27EAA513006386ED /* Helper */,
+				65D93C2327FFD2350033B632 /* testScene.scn */,
 			);
 			path = HitTheTree;
 			sourceTree = "<group>";
@@ -3977,6 +3986,7 @@
 				4254E40127F0615A00008D07 /* Particles.xcassets in Resources */,
 				42534ACF27E979230053E302 /* ToolbarForUITextfild.xib in Resources */,
 				4254E3F927F0615A00008D07 /* PauseScene iPad.sks in Resources */,
+				65024ED927FEA8B100EDF99F /* stickControlView.xib in Resources */,
 				42CBE3C727E9991A009ACB8A /* TPCreateNewPasswordVC.xib in Resources */,
 				42CBE3E027E9991A009ACB8A /* TPChangePasswordViewController.xib in Resources */,
 				42534A1B27E979210053E302 /* MailCell.xib in Resources */,
@@ -3997,6 +4007,7 @@
 				42C4650027E9C80E00840C7D /* TestView.xib in Resources */,
 				4253487127E978800053E302 /* FTBaseHeaderView.xib in Resources */,
 				425349FA27E979210053E302 /* DefaultTableViewCell.xib in Resources */,
+				65D93C2427FFD2350033B632 /* testScene.scn in Resources */,
 				4254E40527F0615A00008D07 /* retro_transition_fade_from_top_left.fsh in Resources */,
 				42534AC727E979220053E302 /* dog-3.jpg in Resources */,
 				42C464FC27E9C80E00840C7D /* CCCDTableViewCell.xib in Resources */,
@@ -4368,6 +4379,7 @@
 				42CBE3AF27E99919009ACB8A /* TPBaseTextFieldWithLabel.swift in Sources */,
 				42534A0427E979210053E302 /* Swipeable.swift in Sources */,
 				C19CBA3526C9DEE300846AFC /* TestVCSwiftUIView2.swift in Sources */,
+				65024ED827FEA8B100EDF99F /* stickControlView.swift in Sources */,
 				4254E41927F0615A00008D07 /* Updatable.swift in Sources */,
 				42534A1127E979210053E302 /* SwipeCollectionViewCell.swift in Sources */,
 				42534A0D27E979210053E302 /* SwipeCollectionViewCellDelegate.swift in Sources */,

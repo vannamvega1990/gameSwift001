@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let vc = slideMenuViewController1()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
-            //let vc = ViewController()
+            //let vc = GameViewController()
 //            let vc = ExGameViewController1()
 //            let vc = ExGameViewController2()
             let vc = biDaViewController()

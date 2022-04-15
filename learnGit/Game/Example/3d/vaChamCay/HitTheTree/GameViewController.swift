@@ -11,6 +11,30 @@ import SceneKit
 
 class GameViewController: UIViewController {
     
+    var scene:SCNScene!
+    var sceneView:SCNView!
+    override func viewDidLoad() {
+        setupScene()
+    }
+    func setupScene(){
+
+        sceneView = SCNView(frame: UIScreen.main.bounds, options: nil)
+        self.view.addSubview(sceneView)
+        //sceneView.delegate = self
+        //sceneView.allowsCameraControl = true
+        //scene = SCNScene(named: "art.scnassets/MainScene.scn")
+        scene = SCNScene(named: "testScene.scn")
+        sceneView.scene = scene
+        
+        //scene.physicsWorld.contactDelegate = self
+        
+       
+        
+    }
+}
+
+class GameViewController001: UIViewController {
+    
     let CategoryTree = 2
     
     var sceneView:SCNView!
@@ -39,6 +63,7 @@ class GameViewController: UIViewController {
         sceneView.delegate = self
         //sceneView.allowsCameraControl = true
         scene = SCNScene(named: "art.scnassets/MainScene.scn")
+        scene = SCNScene(named: "testScene.scn")
         sceneView.scene = scene
         
         scene.physicsWorld.contactDelegate = self
@@ -47,7 +72,7 @@ class GameViewController: UIViewController {
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.numberOfTouchesRequired = 1
         
-        tapRecognizer.addTarget(self, action: #selector(GameViewController.sceneViewTapped(recognizer:)))
+        tapRecognizer.addTarget(self, action: #selector(GameViewController001.sceneViewTapped(recognizer:)))
         sceneView.addGestureRecognizer(tapRecognizer)
         
     }
@@ -115,7 +140,7 @@ class GameViewController: UIViewController {
 
 }
 
-extension GameViewController : SCNSceneRendererDelegate {
+extension GameViewController001 : SCNSceneRendererDelegate {
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         let ball = ballNode.presentation
         let ballPosition = ball.position
@@ -144,7 +169,7 @@ extension GameViewController : SCNSceneRendererDelegate {
     
 }
 
-extension GameViewController : SCNPhysicsContactDelegate {
+extension GameViewController001 : SCNPhysicsContactDelegate {
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
         var contactNode:SCNNode!
         
